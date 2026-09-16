@@ -1,0 +1,767 @@
+fighter_id,name,height,weight,age,dob,gender,weight_class,reach,stance,style,gym,country
+4294832,Carlos Prates,185.42,77.11,32.0,1993-08-17,male,welterweight,198.12,switch,striker,fighting nerds,brazil
+4243624,Tracy Cortez,165.1,56.7,31.0,1993-12-10,female,womens-flyweight,166.37,orthodox,mixed martial artist,fight ready,usa
+4690541,Gregory Rodrigues,190.5,83.91,33.0,1992-02-17,male,middleweight,190.5,orthodox,grappling,kill cliff fc,brazil
+4963343,Denise Gomes,157.48,52.16,25.0,1999-12-30,female,womens-strawweight,160.02,orthodox,mixed martial artist,parana vale tudo,brazil
+5134399,Nick Klein,185.42,84.37,30.0,1995-09-08,male,middleweight,195.58,orthodox,,pura vida bjj,usa
+5213179,Yadier del Valle,175.26,65.77,29.0,1996-07-29,male,featherweight,175.26,southpaw,,gracie barra westchase,cuba
+4873640,Jailton Almeida,190.5,106.59,34.0,1991-06-26,male,heavyweight,200.66,orthodox,boxing,galpao da luta,brazil
+4227265,Azamat Murzakanov,177.8,92.99,36.0,1989-04-12,male,lightheavyweight,181.61,southpaw,striker,k dojo,russia
+4815978,Mitch Raposo,165.1,57.15,26.0,1998-10-16,male,flyweight,163.83,switch,mixed martial artist,regiment traing center,usa
+5223435,Jose Miguel Delgado,180.34,65.77,27.0,1998-04-21,male,featherweight,187.96,switch,,mma lab,usa
+4025699,Brendan Allen,187.96,83.91,29.0,1995-12-28,male,middleweight,190.5,orthodox,brazilian jiu-jitsu,kill cliff fc,usa
+3165120,Mike Malott,185.42,77.56,33.0,1991-11-07,male,welterweight,185.42,orthodox,mixed martial artist,niagara top team,canada
+4835135,Jasmine Jasudavicius,170.18,56.25,36.0,1989-03-01,female,womens-flyweight,172.72,orthodox,brawler,niagara top team,canada
+4081024,Matt Frevola,175.26,70.76,35.0,1990-06-11,male,lightweight,180.34,orthodox,wrestling,gracie tampa south,usa
+5211247,Djorden Santos,182.88,83.91,28.0,1997-08-01,male,middleweight,191.77,orthodox,,american top team,brazil
+5149815,Yousri Belgaroui,195.58,84.37,33.0,1992-06-29,male,middleweight,200.66,orthodox,,teixeira mma & fitness,netherlands
+4339130,Montel Jackson,177.8,61.69,33.0,1992-04-24,male,bantamweight,190.5,southpaw,striker,pura vida bjj,usa
+5218817,Mario Pinto,195.58,111.58,27.0,1998-03-14,male,heavyweight,200.66,orthodox,,fightzone london,portugal
+5212738,Michael Aswell Jr.,172.72,70.31,25.0,2000-09-27,male,featherweight,175.26,orthodox,,metro fight club,usa
+4904998,Clayton Carpenter,167.64,56.7,29.0,1996-06-09,male,flyweight,167.64,orthodox,mixed martial artist,mma lab,usa
+4869702,Thomas Petersen,185.42,113.4,30.0,1995-03-30,male,heavyweight,187.96,southpaw,boxing,spartan mma,usa
+4684135,Joe Pyfer,187.96,83.91,29.0,1996-09-17,male,middleweight,190.5,orthodox,boxing,marquez mma,usa
+4944080,Ozzy Diaz,193.04,83.91,34.0,1990-11-22,male,middleweight,200.66,orthodox,,california mixed martial marts,usa
+3091099,Andre Muniz,185.42,83.91,35.0,1990-02-17,male,middleweight,198.12,southpaw,mixed martial artist,tata fight team,brazil
+5016786,Farid Basharat,172.72,62.14,28.0,1997-08-02,male,bantamweight,180.34,orthodox,mixed martial artist,xtreme couture,afghanistan
+4700616,Nikolay Veretennikov,185.42,76.66,35.0,1989-12-22,male,welterweight,187.96,orthodox,sambo,kings mma,kazakhstan
+4290344,Austin Vanderford,180.34,78.93,35.0,1990-03-21,male,welterweight,187.96,orthodox,,american top team,usa
+5152409,Ramon Taveras,172.72,66.68,31.0,1994-01-09,male,featherweight,177.8,southpaw,mixed martial artist,bulldog boxing,usa
+4786358,Charlie Campbell,182.88,70.31,30.0,1995-07-03,male,lightweight,184.15,orthodox,mixed martial artist,serra-longo fight team ,usa
+5060489,Rodolfo Bellato,190.5,92.99,29.0,1996-02-05,male,lightheavyweight,190.5,orthodox,,team nogueira,brazil
+5212850,Josias Musasa,172.72,61.23,26.0,1998-10-10,male,bantamweight,187.96,southpaw,,elite training centre,democratic republic of congo
+4372194,Luana Carolina,167.64,61.69,32.0,1993-06-11,female,womens-bantamweight,175.26,orthodox,muay thai,nova uniao ,brazil
+5075992,Alexia Thainara,162.56,52.16,29.0,1995-11-20,female,womens-strawweight,170.18,orthodox,,ribas family,brazil
+5264925,Mantas Kondratavičius,190.5,84.37,26.0,1999-07-17,male,middleweight,191.77,orthodox,,fighter house,lithuania
+5308768,Murtazali Magomedov,180.34,65.77,26.0,1999-08-26,male,featherweight,179.07,orthodox,,khk mma team,kyrgyzstan
+5308770,Sofia Montenegro,167.64,56.7,26.0,1999-06-18,female,womens-flyweight,171.45,orthodox,,alfa team,argentina
+4687104,Javier Reyes,177.8,65.77,31.0,1993-10-10,male,featherweight,185.42,,,bareknuckle mma,colombia
+5308872,Jair de Oliveira,175.26,92.53,29.0,1996-05-09,male,lightheavyweight,176.53,,,ct lucas cebola,brazil
+5236383,Hecher Sosa,172.72,61.69,30.0,1995-08-25,male,bantamweight,177.8,orthodox,,afc villalba,spain
+5307810,Iwo Baraniewski,182.88,92.99,26.0,1998-11-20,male,lightheavyweight,186.69,orthodox,,aligatores fight club,poland
+5307815,Adam Livingston,187.96,70.76,24.0,2001-08-15,male,lightweight,181.61,orthodox,,long island mma,usa
+5109011,Paddy McCorry,190.5,84.37,27.0,1997-12-09,male,middleweight,185.42,switch,,fight academy ireland,ireland
+5282412,Cody Chovancek,172.72,61.69,27.0,1998-07-24,male,bantamweight,170.18,switch,,niagara top team,canada
+5145766,Jean Silva,170.18,65.77,28.0,1996-12-27,male,featherweight,175.26,orthodox,striker,fighting nerds,brazil
+4503229,David Martinez,165.1,61.23,27.0,1998-08-03,male,bantamweight,167.64,orthodox,,bonebreakers mma,mexico
+4685871,Dustin Stoltzfus,182.88,83.91,33.0,1991-11-15,male,middleweight,190.5,orthodox,muay thai,xtreme couture,usa
+4421517,Duško Todorović,185.42,84.37,31.0,1994-05-19,male,middleweight,187.96,orthodox,mixed martial artist,secutor,serbia
+5218137,Luis Gurule,165.1,56.7,31.0,1993-11-16,male,flyweight,162.56,orthodox,,factoryx muay thai,usa
+5060467,Sedriques Dumas,187.96,84.37,30.0,1995-08-06,male,middleweight,200.66,orthodox,kickboxing,team remedy bjj & mma,usa
+5239615,Steven Asplund,195.58,118.39,27.0,1998-07-16,male,heavyweight,198.12,orthodox,,minnesota top team,usa
+4958170,Lerryan Douglas,177.8,65.77,30.0,1995-04-27,male,featherweight,182.88,orthodox,,bloodline combat,brazil
+5307524,Freddy Vidal,190.5,95.25,31.0,1994-05-06,male,lightheavyweight,201.93,orthodox,,serra-longo fight team ,usa
+5293557,Samuel Sanches,177.8,69.85,22.0,2003-01-28,male,lightweight,189.23,orthodox,,galpao da luta,brazil
+5278269,Carol Foro,157.48,52.16,28.0,1997-03-21,female,womens-strawweight,156.21,orthodox,,rplay thai,brazil
+4835137,Caio Borralho,185.42,83.91,32.0,1993-01-16,male,middleweight,190.5,southpaw,mixed martial artist,fighting nerds,brazil
+5122238,Mauricio Ruffy,180.34,70.76,29.0,1996-06-17,male,lightweight,190.5,orthodox,striker,fighting nerds,brazil
+4379328,Brendson Ribeiro,190.5,93.44,29.0,1996-09-08,male,lightheavyweight,205.74,orthodox,striker,brazilian tko,brazil
+5092403,Trey Waters,195.58,77.56,30.0,1995-02-21,male,welterweight,195.58,orthodox,striker,ludus mma,usa
+4629138,Jean-Paul Lebosnoyani,180.34,77.11,26.0,1999-01-27,male,welterweight,182.88,switch,,california mixed martial marts,usa
+5216978,Cezary Oleksiejczuk,190.5,83.91,25.0,2000-01-06,male,middleweight,191.77,southpaw,,fighting nerds,poland
+5124146,Samuel Silva,182.88,69.85,29.0,1996-01-02,male,lightweight,184.15,orthodox,,evolucao thai,brazil
+5150021,Eduardo Chapolin,170.18,56.7,29.0,1995-11-23,male,flyweight,170.18,orthodox,,bloodline combat,brazil
+5295176,David Mgoyan,175.26,65.77,21.0,2004-06-25,male,featherweight,179.07,orthodox,,american top team,russia
+5291085,Ryan Gandra,185.42,83.46,30.0,1995-05-08,male,middleweight,189.23,orthodox,,flavio baiano team,brazil
+5099679,Marcio Barbosa,167.64,65.77,27.0,1998-05-22,male,featherweight,179.07,orthodox,,ronildo nobre judo club,brazil
+5220971,Alik Lorenz,187.96,93.44,28.0,1997-01-25,male,lightheavyweight,196.85,orthodox,,hard drive mma,usa
+5085291,Manoel Sousa,175.26,70.31,28.0,1997-06-04,male,lightweight,177.8,orthodox,,academia octógono,brazil
+4413642,Darion Abbey,187.96,102.51,32.0,1993-02-25,male,heavyweight,205.74,orthodox,,kill cliff fc,usa
+4903365,Waldo Cortes-Acosta,193.04,118.84,33.0,1991-10-03,male,heavyweight,198.12,orthodox,striker,ukf gym,dominican republic
+5144066,Kevin Borjas,165.1,57.15,27.0,1997-12-06,male,flyweight,172.72,orthodox,mixed martial artist,pitbull martial arts center,peru
+5085318,Gauge Young,175.26,70.31,25.0,2000-07-14,male,lightweight,177.8,orthodox,,ignite jiu-jitsu,usa
+5147737,Lone'er Kavanagh,167.64,57.15,26.0,1999-06-09,male,flyweight,170.18,orthodox,,great britain top team,england
+4329444,Kyle Daukaus,190.5,83.91,32.0,1993-02-27,male,middleweight,193.04,southpaw,mixed martial artist,martinez bjj,usa
+5213352,Diyar Nurgozhay,187.96,92.99,28.0,1997-04-22,male,lightheavyweight,187.96,southpaw,,arlan mma pro team,kazakhstan
+4969974,Jose Delano,172.72,65.77,29.0,1996-09-11,male,featherweight,177.8,orthodox,,brazilian top team,brazil
+4694832,Cam Rowston,190.5,83.46,30.0,1995-01-19,male,middleweight,198.12,orthodox,,city kickboxing,australia
+5212852,Louis Lee Scott,172.72,62.14,25.0,2000-02-26,male,bantamweight,177.8,orthodox,,manchester top team,england
+5220468,Guilherme Uriel,185.42,112.94,28.0,1997-02-18,male,heavyweight,187.96,orthodox,,evolution combat mma,brazil
+5290796,Ramiro Jimenez,175.26,65.32,26.0,1999-01-16,male,featherweight,185.42,southpaw,,the goat shed,mexico
+4801725,Dione Barbosa,167.64,56.7,33.0,1992-05-08,female,womens-flyweight,167.64,orthodox,mixed martial artist,kings mma,brazil
+5287948,Neemias Santana,187.96,84.37,29.0,1996-07-10,male,middleweight,193.04,orthodox,,team lucas mineiro,brazil
+5264471,Jimmy Drago,177.8,77.11,30.0,1995-02-18,male,welterweight,180.34,orthodox,,ataque duplo ,usa
+5149437,Murtaza Talha,182.88,84.37,29.0,1996-07-10,male,middleweight,187.96,orthodox,,khk mma team,bahrain
+5265556,Radley da Silva,175.26,65.77,30.0,1995-06-20,male,featherweight,180.34,orthodox,,axe capoeira vancouver,canada
+5147207,Yuri Panferov,185.42,84.37,29.0,1996-08-30,male,middleweight,184.15,orthodox,,ultimate mma,russia
+4290956,Anthony Hernandez,182.88,84.37,31.0,1993-10-18,male,middleweight,190.5,orthodox,brazilian jiu-jitsu,mmagold fight team,usa
+4424224,Ode' Osbourne,170.18,61.23,33.0,1992-01-09,male,bantamweight,185.42,southpaw,mixed martial artist,bkmma,jamaica
+4875511,Christian Rodriguez,170.18,66.22,27.0,1997-12-17,male,featherweight,181.61,orthodox,freestyle,roufusport,mexico
+5149439,Jean Matsumoto,167.64,61.69,26.0,1999-09-09,male,bantamweight,172.72,orthodox,mixed martial artist,inside muay thai,brazil
+4867356,Chris Duncan,177.8,70.76,32.0,1993-05-10,male,lightweight,180.34,orthodox,mixed martial artist,american top team,scotland
+5074131,Esteban Ribovics,177.8,70.31,29.0,1996-04-27,male,lightweight,175.26,orthodox,striker,kill cliff fc,argentina
+5145681,Kevin Vallejos,170.18,66.22,23.0,2001-12-08,male,featherweight,172.72,switch,,brothers of life mma,argentina
+5211225,Andrey Pulyaev,193.04,83.91,28.0,1997-09-10,male,middleweight,198.12,southpaw,,storm shlemenko fight team,russia
+4426305,Steven Nguyen,180.34,65.77,32.0,1993-05-19,male,featherweight,185.42,switch,striker,fortis mma,usa
+4426312,Daniel Rodriguez,185.42,77.11,38.0,1986-12-31,male,welterweight,187.96,southpaw,freestyle,10th planet jiu-jitsu,usa
+4863327,Daniel Zellhuber,185.42,70.76,26.0,1999-07-07,male,lightweight,195.58,switch,freestyle,xtreme couture,mexico
+4884877,Vinicius Oliveira,175.26,61.69,29.0,1995-11-30,male,bantamweight,179.07,switch,mixed martial artist,sombra team mma,brazil
+5212748,Islam Dulatov,190.5,77.56,27.0,1998-08-02,male,welterweight,190.5,orthodox,,american top team,germany
+4710386,Lukasz Brzeski,190.5,109.77,33.0,1992-05-17,male,heavyweight,198.12,orthodox,striker,raion fight club,poland
+4239113,Nicolle Caliari,160.02,57.15,28.0,1996-11-04,female,womens-flyweight,157.48,orthodox,,thai brasil,brazil
+5212856,Tallison Teixeira,200.66,117.48,25.0,1999-12-07,male,heavyweight,210.82,orthodox,,team lucas mineiro,brazil
+4921516,Gabriel Bonfim,185.42,77.56,28.0,1997-08-20,male,welterweight,184.15,orthodox,mixed martial artist,cerrado mma,brazil
+3023804,Steve Garcia,182.88,66.22,33.0,1992-05-22,male,featherweight,190.5,southpaw,striker,jackson-wink mma,usa
+2223033,Austen Lane,198.12,111.13,37.0,1987-11-09,male,heavyweight,203.2,orthodox,mixed martial artist,bulldog boxing,usa
+2984770,Chris Curtis,177.8,77.11,38.0,1987-07-15,male,welterweight,191.77,orthodox,striker,xtreme couture,usa
+2959422,Chidi Njokuani,190.5,77.56,36.0,1988-12-31,male,welterweight,203.2,orthodox,striker,janjira muay thai,usa
+5143888,Eduarda Moura,167.64,57.15,31.0,1994-02-28,female,womens-flyweight,167.64,orthodox,wrestling,galpao da luta,brazil
+4339145,Mike Davis,182.88,70.31,32.0,1992-10-07,male,lightweight,184.15,orthodox,mixed martial artist,fusion x-cel,usa
+4877915,Viacheslav Borshchev,180.34,70.31,33.0,1992-01-08,male,lightweight,175.26,orthodox,striker,team alpha male,russia
+5149961,Jacobe Smith,187.96,77.11,29.0,1996-01-17,male,welterweight,182.88,southpaw,,fortis mma,usa
+4038116,Ignacio Bahamondes,190.5,70.31,28.0,1997-08-27,male,lightweight,190.5,orthodox,freestyle,valle flow striking,chile
+4001837,Rizvan Kuniev,193.04,119.75,33.0,1992-03-10,male,heavyweight,193.04,orthodox,,gorets,russia
+3897242,Nikolas Motta,175.26,70.31,32.0,1993-02-08,male,lightweight,177.8,orthodox,kickboxing,xtreme couture,usa
+5144006,Bogdan Grad,172.72,66.22,30.0,1995-09-28,male,featherweight,177.8,orthodox,,ettl bros mma,austria
+4900808,Oban Elliott,182.88,77.11,27.0,1997-12-19,male,welterweight,182.88,orthodox,mixed martial artist,shore mixed martial arts centre of excellence,wales
+4684474,Cody Brundage,182.88,91.63,31.0,1994-05-16,male,lightheavyweight,182.88,orthodox,wrestling,factoryx muay thai,usa
+5144320,Cameron Smotherman,175.26,61.69,28.0,1997-09-17,male,bantamweight,175.26,orthodox,,metro fight club,usa
+4875506,Ange Loosa,177.8,77.56,32.0,1993-03-18,male,welterweight,187.96,orthodox,kickboxing,kill cliff fc,democratic republic of congo
+4683395,Vanessa Demopoulos,157.48,57.15,37.0,1988-09-22,male,womens-flyweight,149.86,orthodox,jiu-jitsu,xtreme couture,usa
+4205093,Sean O'Malley,180.34,61.23,30.0,1994-10-24,male,bantamweight,182.88,switch,striker,red hawk academy,usa
+3943695,Kevin Holland,190.5,77.11,32.0,1992-11-05,male,welterweight,205.74,orthodox,kung fu,travis lutter bjj,usa
+4738749,Andreas Gustafsson,185.42,77.56,34.0,1991-02-20,male,welterweight,186.69,orthodox,,vasteras fight club,sweden
+4691323,Bruno Lopes,187.96,93.44,32.0,1993-04-24,male,lightheavyweight,187.96,orthodox,,011 mma team,brazil
+3020408,Allan Nascimento,172.72,57.61,34.0,1991-09-11,male,flyweight,175.26,orthodox,brazilian jiu-jitsu,chute boxe,brazil
+4686565,Jordan Leavitt,175.26,70.31,30.0,1995-06-02,male,lightweight,180.34,southpaw,freestyle,syndicate mma,usa
+4869426,Michael Morales,182.88,77.11,26.0,1999-06-24,male,welterweight,200.66,orthodox,striker,entram gym,ecuador
+3955778,Thiago Moises,175.26,70.31,30.0,1995-03-23,male,lightweight,179.07,orthodox,mixed martial artist,american top team,brazil
+5044438,Connor Matthews,172.72,65.77,33.0,1992-05-31,male,featherweight,180.34,switch,mixed martial artist,new england cartel,usa
+3249894,Carlos Hernandez,172.72,57.15,31.0,1993-10-25,male,flyweight,170.18,orthodox,freestyle,valle flow striking,usa
+4689229,Luana Pinheiro,157.48,52.16,32.0,1992-11-18,female,womens-strawweight,158.75,orthodox,judo,ufc gym huntington beach,brazil
+4828707,Jack Della Maddalena,180.34,77.11,29.0,1996-09-10,male,welterweight,185.42,switch,mixed martial artist,scrappy mma,australia
+5061870,Bo Nickal,185.42,83.91,29.0,1996-01-14,male,middleweight,193.04,southpaw,wrestling,american top team,usa
+5088886,Daniel Marcos,170.18,61.23,32.0,1993-03-07,male,bantamweight,175.26,orthodox,mixed martial artist,american combat gym,peru
+5146229,Serhiy Sidey,180.34,61.23,29.0,1996-07-04,male,bantamweight,182.88,switch,freestyle,burlington training centre,ukraine
+4249193,Don'Tale Mayes,198.12,117.93,33.0,1992-01-16,male,heavyweight,205.74,orthodox,boxing,jackson-wink mma,usa
+2989380,Jimmy Flick,170.18,57.15,35.0,1990-09-07,male,flyweight,172.72,orthodox,brazilian jiu-jitsu,forza combat sports,usa
+4063869,John Castaneda,167.64,66.22,33.0,1991-12-18,male,featherweight,180.34,switch,mixed martial artist,the academy mn,usa
+5077399,Cameron Saaiman,172.72,61.23,24.0,2000-12-20,male,bantamweight,170.18,southpaw,mixed martial artist,team cit,south africa
+4881999,Diego Lopes,180.34,66.22,30.0,1994-12-30,male,featherweight,184.15,orthodox,brazilian jiu-jitsu,lobo gym mma,brazil
+4566991,Sean Woodson,187.96,66.22,33.0,1992-06-07,male,featherweight,198.12,orthodox,freestyle,wolves den training center,usa
+4354421,Chase Hooper,185.42,70.31,26.0,1999-09-13,male,lightweight,187.96,southpaw,brazilian jiu-jitsu,combat sport and fitness,usa
+3955577,Julian Erosa,185.42,65.77,36.0,1989-07-31,male,featherweight,189.23,southpaw,striker,xtreme couture,usa
+5138111,Marco Tulio,182.88,84.37,31.0,1994-06-13,male,middleweight,189.23,orthodox,,chute boxe - diego lima,brazil
+4374742,Hailey Cowan,172.72,61.69,33.0,1992-02-12,female,womens-bantamweight,170.18,southpaw,freestyle,blitz sport mma,usa
+4422355,Joanderson Brito,172.72,66.22,30.0,1995-02-11,male,featherweight,182.88,orthodox,striker,chute boxe - joao emilio,brazil
+5153082,Daniel Frunza,185.42,77.11,31.0,1994-04-13,male,welterweight,185.42,orthodox,,black house santiago,romania
+3936279,Pedro Falcão,167.64,61.69,33.0,1992-07-30,male,bantamweight,167.64,orthodox,mixed martial artist,nova uniao ,brazil
+5139556,Talita Alencar,154.94,52.16,34.0,1990-10-17,female,womens-strawweight,147.32,orthodox,grappling,fight sports deerfield beach,brazil
+4396359,CJ Vergara,167.64,57.15,34.0,1991-06-18,male,flyweight,172.72,orthodox,mixed martial artist,pete spratt muay thai,usa
+4349153,Vince Morales,170.18,61.69,34.0,1990-11-12,male,bantamweight,177.8,orthodox,striker,syndicate mma,usa
+4875505,Saimon Oliveira,162.56,61.23,34.0,1991-04-21,male,bantamweight,182.88,orthodox,striker,astra fight team,brazil
+5218421,Ateba Gautier,193.04,83.91,23.0,2002-04-10,male,middleweight,205.74,switch,,manchester top team,cameroon
+4686723,Julia Polastri,157.48,52.62,27.0,1998-03-05,female,womens-strawweight,160.02,orthodox,striker,cwb fighter,brazil
+4695736,Carlos Ulberg,193.04,92.99,34.0,1990-11-07,male,lightheavyweight,195.58,orthodox,kickboxing,city kickboxing,new zealand
+5060505,Mick Parkin,193.04,117.93,29.0,1995-10-02,male,heavyweight,200.66,orthodox,mixed martial artist,team fish tank,england
+3019246,Kurt Holobaugh,180.34,70.76,39.0,1986-09-08,male,lightweight,177.8,orthodox,brazilian jiu-jitsu,gracie united,usa
+3887606,Ryan Spann,195.58,114.31,34.0,1991-08-24,male,heavyweight,200.66,orthodox,brazilian jiu-jitsu,fortis mma,usa
+4685730,AJ Cunningham,177.8,61.69,31.0,1994-09-07,male,bantamweight,180.34,orthodox,mixed martial artist,law school mma,usa
+5157669,Andre Lima,170.18,57.15,26.0,1999-02-04,male,flyweight,170.18,orthodox,kickboxing,team lucas mineiro,brazil
+5172179,Carli Judice,170.18,56.7,26.0,1999-03-02,female,womens-flyweight,172.72,southpaw,,headkicks mma,usa
+4894791,Armen Petrosyan,190.5,84.37,34.0,1990-11-03,male,middleweight,180.34,orthodox,muay thai,academy mma,armenia
+5060394,Francis Marshall,175.26,66.22,26.0,1999-03-03,male,featherweight,182.88,orthodox,freestyle,american top team,usa
+4077475,Julian Marquez,187.96,84.37,35.0,1990-05-08,male,middleweight,182.88,orthodox,jiu-jitsu,mma lab,usa
+5088916,Sam Patterson,190.5,77.11,29.0,1996-04-30,male,welterweight,198.12,orthodox,mixed martial artist,team crossface,england
+4863328,Lucas Almeida,180.34,67.13,34.0,1991-01-31,male,featherweight,180.34,orthodox,striker,mma sorocaba,brazil
+4686734,Melsik Baghdasaryan,175.26,65.77,33.0,1992-01-28,male,featherweight,177.8,southpaw,mixed martial artist,glendale fighting club,armenia
+4684240,Ibo Aslan,190.5,92.53,29.0,1996-04-23,male,lightheavyweight,196.85,orthodox,striker,gym 23,turkey
+4867357,Javid Basharat,175.26,61.69,30.0,1995-09-07,male,bantamweight,175.26,orthodox,mixed martial artist,american top team,afghanistan
+5032015,Dylan Budka,182.88,84.37,25.0,2000-01-14,male,middleweight,190.5,switch,freestyle,demolition fight team,usa
+5074130,Nazim Sadykhov,177.8,70.31,31.0,1994-05-16,male,lightweight,175.26,southpaw,freestyle,serra-longo fight team ,azerbaijan
+5074274,Jesus Aguilar,162.56,57.15,29.0,1996-03-13,male,flyweight,158.75,orthodox,freestyle,entram gym,mexico
+5144797,Elijah Smith,175.26,61.69,23.0,2002-09-05,male,bantamweight,180.34,orthodox,,team victory,usa
+4394200,Bruna Brasil,167.64,56.7,32.0,1993-09-07,female,womens-strawweight,166.37,orthodox,mixed martial artist,fighting nerds,brazil
+5212351,Kody Steele,175.26,70.76,30.0,1995-04-21,male,lightweight,180.34,orthodox,,syndicate mma,usa
+4371001,Mayra Bueno Silva,167.64,57.15,34.0,1991-08-22,female,womens-bantamweight,168.91,orthodox,striker,american top team,brazil
+4565641,Jamal Pogues,190.5,119.75,29.0,1995-12-01,male,heavyweight,195.58,orthodox,boxing,syndicate mma,usa
+4425355,Jamahal Hill,193.04,93.44,34.0,1991-05-19,male,lightheavyweight,200.66,southpaw,mixed martial artist,black lion jiu-jitsu,usa
+3960072,Muin Gafurov,170.18,61.69,29.0,1996-05-17,male,bantamweight,172.72,orthodox,brazilian jiu-jitsu,syndicate mma,tajikistan
+5120304,Austin Bashi,167.64,65.77,24.0,2001-09-29,male,featherweight,177.8,orthodox,,warrior way martial arts,usa
+4685870,Uros Medic,185.42,77.56,32.0,1993-04-25,male,welterweight,180.34,southpaw,mixed martial artist,kings mma,serbia
+4873642,Ihor Potieria,190.5,85.28,29.0,1996-05-29,male,middleweight,190.5,southpaw,mixed martial artist,aurum sport club,ukraine
+5060398,Viktoriia Dudakova,165.1,52.62,26.0,1999-01-26,female,womens-strawweight,170.18,orthodox,mixed martial artist,cobrinha brazilian jiu-jitsu & fitness,russia
+4423876,Joe Solecki,175.26,70.31,32.0,1993-08-27,male,lightweight,179.07,orthodox,mixed martial artist,salty dog jiu jitsu,usa
+3900088,Billy Quarantillo,177.8,66.22,36.0,1988-12-08,male,featherweight,177.8,orthodox,mixed martial artist,gracie tampa south,usa
+2594871,Dustin Jacoby,190.5,92.99,37.0,1988-04-04,male,lightheavyweight,193.04,orthodox,striker,factoryx muay thai,usa
+4816066,Piera Rodriguez,160.02,52.62,32.0,1992-11-11,female,womens-strawweight,161.29,orthodox,striker,xtreme couture,venezuela
+3309918,Karine Silva,165.1,56.7,31.0,1993-12-02,female,womens-flyweight,170.18,orthodox,brazilian jiu-jitsu,fighting nerds,brazil
+5075748,James Llontop,182.88,75.3,26.0,1999-08-02,male,lightweight,185.42,orthodox,striker,team ffc,peru
+5145497,Jhonata Diniz,193.04,115.21,34.0,1991-06-23,male,heavyweight,201.93,orthodox,kickboxing,santa fe team,brazil
+4775129,Cortavious Romious,162.56,63.05,31.0,1994-01-06,male,bantamweight,172.72,southpaw,mixed martial artist,pura vida bjj,usa
+3955820,Antonio Trocoli,195.58,84.37,34.0,1990-12-06,male,middleweight,203.2,orthodox,muay thai,full house mma,brazil
+4426192,Rodrigo Nascimento,187.96,119.75,32.0,1992-11-26,male,heavyweight,203.2,orthodox,brazilian jiu-jitsu,american top team,brazil
+4074001,Dan Ige,170.18,65.77,34.0,1991-08-06,male,featherweight,180.34,orthodox,wrestling,xtreme couture,usa
+5077131,Brunno Ferreira,177.8,84.37,32.0,1992-11-04,male,middleweight,182.88,orthodox,grappling,brazilian tko,brazil
+4293183,Victor Hugo,170.18,65.77,32.0,1992-11-22,male,featherweight,181.61,orthodox,striker,astra fight team,brazil
+4237015,Kyler Phillips,172.72,61.23,30.0,1995-06-12,male,bantamweight,182.88,orthodox,nikidokai,mma lab,usa
+5147552,Heraldo Souza,180.34,83.91,30.0,1994-12-15,male,middleweight,185.42,orthodox,,evolucao thai,brazil
+5195917,Nick Piccininni,167.64,56.7,28.0,1996-12-16,male,flyweight,167.64,orthodox,,fortis mma,usa
+5223853,Leslie Hernandez,160.02,52.62,27.0,1997-12-29,female,womens-strawweight,163.83,orthodox,,mma lab,usa
+5236142,Jonathan Micallef,182.88,77.11,26.0,1999-03-05,male,welterweight,195.58,southpaw,,combat 1 mma,australia
+4565671,Cory McKenna,160.02,52.16,26.0,1999-07-11,female,womens-strawweight,148.59,orthodox,mixed martial artist,team alpha male,wales
+5001014,Cody Haddon,170.18,61.23,27.0,1998-09-08,male,bantamweight,175.26,orthodox,mixed martial artist,luistro combat academy,australia
+5146278,Lucas Rocha,160.02,56.7,25.0,2000-08-12,male,flyweight,162.56,orthodox,muay thai,renovacao coari team,brazil
+5217935,Artem Vakhitov,185.42,92.99,34.0,1991-04-04,male,lightheavyweight,190.5,orthodox,,kuzbass muay thai federation,russia
+5193167,Chasen Blair,177.8,70.76,26.0,1998-10-14,male,lightweight,180.34,orthodox,,mma fight academy,usa
+5218814,Anthony Drilich,165.1,57.15,31.0,1994-03-17,male,flyweight,165.1,southpaw,,drilich combat academy,australia
+5081274,Bartosz Szewczyk,193.04,92.99,28.0,1997-09-18,male,lightheavyweight,185.42,orthodox,,ankos mma,poland
+5125484,Carlos Calderon,180.34,65.77,29.0,1996-02-10,male,featherweight,180.34,southpaw,,havoc mma,usa
+5235875,Xavier Franklin,167.64,61.23,29.0,1995-10-15,male,bantamweight,167.64,southpaw,,george's mma & boxing gym,usa
+5130607,Abdellah Er-Ramy,182.88,83.91,29.0,1996-09-19,male,middleweight,187.96,orthodox,,rebel pride gym,spain
+5150152,Christien Savoie,180.34,77.11,33.0,1992-08-29,male,welterweight,182.88,orthodox,,house of champions,canada
+4354423,Roosevelt Roberts,187.96,70.31,31.0,1994-02-11,male,lightweight,185.42,orthodox,jiu-jitsu,kill cliff fc,usa
+4713584,Victor Altamirano,172.72,57.15,34.0,1991-01-23,male,flyweight,177.8,switch,striker,double five mid-cities,mexico
+5216851,Danylo Voievodkin,193.04,119.29,25.0,2000-07-19,male,heavyweight,198.12,southpaw,,kratos,ukraine
+4082400,Vadym Kutsyi,182.88,77.56,34.0,1991-07-18,male,welterweight,180.34,orthodox,,academy mma,belarus
+5220883,Francesco Mazzeo,190.5,93.44,28.0,1997-09-23,male,lightheavyweight,190.5,orthodox,,mma fight academy,italy
+5222338,Cam Teague,177.8,65.77,27.0,1998-02-13,male,featherweight,175.26,orthodox,,port city combat sports,usa
+5142277,Rose Conceição,165.1,51.71,28.0,1997-05-13,female,womens-strawweight,165.1,orthodox,,pitbull brothers,brazil
+5212857,Arthur Lopes,187.96,98.88,32.0,1993-02-17,male,heavyweight,196.85,southpaw,,,brazil
+5218815,Benjamin Bennett,182.88,77.11,31.0,1994-05-08,male,welterweight,185.42,switch,,elevation fight team,usa
+5218420,Yura Naito,182.88,83.91,29.0,1996-04-26,male,middleweight,187.96,orthodox,,reversal gym yokohama ground slam,japan
+4935217,Dylan Mantello,185.42,70.76,32.0,1992-11-19,male,lightweight,185.42,orthodox,,serra-longo fight team ,usa
+5228275,Phil Latu,190.5,93.44,34.0,1991-02-17,male,lightheavyweight,193.04,orthodox,,elevation fight team,usa
+5212853,Otari Tanzilovi,177.8,60.78,27.0,1998-04-09,male,bantamweight,177.8,orthodox,,guram fight club,georgia
+5214599,Igor Cavalcanti,180.34,77.11,27.0,1997-10-10,male,welterweight,201.93,orthodox,,infinity fight team,brazil
+5172335,Dorian Ramos,172.72,65.77,31.0,1993-12-31,male,featherweight,177.8,orthodox,,apex mma,usa
+5211222,Shannon Clark,165.1,56.7,33.0,1992-07-07,female,womens-flyweight,163.83,orthodox,,canadian martial arts centre,canada
+5157667,Quillan Salkilld,182.88,70.76,25.0,1999-12-28,male,lightweight,190.5,orthodox,,luistro combat academy,australia
+4705665,Liam Anderson,187.96,83.91,30.0,1995-01-13,male,middleweight,190.5,orthodox,,team empire,usa
+5013686,Matthieu Duclos,190.5,83.91,30.0,1995-04-04,male,middleweight,195.58,orthodox,,woirin team elite,france
+4421157,Adam Bramhald,177.8,61.23,31.0,1994-03-24,male,bantamweight,177.8,orthodox,,asylum vale tudo,england
+5157817,Jose Daniel Medina,182.88,84.37,34.0,1991-05-17,male,middleweight,189.23,orthodox,boxing,kill cliff fc,bolivia
+4374740,Victoria Leonardo,165.1,56.7,35.0,1990-02-16,female,womens-flyweight,162.56,orthodox,mixed martial artist,elevation fight team,usa
+5212851,Pat Pytlik,185.42,76.66,36.0,1989-04-24,male,welterweight,185.42,orthodox,,hayabusa training centre ,canada
+4863329,Hugo Cunha,190.5,117.48,32.0,1993-02-04,male,heavyweight,200.66,orthodox,,tata fight team,brazil
+4245470,Michael Imperato,170.18,61.23,36.0,1989-09-01,male,bantamweight,168.91,switch,,tap star,canada
+4050996,Torrez Finney,172.72,84.37,26.0,1998-10-24,male,middleweight,190.5,orthodox,,agoge combatives,usa
+3089633,Herbert Burns,175.26,66.22,37.0,1988-02-02,male,featherweight,186.69,orthodox,brazilian jiu-jitsu,kill cliff fc,brazil
+5057023,Wes Schultz,187.96,83.91,29.0,1996-08-09,male,middleweight,195.58,orthodox,,pura vida bjj,usa
+4295666,Rami Hamed,185.42,77.11,34.0,1991-04-25,male,welterweight,180.34,orthodox,,mma masters,lebanon
+5212749,Ernie Juarez,172.72,65.77,27.0,1998-01-12,male,featherweight,177.8,,,gracie fighter stockton,usa
+5200305,An Tuan Ho,167.64,57.15,25.0,2000-09-27,male,flyweight,168.91,switch,,mma lab,vietnam
+4878592,Charalampos Grigoriou,170.18,61.69,33.0,1992-03-31,male,bantamweight,171.45,orthodox,striker,serra-longo fight team ,cyprus
+4915907,Karl Williams,190.5,110.22,35.0,1990-01-06,male,heavyweight,200.66,orthodox,mixed martial artist,american top team atlanta,usa
+3948876,Alonzo Menifield,182.88,93.44,37.0,1987-10-18,male,lightheavyweight,193.04,orthodox,striker,fortis mma,usa
+3957071,Giga Chikadze,182.88,66.68,37.0,1988-08-25,male,featherweight,187.96,orthodox,striker,kings mma,georgia
+4868702,Kaynan Kruschewsky,182.88,69.85,34.0,1991-04-04,male,lightweight,185.42,orthodox,muay thai,fighting nerds,brazil
+4076472,Bill Algeo,182.88,66.22,36.0,1989-06-09,male,featherweight,185.42,switch,brazilian jiu-jitsu,algeo mma and kickboxing,usa
+5027356,Hyder Amil,175.26,65.77,35.0,1990-05-28,male,featherweight,177.8,switch,mixed martial artist,skrap pack,philippines
+4426285,Mariya Agapova,167.64,56.7,28.0,1997-04-07,female,womens-flyweight,173.99,southpaw,kickboxing,mma science academy,kazakhstan
+4358252,Darrius Flowers,175.26,77.11,31.0,1994-08-25,male,welterweight,180.34,orthodox,mixed martial artist,uprising mma,usa
+4406574,Martin Buday,193.04,120.66,33.0,1991-11-11,male,heavyweight,195.58,orthodox,jiu-jitsu,spartakus fight gym,slovakia
+4684776,Ikram Aliskerov,182.88,83.91,32.0,1992-12-07,male,middleweight,193.04,southpaw,sambo,khk mma team,russia
+4010864,Miles Johns,170.18,61.69,31.0,1994-03-30,male,bantamweight,172.72,orthodox,wrestling,marathon mma,usa
+4360028,Jose Johnson,182.88,56.7,30.0,1995-05-20,male,flyweight,181.61,orthodox,mixed martial artist,strkings,usa
+3928693,Ricky Turcios,175.26,61.69,32.0,1993-06-05,male,bantamweight,180.34,orthodox,freestyle,gracie barra woodlands,usa
+5143223,Zachary Reese,193.04,83.91,31.0,1994-03-24,male,middleweight,195.58,switch,mixed martial artist,bangtao muay thai,usa
+4423214,Punahele Soriano,180.34,77.56,32.0,1992-11-22,male,welterweight,184.15,southpaw,mixed martial artist,xtreme couture,usa
+4869425,Vinicius Salvador,170.18,61.69,29.0,1996-07-24,male,bantamweight,179.07,southpaw,brazilian jiu-jitsu,ribas family,brazil
+5144007,Tom Nolan,190.5,70.31,25.0,2000-03-08,male,lightweight,185.42,southpaw,ninja,team compton training centre,australia
+4875509,Kleydson Rodrigues,165.1,61.23,29.0,1995-10-22,male,bantamweight,170.18,orthodox,mixed martial artist,team nogueira,brazil
+4689965,Mateusz Rębecki,170.18,70.31,32.0,1992-11-03,male,lightweight,167.64,southpaw,brazilian jiu-jitsu,bks skorpion szczecin,poland
+4705600,Jake Hadley,170.18,61.23,29.0,1996-08-03,male,bantamweight,177.8,southpaw,mixed martial artist,fearless mma,england
+5060483,Vitor Petrino,187.96,112.94,28.0,1997-08-28,male,heavyweight,196.85,orthodox,striker,cm system,brazil
+5149147,Ernesta Kareckaite,175.26,57.15,27.0,1998-06-05,female,womens-flyweight,180.34,orthodox,mixed martial artist,fighters land mma,lithuania
+3155425,Alex Perez,167.64,57.15,33.0,1992-03-21,male,flyweight,166.37,orthodox,brazilian jiu-jitsu,team oyama,usa
+5007668,Caio Machado,193.04,92.99,31.0,1994-07-20,male,lightheavyweight,198.12,southpaw,mixed martial artist,fkp mma vancouver,brazil
+4895360,Maheshate,182.88,70.31,25.0,1999-12-01,male,lightweight,181.61,orthodox,wrestling,ufc performance institute shanghai,china
+4379258,Marina Rodriguez,167.64,52.16,38.0,1987-04-29,female,womens-strawweight,165.1,orthodox,muay thai,thai brasil,brazil
+5144068,Cesar Almeida,185.42,83.91,37.0,1988-03-28,male,middleweight,187.96,orthodox,kickboxing,teixeira mma & fitness,brazil
+3915502,Jamall Emmers,177.8,65.77,36.0,1989-07-24,male,featherweight,187.96,orthodox,kickboxing,pinnacle mma,usa
+4875513,Anton Turkalj,193.04,92.99,29.0,1996-06-10,male,lightheavyweight,198.12,orthodox,mixed martial artist,gbg mma,sweden
+4374436,AJ Dobson,185.42,83.91,33.0,1992-01-18,male,middleweight,193.04,orthodox,freestyle,carlson gracie team ohio,usa
+5144312,Luis Pajuelo,177.8,65.77,30.0,1994-12-12,male,featherweight,176.53,orthodox,mixed martial artist,contacto livre,peru
+4245094,Kennedy Nzechukwu,195.58,107.95,33.0,1992-06-13,male,heavyweight,210.82,southpaw,striker,fortis mma,nigeria
+4702589,Danny Silva,180.34,65.32,28.0,1997-01-30,male,featherweight,177.8,switch,mixed martial artist,bloodline combat,usa
+4816283,Mitch Ramirez,180.34,70.76,32.0,1992-11-03,male,lightweight,180.34,orthodox,mixed martial artist,syndicate mma,usa
+4816062,Chad Anheliger,167.64,61.23,38.0,1986-12-01,male,bantamweight,163.83,orthodox,freestyle,champion's creed mma,canada
+4246307,Maycee Barber,165.1,57.61,27.0,1998-05-18,female,womens-flyweight,165.1,switch,striker,fort collins martial arts,usa
+4276994,Josh Parisian,193.04,120.66,36.0,1989-06-28,male,heavyweight,200.66,orthodox,striker,scorpion fighting system,usa
+5145498,Shamil Gaziev,193.04,117.93,35.0,1990-02-10,male,heavyweight,199.39,orthodox,mixed martial artist,khk mma team,bahrain
+4237148,Jamie Pickett,187.96,84.37,37.0,1988-08-29,male,middleweight,203.2,orthodox,striker,port city sports performance,usa
+5074126,Claudio Ribeiro,185.42,83.91,33.0,1992-07-17,male,middleweight,195.58,orthodox,boxing,brazilian black thai,brazil
+5088891,Mateus Mendonca,167.64,57.15,26.0,1999-01-17,male,bantamweight,181.61,orthodox,brazilian jiu-jitsu,chute boxe,brazil
+4690540,Muhammad Naimov,175.26,66.22,31.0,1994-08-07,male,featherweight,177.8,orthodox,mixed martial artist,elevation fight team,tajikistan
+5152138,Danny Barlow,187.96,77.11,30.0,1995-08-02,male,middleweight,200.66,southpaw,mixed martial artist,law school mma,usa
+5123311,Timmy Cuamba,175.26,66.22,26.0,1999-02-08,male,featherweight,180.34,orthodox,,xtreme couture,usa
+5080936,Blake Bilder,172.72,65.32,35.0,1990-07-12,male,bantamweight,173.99,switch,mixed martial artist,subfighter mma,usa
+5157668,MarQuel Mederos,177.8,70.31,28.0,1996-11-30,male,lightweight,175.26,orthodox,,factoryx muay thai,usa
+3146944,Johnny Walker,198.12,93.44,33.0,1992-03-30,male,lightheavyweight,208.28,orthodox,striker,sbg ireland,brazil
+4812389,Shannon Ross,167.64,57.15,36.0,1989-05-12,male,flyweight,167.64,switch,freestyle,platinum boxing club,australia
+5076593,Rafael Estevam,172.72,58.97,29.0,1996-08-10,male,flyweight,175.26,orthodox,,nova uniao ,brazil
+5074121,Alessandro Costa,162.56,56.7,29.0,1996-01-28,male,flyweight,170.18,orthodox,brazilian jiu-jitsu,brazilian warriors bjj,brazil
+5048900,Trevor Peek,175.26,70.31,30.0,1995-01-09,male,lightweight,177.8,switch,mixed martial artist,agoge combatives,usa
+3998248,Adrian Yanez,170.18,61.69,31.0,1993-11-29,male,bantamweight,177.8,orthodox,boxing,metro fight club,usa
+4063667,TJ Brown,175.26,66.22,35.0,1990-05-22,male,featherweight,182.88,switch,mixed martial artist,westside fight team,usa
+5157670,Jair Farias,180.34,66.22,32.0,1993-03-16,male,featherweight,195.58,orthodox,,fighting nerds,brazil
+4683526,Issa Isakov,175.26,70.76,35.0,1989-10-22,male,lightweight,177.8,orthodox,,streetsport luxembourg,luxembourg
+5119536,Eduardo Torres Caut,170.18,61.23,30.0,1995-04-26,male,bantamweight,177.8,orthodox,,,chile
+5149440,Magomed Gadzhiyasulov,187.96,92.99,31.0,1993-11-04,male,lightheavyweight,191.77,orthodox,kickboxing,khk mma team,bahrain
+4565683,Raimond Magomedaliev,185.42,77.11,35.0,1990-06-10,male,welterweight,190.5,orthodox,,eagles mma,russia
+5088544,Raheam Forest,180.34,77.11,28.0,1997-07-11,male,welterweight,185.42,switch,,memphis judo & jiu-jitsu,usa
+5149190,Mario Piazzon,175.26,108.86,27.0,1998-04-06,male,heavyweight,185.42,orthodox,,galpao da luta,brazil
+4688624,Victor Madrigal,170.18,60.78,35.0,1990-08-16,male,bantamweight,180.34,orthodox,,lobo gym mma,mexico
+4869424,AJ Fletcher,177.8,77.11,28.0,1997-02-18,male,welterweight,170.18,switch,striker,gladiators academy of lafayette,usa
+4289255,Hannah Goldy,162.56,52.16,33.0,1992-05-18,female,womens-strawweight,154.94,orthodox,mixed martial artist,fusion x-cel,usa
+5121866,Greg Velasco,187.96,119.29,32.0,1993-09-23,male,heavyweight,177.8,southpaw,,the institute muay thai,usa
+4977643,Daniel Allen,182.88,70.76,33.0,1992-08-10,male,lightweight,190.5,southpaw,,aka (american kickboxing academy),usa
+5126213,Jhonata Silva,165.1,56.7,28.0,1997-04-24,male,flyweight,168.91,orthodox,,nova uniao ,brazil
+4891678,Marnic Mann,152.4,52.16,32.0,1993-03-05,female,womens-strawweight,162.56,southpaw,,montana mixed martial arts,usa
+5092399,Malik Lewis,182.88,70.76,29.0,1996-03-04,male,lightweight,190.5,orthodox,,genesis bjj,usa
+5053878,Eduardo Neves,187.96,119.29,25.0,2000-03-16,male,heavyweight,199.39,orthodox,,machado team,brazil
+5145494,Patricia Alujas,162.56,52.16,29.0,1996-05-08,female,womens-strawweight,162.56,orthodox,,evolucao thai,paraguay
+5149436,Kasey Tanner,170.18,61.23,33.0,1992-01-11,male,bantamweight,175.26,orthodox,,fight ready,usa
+5079262,Mateo Vogel,172.72,65.77,29.0,1996-03-05,male,lightweight,180.34,orthodox,,,canada
+4358022,Chandler Cole,177.8,119.75,30.0,1995-01-09,male,heavyweight,184.15,orthodox,,,usa
+4914335,Dylan Salvador,175.26,70.31,32.0,1993-05-20,male,lightweight,176.53,southpaw,,,france
+4880596,Fernie Garcia,170.18,66.22,33.0,1992-04-12,male,bantamweight,170.18,orthodox,mixed martial artist,fortis mma,usa
+3170347,Taila Santos,167.64,56.7,32.0,1993-06-22,female,womens-flyweight,171.45,orthodox,striker,team taila santos,brazil
+5085249,Yusaku Kinoshita,182.88,77.11,25.0,2000-08-21,male,welterweight,180.34,southpaw,striker,kill cliff fc,japan
+5007635,Josefine Knutsson,160.02,52.62,29.0,1996-01-16,female,womens-strawweight,152.4,orthodox,striker,allstars training center,sweden
+5147245,Robbie Ring,175.26,65.77,25.0,2000-07-14,male,featherweight,172.72,orthodox,,ring combat sports,usa
+4252349,Rico DiSciullo,175.26,61.23,38.0,1986-10-12,male,bantamweight,187.96,orthodox,,team sityodtong,usa
+4695485,Abdul-Kareem Al-Selwady,172.72,70.31,30.0,1995-04-10,male,lightweight,175.26,orthodox,,fortis mma,usa
+5007669,Paulo Renato Jr.,182.88,92.99,31.0,1994-01-25,male,heavyweight,185.42,orthodox,,infinity fight team,brazil
+5115163,Emrah Sonmez,177.8,66.68,33.0,1992-06-26,male,featherweight,180.34,orthodox,,great britain top team,turkey
+5143887,Janaina Silva,154.94,51.71,33.0,1992-02-16,female,womens-strawweight,152.4,orthodox,,babuino gold team,brazil
+4600143,Tafon Nchukwi,182.88,85.73,30.0,1994-10-14,male,lightheavyweight,195.58,orthodox,mixed martial artist,team lloyd irvin,cameroon
+4684468,Mike Breeden,177.8,72.12,36.0,1989-04-21,male,lightweight,177.8,orthodox,striker,marathon mma,usa
+5119021,Lucas Fernando,190.5,83.91,28.0,1997-01-10,male,middleweight,207.01,,,rizzo rvt,brazil
+4892422,Reyes Cortez Jr.,170.18,61.23,33.0,1992-07-31,male,bantamweight,172.72,orthodox,,fight ready,usa
+4426299,Aleksa Camur,185.42,92.99,30.0,1995-09-25,male,lightheavyweight,187.96,orthodox,mixed martial artist,strong style fight team,bosnia & herzegovina
+4686735,Dennis Buzukja,175.26,70.31,27.0,1997-10-01,male,featherweight,179.07,switch,mixed martial artist,serra-longo fight team ,usa
+4880114,Jonny Parsons,175.26,77.11,34.0,1991-09-06,male,welterweight,175.26,orthodox,muay thai,syndicate mma,usa
+4236496,Daniel Barez,167.64,57.15,36.0,1988-12-10,male,flyweight,167.64,orthodox,freestyle,entram gym,spain
+4425604,Terrance McKinney,177.8,70.31,31.0,1994-09-15,male,lightweight,186.69,switch,mixed martial artist,fusion x-cel,usa
+4874988,Genaro Valdez,175.26,70.76,33.0,1992-01-16,male,lightweight,182.88,orthodox,mixed martial artist,entram gym,mexico
+5076027,Édgar Cháirez,170.18,57.15,29.0,1996-01-27,male,flyweight,180.34,orthodox,mixed martial artist,entram gym,mexico
+3931156,Grant Dawson,177.8,70.76,31.0,1994-02-20,male,lightweight,182.88,switch,brazilian jiu-jitsu,american top team,usa
+3924096,Phil Rowe,190.5,77.56,35.0,1990-07-18,male,welterweight,204.47,orthodox,mixed martial artist,fusion x-cel,usa
+5088885,Jack Jenkins,170.18,66.22,31.0,1993-11-03,male,featherweight,172.72,switch,freestyle,absolute mixed martial arts,australia
+4884868,Cristian Quiñonez,172.72,61.23,29.0,1996-04-26,male,bantamweight,177.8,orthodox,jiu-jitsu,entram gym,mexico
+4231391,Ronnie Lawrence,172.72,61.23,33.0,1992-06-13,male,bantamweight,173.99,switch,freestyle,mma science academy,usa
+4348793,Maria Oliveira,167.64,52.16,28.0,1996-12-12,female,womens-strawweight,175.26,orthodox,muay thai,parana vale tudo,brazil
+3922491,Ricky Simon,167.64,61.69,33.0,1992-08-31,male,bantamweight,175.26,orthodox,striker,american top team portland,usa
+3088682,Albert Duraev,180.34,84.37,36.0,1989-01-05,male,middleweight,190.5,orthodox,brazilian jiu-jitsu,xtreme couture,russia
+4684678,Tucker Lutz,172.72,66.22,31.0,1994-07-12,male,lightweight,182.88,orthodox,wrestling,ground control academy,usa
+4372245,Omar Morales,180.34,70.31,39.0,1985-10-17,male,lightweight,185.42,orthodox,striker,ko zone,venezuela
+3896934,Jafel Filho,170.18,57.15,32.0,1993-05-05,male,flyweight,173.99,orthodox,grappling,nova uniao ,brazil
+4084453,Tony Gravely,165.1,61.23,34.0,1991-09-28,male,bantamweight,175.26,orthodox,mixed martial artist,american top team,usa
+4339490,Jalin Turner,190.5,69.85,30.0,1995-05-18,male,lightweight,195.58,southpaw,striker,carlson gracie riverside,usa
+4880807,Yohan Lainesse,185.42,77.11,33.0,1992-08-14,male,welterweight,193.04,orthodox,striker,brazilian top team canada,canada
+4252258,Victor Martinez,172.72,70.76,34.0,1991-07-17,male,lightweight,177.8,orthodox,mixed martial artist,team ferreira,usa
+5092398,Nurullo Aliev,177.8,70.31,24.0,2000-12-08,male,lightweight,182.88,orthodox,freestyle,kaizen mma,tajikistan
+4062287,Jay Perrin,170.18,61.69,32.0,1993-06-15,male,bantamweight,170.18,switch,karate,syndicate mma,usa
+5075335,Erik Silva,175.26,66.22,38.0,1987-03-16,male,featherweight,180.34,orthodox,mixed martial artist,antonio silva martial arts school,venezuela
+4245092,Jonathan Pearce,182.88,65.77,33.0,1992-05-01,male,featherweight,180.34,switch,striker,fight ready,usa
+5056144,Tereza Bleda,175.26,56.7,23.0,2001-11-30,female,womens-flyweight,180.34,orthodox,wrestling,reinders mma,czechia
+4065617,Shanna Young,170.18,57.15,34.0,1991-02-20,female,womens-bantamweight,170.18,orthodox,mixed martial artist,syndicate mma,usa
+4249184,Benito Lopez,177.8,62.6,31.0,1994-04-06,male,bantamweight,185.42,switch,striker,team alpha male,usa
+4227709,Jared Vanderaa,193.04,117.48,33.0,1992-05-12,male,heavyweight,203.2,orthodox,mixed martial artist,team quest -portland,usa
+4425728,Joshua Weems,172.72,63.05,31.0,1994-05-05,male,bantamweight,175.26,orthodox,,black sails mma,usa
+4896529,Gadzhi Omargadzhiev,185.42,77.56,32.0,1993-02-24,male,middleweight,181.61,switch,mixed martial artist,mma factory,russia
+3960440,Brandon Davis,177.8,61.23,35.0,1990-05-08,male,featherweight,182.88,orthodox,striker,american top team d'iberville,usa
+5088537,Donovan Beard,187.96,83.46,35.0,1989-11-05,male,middleweight,198.12,orthodox,,off the chain mma,usa
+5088845,Vinicius Cenci,185.42,70.31,29.0,1995-11-24,male,lightweight,187.96,orthodox,,kings mma,brazil
+4871197,Joao Elias,160.02,56.7,30.0,1995-01-08,male,flyweight,163.83,southpaw,,gile ribeiro team / noguchi team,brazil
+4876401,Mando Gutierrez,167.64,61.23,28.0,1997-02-24,male,bantamweight,177.8,southpaw,,murcielago mma,usa
+3128474,Josh Wick,175.26,70.76,30.0,1994-10-04,male,lightweight,175.26,switch,,elevation fight team,usa
+4685887,Louis Cosce,175.26,77.11,30.0,1995-08-27,male,welterweight,180.34,orthodox,mixed martial artist,syndicate mma,usa
+4903519,Allan Begosso,165.1,61.23,29.0,1995-11-23,male,bantamweight,167.64,orthodox,,team alpha male,brazil
+4684923,Mario Sousa,190.5,83.91,28.0,1996-10-20,male,middleweight,201.93,orthodox,,caes do ringue,brazil
+4875507,Brandon Lewis,162.56,61.23,28.0,1997-08-02,male,bantamweight,177.8,orthodox,,defwar,usa
+4375603,Danyelle Wolf,180.34,66.22,42.0,1983-09-08,male,womens-featherweight,177.8,orthodox,boxing,victory mma,usa
+4294871,Nariman Abbasov,172.72,70.31,31.0,1994-02-01,male,lightweight,167.64,orthodox,,azerbaijan fight club,azerbaijan
+5080485,Jose Henrique,190.5,77.56,23.0,2002-05-23,male,welterweight,200.66,orthodox,,nova uniao ,brazil
+5060472,Matej Penaz,190.5,83.91,28.0,1996-10-14,male,middleweight,210.82,southpaw,,reinders mma,czechia
+4213329,Alexander Morgan,177.8,65.32,34.0,1991-05-14,male,bantamweight,180.34,orthodox,,tristar gym,canada
+4251497,Harry Hunsucker,187.96,92.53,36.0,1989-01-03,male,heavyweight,190.5,orthodox,jiu-jitsu,elite fitness and martial arts,usa
+3074813,Luis Saldana,180.34,65.77,34.0,1991-01-27,male,featherweight,185.42,orthodox,striker,fight ready,usa
+5030324,Claudia Leite,160.02,61.69,28.0,1996-11-04,female,womens-bantamweight,163.83,orthodox,,astra fight team,brazil
+5074129,Ahmad Hassanzada,185.42,70.31,28.0,1996-11-20,male,lightweight,190.5,orthodox,,team alpha male,afghanistan
+4788300,Josh Quinlan,182.88,76.66,32.0,1993-02-06,male,welterweight,182.88,orthodox,brazilian jiu-jitsu,wand fight team,usa
+5078230,Zachary Borrego,187.96,84.82,29.0,1996-07-18,male,middleweight,198.12,switch,,w4r training center,usa
+5060511,Anvar Boynazarov,175.26,65.77,36.0,1989-01-10,male,featherweight,175.26,orthodox,,tiger muay thai,uzbekistan
+4683551,Karolina Wojcik,157.48,52.16,31.0,1994-09-12,female,womens-strawweight,157.48,orthodox,,grappling krakow,poland
+3111997,Geoff Neal,180.34,77.56,35.0,1990-08-28,male,welterweight,190.5,southpaw,striker,fortis mma,usa
+5060387,Danilo Suzart,182.88,115.67,33.0,1991-12-04,male,heavyweight,187.96,orthodox,,life mma,brazil
+4706975,Billy Ray Goff,177.8,77.11,27.0,1998-06-18,male,welterweight,182.88,switch,mixed martial artist,team dexter vale tudo,usa
+3120449,Rafael Alves,172.72,70.31,34.0,1990-11-14,male,featherweight,172.72,orthodox,mixed martial artist,mma masters,brazil
+4687113,Acácio Dos Santos,193.04,91.17,34.0,1991-09-29,male,lightheavyweight,200.66,orthodox,,power lotus team,brazil
+4879763,Kaleio Romero,177.8,65.77,29.0,1996-04-19,male,featherweight,175.26,switch,,team alpha male,usa
+5060382,Juan Andres Luna,170.18,56.7,30.0,1995-08-20,male,flyweight,182.88,orthodox,,entram gym,ecuador
+4236954,Karl Roberson,185.42,92.08,34.0,1990-10-04,male,middleweight,187.96,southpaw,brazilian jiu-jitsu,killer b combat sports academy,usa
+4566310,Gloria de Paula,165.1,52.16,30.0,1995-06-10,female,womens-strawweight,171.45,orthodox,muay thai,american top team,brazil
+4896616,Manuel Torres,177.8,70.76,30.0,1995-03-25,male,lightweight,185.42,switch,mixed martial artist,alliance jiu-jitsu,mexico
+4013049,Carlos Candelario,172.72,58.06,34.0,1991-06-04,male,flyweight,172.72,southpaw,freestyle,underdog bjj,usa
+4422029,TJ Laramie,167.64,65.77,27.0,1997-10-15,male,featherweight,167.64,orthodox,,maximum training centre,canada
+4255766,William Knight,177.8,93.44,37.0,1988-04-03,male,lightheavyweight,185.42,orthodox,brawler,thornton martial arts,usa
+3939270,Kamuela Kirk,177.8,70.31,31.0,1994-04-13,male,featherweight,190.5,switch,mixed martial artist,fight ready,usa
+2220951,Greg Hardy,195.58,120.66,37.0,1988-07-28,male,heavyweight,204.47,orthodox,striker,american top team,usa
+4426301,Fabio Cherant,185.42,92.99,30.0,1994-11-25,male,lightheavyweight,187.96,southpaw,mixed martial artist,lauzon mma,usa
+4700964,Nick Maximov,182.88,83.46,27.0,1997-12-23,male,middleweight,193.04,southpaw,mixed martial artist,nick diaz academy,usa
+3041138,Steven Peterson,177.8,66.22,35.0,1990-05-29,male,featherweight,177.8,orthodox,brazilian jiu-jitsu,fortis mma,usa
+4280789,Rogerio Bontorin,165.1,56.7,33.0,1992-04-25,male,flyweight,170.18,orthodox,brazilian jiu-jitsu,gile ribeiro team / noguchi team,brazil
+4783385,Joseph Holmes,193.04,85.73,30.0,1995-07-04,male,middleweight,203.2,orthodox,mixed martial artist,w4r training center,usa
+3122837,Matt Sayles,170.18,70.31,31.0,1994-02-21,male,featherweight,173.99,orthodox,striker,alliance mma,usa
+3121961,Darrick Minner,170.18,66.22,35.0,1990-04-28,male,bantamweight,176.53,orthodox,brazilian jiu-jitsu,glory mma & fitness,usa
+4141265,Mallory Martin,162.56,52.16,31.0,1994-01-29,female,womens-strawweight,160.02,orthodox,,elevation fight team,usa
+4702563,Natan Levy,175.26,70.31,33.0,1991-09-30,male,lightweight,180.34,southpaw,karate,xtreme couture,israel
+4227122,Julio Arce,170.18,66.68,35.0,1989-10-27,male,featherweight,177.8,southpaw,striker,team tiger schulman,usa
+4686739,Collin Anglin,175.26,66.22,32.0,1993-02-20,male,featherweight,180.34,orthodox,,factoryx muay thai,usa
+4040956,Jordan Williams,185.42,77.56,34.0,1990-10-13,male,middleweight,191.77,southpaw,striker,factoryx muay thai,usa
+4372193,John Allan,185.42,92.99,32.0,1993-02-22,male,lightheavyweight,190.5,orthodox,striker,chute boxe,brazil
+4875499,Achilles Estremadura,177.8,70.76,33.0,1992-03-11,male,lightweight,172.72,orthodox,,axe capoeira vancouver,canada
+4848687,Justin Burlinson,185.42,77.11,28.0,1997-05-19,male,welterweight,187.96,switch,,,england
+4895769,Erisson Ferreira,167.64,56.7,34.0,1991-05-03,male,flyweight,177.8,orthodox,,machado team,brazil
+4354422,Canaan Kawaihae,182.88,65.77,28.0,1997-08-26,male,featherweight,180.34,southpaw,brazilian jiu-jitsu,,usa
+4204320,Juan Puerta,175.26,56.7,37.0,1988-01-20,male,flyweight,180.34,southpaw,,american top team atlanta,usa
+4896540,Jansey Silva,187.96,83.91,30.0,1995-05-30,male,middleweight,170.18,orthodox,,tata fight team,brazil
+4892416,Olivier Murad,177.8,66.22,31.0,1993-12-21,male,featherweight,182.88,southpaw,,freedom fighters,haiti
+4339149,Dwight Grant,185.42,83.46,41.0,1984-09-14,male,welterweight,193.04,switch,striker,alliance mma,usa
+4878384,Solomon Renfro,175.26,71.21,28.0,1997-02-05,male,welterweight,182.88,switch,,xtreme couture,usa
+4836549,Valesca Machado,162.56,52.16,29.0,1996-05-06,female,womens-strawweight,160.02,orthodox,,team alpha male,brazil
+4336424,Jesse Murray,190.5,92.08,32.0,1993-01-26,male,lightheavyweight,198.12,orthodox,,strong style fight team,usa
+3924102,James Barnes,172.72,61.23,43.0,1982-05-28,male,bantamweight,180.34,orthodox,,team quest,usa
+4403763,Kathryn Paprocki,160.02,52.16,32.0,1993-04-28,female,womens-strawweight,165.1,orthodox,,dco mma & fitness,usa
+4255574,Aaron Jeffery,187.96,83.91,32.0,1992-11-14,male,middleweight,185.42,orthodox,,niagara top team,usa
+4848663,Edivan Santos,193.04,106.14,33.0,1992-05-03,male,heavyweight,198.12,orthodox,,chute boxe,brazil
+4875510,Theo Rlayang,170.18,65.77,31.0,1994-08-10,male,featherweight,165.1,orthodox,,,usa
+4683418,Santo Curatolo,160.02,56.7,30.0,1995-01-18,male,flyweight,160.02,southpaw,,catone mma,usa
+4371002,Antonio Arroyo,190.5,84.37,36.0,1989-07-01,male,middleweight,185.42,orthodox,,marajo brothers team,brazil
+4249185,JP Buys,165.1,61.69,29.0,1996-04-30,male,flyweight,170.18,orthodox,wrestling,xtreme couture,south africa
+3115959,Sarah Alpar,162.56,56.7,34.0,1991-06-01,female,womens-bantamweight,160.02,southpaw,,american elite mma,usa
+4684857,Nasrudin Nasrudinov,182.88,92.99,33.0,1991-10-06,male,lightheavyweight,180.34,orthodox,,akhmat fight team,russia
+4875508,Mo Miller,172.72,61.23,33.0,1992-08-10,male,bantamweight,182.88,orthodox,,strong style fight team,usa
+3120454,Caio Bittencourt,182.88,83.91,34.0,1991-05-22,male,middleweight,190.5,orthodox,,roxo strike team,brazil
+4336003,Dylan Potter,190.5,115.67,30.0,1995-01-14,male,heavyweight,195.58,switch,,american top team portland,usa
+3962309,Jose Alday,170.18,61.23,34.0,1991-09-14,male,bantamweight,172.72,orthodox,,,mexico
+3896935,Bruno Korea,167.64,56.7,34.0,1991-06-28,male,flyweight,165.1,,brazilian jiu-jitsu,tata fight team,brazil
+3041157,Domingo Pilarte,182.88,61.69,35.0,1990-01-05,male,bantamweight,187.96,southpaw,brazilian jiu-jitsu,revolution dojo,usa
+3147489,Vince Murdock,167.64,65.77,34.0,1991-03-21,male,bantamweight,167.64,orthodox,,team alpha male,usa
+4030197,Casey Kenney,170.18,61.69,34.0,1991-03-20,male,bantamweight,172.72,southpaw,brazilian jiu-jitsu,mma lab,usa
+4412279,Drako Rodriguez,172.72,61.69,29.0,1996-06-16,male,bantamweight,175.26,orthodox,,red's boxing club,usa
+4687126,Orion Cosce,180.34,78.02,31.0,1994-07-15,male,welterweight,180.34,switch,mixed martial artist,lost boys jiu jitsu and muay thai,usa
+4372195,Raulian Paiva,172.72,61.69,29.0,1995-10-17,male,flyweight,176.53,orthodox,brazilian jiu-jitsu,team alpha male,brazil
+4202873,Ian Heinisch,180.34,83.91,37.0,1988-08-05,male,middleweight,182.88,orthodox,striker,tiger muay thai,usa
+4222369,Jerome Rivera,177.8,56.7,30.0,1995-04-22,male,flyweight,182.88,southpaw,brazilian jiu-jitsu,luttrell-yee mma,usa
+3900464,Augusto Sakai,190.5,117.93,34.0,1991-05-09,male,heavyweight,195.58,orthodox,striker,gile ribeiro team / noguchi team,brazil
+4423448,Miguel Baeza,187.96,77.56,33.0,1992-08-23,male,welterweight,189.23,orthodox,striker,mma masters,usa
+4354318,Edmen Shahbazyan,187.96,83.91,27.0,1997-11-20,male,middleweight,190.5,orthodox,striker,xtreme couture,usa
+4339152,Antonina Shevchenko,172.72,56.7,40.0,1984-11-20,female,womens-flyweight,170.18,southpaw,,tiger muay thai,kyrgyzstan
+4354420,Jimmy Crute,187.96,92.99,29.0,1996-03-04,male,lightheavyweight,187.96,orthodox,mixed martial artist,greco and stewie's house,australia
+4684238,Jeff Molina,167.64,56.7,28.0,1997-07-17,male,flyweight,175.26,orthodox,mixed martial artist,glory mma & fitness,usa
+4355664,Alexander Munoz,175.26,70.76,35.0,1990-02-27,male,lightweight,182.88,switch,mixed martial artist,team alpha male,usa
+4289274,Sodiq Yusuff,175.26,70.31,32.0,1993-05-19,male,lightweight,180.34,orthodox,striker,team lloyd irvin,nigeria
+3150681,Jordan Griffin,177.8,65.77,35.0,1990-02-28,male,featherweight,185.42,southpaw,brazilian jiu-jitsu,roufusport,usa
+3119811,Ray Rodriguez,170.18,61.23,37.0,1987-12-10,male,bantamweight,177.8,orthodox,,brazilian top team texas,usa
+4054622,Jordan Espinosa,167.64,56.7,35.0,1989-11-08,male,flyweight,175.26,orthodox,brazilian jiu-jitsu,luttrell-yee mma,usa
+4043437,Aalon Cruz,182.88,70.31,36.0,1989-09-20,male,featherweight,198.12,switch,,xtreme couture,usa
+4038127,Martin Day,177.8,65.77,36.0,1988-11-10,male,bantamweight,186.69,orthodox,brazilian jiu-jitsu,hawaii elite mma,usa
+4372196,Vinicius Moreira,193.04,93.44,36.0,1989-02-28,male,lightheavyweight,193.04,orthodox,brazilian jiu-jitsu,five rounds,brazil
+4388465,Peter Barrett,177.8,65.77,39.0,1986-08-10,male,featherweight,185.42,southpaw,muay thai,sityodtong boston,usa
+4339150,Jordan Wright,187.96,92.53,33.0,1991-10-07,male,middleweight,195.58,orthodox,mixed martial artist,jackson-wink mma,usa
+4193828,Jacob Silva,165.1,56.7,37.0,1988-02-23,male,flyweight,170.18,orthodox,,metro fight club,usa
+3162581,Oscar Cota,187.96,119.29,40.0,1984-10-15,male,heavyweight,182.88,orthodox,,kimura training center,mexico
+4689223,Sherrard Blackledge,180.34,70.31,32.0,1993-08-16,male,lightweight,190.5,orthodox,,syndicate mma,usa
+4684922,Mariusz Ksiazkiewicz,190.5,83.91,35.0,1989-10-04,male,middleweight,190.5,southpaw,,winnipeg academy of mma,poland
+4294278,Joe Lowry,180.34,70.31,35.0,1989-12-12,male,lightweight,185.42,orthodox,,beacon mma,usa
+2504828,Stephanie Frausto,157.48,52.16,35.0,1990-09-20,female,womens-strawweight,154.94,orthodox,,combat sports academy,usa
+4237930,Taylor Moore,177.8,61.23,31.0,1993-10-16,male,bantamweight,177.8,southpaw,,scorpion fighting system,usa
+4249192,Bevon Lewis,190.5,102.97,34.0,1991-05-05,male,middleweight,200.66,orthodox,striker,jackson-wink mma,jamaica
+4687590,Bruno Oliveira,193.04,92.99,41.0,1984-05-02,male,middleweight,203.2,orthodox,,corinthians mma,brazil
+3913473,Phil Hawes,182.88,83.91,36.0,1989-01-08,male,middleweight,196.85,orthodox,wrestling,marquez mma,usa
+4237606,Jeff Hughes,187.96,117.03,37.0,1988-05-17,male,heavyweight,195.58,orthodox,striker,strong style fight team,usa
+2511778,Michael Lombardo,182.88,77.11,35.0,1990-04-03,male,welterweight,182.88,orthodox,,american top team,usa
+4684925,Taneisha Tennant,170.18,61.23,36.0,1989-06-15,male,womens-featherweight,177.8,orthodox,,budokan martial arts academy,usa
+4246527,Kyle Driscoll,180.34,70.31,31.0,1994-09-23,male,featherweight,187.96,orthodox,,aka (american kickboxing academy),usa
+4081550,Mike Rodriguez,193.04,91.63,36.0,1988-11-28,male,lightheavyweight,209.55,southpaw,striker,lauzon mma,usa
+4252253,Al Matavao,172.72,92.99,31.0,1994-02-23,male,lightheavyweight,171.45,orthodox,,legacy jiu-jitsu,american samoa
+3162028,Khadzhi Bestaev,195.58,83.91,37.0,1988-07-16,male,middleweight,193.04,,,,usa
+3896920,Henrique Shiguemoto,180.34,83.91,36.0,1989-06-22,male,middleweight,182.88,orthodox,,fight move academy,brazil
+4425706,Hunter Azure,172.72,61.23,33.0,1992-03-02,male,featherweight,175.26,orthodox,,fight ready,usa
+4684241,Nate Smith,167.64,56.7,30.0,1995-04-09,male,flyweight,175.26,switch,,elevation fight team,usa
+4293896,Chase Gibson,177.8,65.77,35.0,1990-02-07,male,lightweight,182.88,orthodox,,california mixed martial marts,usa
+4573208,Impa Kasanganay,180.34,92.99,31.0,1994-01-17,male,middleweight,190.5,orthodox,mixed martial artist,kill cliff fc,usa
+3938715,Austin Springer,172.72,68.49,38.0,1987-05-12,male,featherweight,180.34,orthodox,,gracie barra portland,usa
+4686736,Alejandro Flores,175.26,66.22,34.0,1991-08-06,male,featherweight,187.96,orthodox,,valle flow striking,mexico
+4684470,Anthony Romero,180.34,70.76,28.0,1997-02-25,male,lightweight,180.34,orthodox,taekwondo,para bellum mma,canada
+4341591,Collin Huckbody,190.5,83.91,31.0,1994-09-29,male,middleweight,193.04,orthodox,,mma lab,usa
+3120459,Victor Reyna,180.34,77.11,39.0,1986-08-05,male,welterweight,187.96,southpaw,striker,genesis bjj,usa
+4686737,Hilarie Rose,160.02,52.16,32.0,1992-11-11,male,womens-strawweight,160.02,orthodox,,usmma,usa
+4686738,Matt Dixon,177.8,79.38,29.0,1995-10-09,male,welterweight,190.5,switch,,wcf tulsa,usa
+4684127,Chad Johnson,187.96,97.52,39.0,1986-07-22,male,heavyweight,203.2,orthodox,,roufusport,usa
+4683705,Kenneth Cross,182.88,70.31,30.0,1994-10-04,male,lightweight,182.88,southpaw,,michigan top team,usa
+4403536,Brady Huang,175.26,65.77,32.0,1992-12-16,male,featherweight,175.26,orthodox,,dragon house mma,usa
+2990078,Daniel Swain,175.26,65.77,34.0,1991-01-30,male,featherweight,177.8,orthodox,wrestling,warrior camp mma,usa
+4686567,Mikey Gonzalez,180.34,70.31,40.0,1985-08-13,male,lightweight,187.96,orthodox,,tactica bjj,usa
+3926497,Jose Flores,182.88,70.31,37.0,1988-03-17,male,lightweight,185.42,southpaw,,,usa
+2555540,Kevin Aguilar,170.18,65.77,37.0,1988-09-07,male,featherweight,185.42,orthodox,striker,longview mma,usa
+4016050,Maki Pitolo,177.8,83.46,34.0,1990-11-24,male,middleweight,190.5,orthodox,mixed martial artist,xtreme couture,usa
+4044409,Brok Weaver,182.88,74.39,33.0,1991-12-05,male,welterweight,185.42,southpaw,,port city kickboxing academy,usa
+4423213,Yorgan De Castro,185.42,118.39,37.0,1987-12-19,male,heavyweight,187.96,orthodox,,regiment traing center,cape verde
+4354426,Jacob Kilburn,175.26,65.77,30.0,1995-06-28,male,featherweight,182.88,orthodox,striker,harris holt combat sports,usa
+4573211,Ben Sosoli,182.88,119.75,35.0,1989-12-10,male,heavyweight,184.15,southpaw,,resilience training centre,australia
+3122040,Boston Salmon,175.26,65.77,34.0,1990-11-20,male,bantamweight,172.72,southpaw,striker,xtreme couture,usa
+4256214,Lauren Mueller,165.1,61.23,33.0,1991-11-15,female,womens-flyweight,170.18,orthodox,striker,alliance mma,usa
+4033520,Teddy Ash,185.42,83.91,35.0,1989-12-27,male,middleweight,185.42,switch,,,canada
+4573210,Dustin Joynson,195.58,107.05,39.0,1985-10-14,male,heavyweight,198.12,orthodox,,zugec ultimate martial arts,canada
+4569669,Dylan Lockard,175.26,65.77,33.0,1992-05-19,male,featherweight,182.88,orthodox,,,usa
+4565668,Micol DiSegni,160.02,52.16,37.0,1987-12-29,female,womens-strawweight,153.67,orthodox,,jackson-wink mma,italy
+4303035,Phil Caracappa,172.72,61.23,33.0,1992-06-05,male,bantamweight,177.8,orthodox,,dante rivera bjj,usa
+4245681,Karl Reed,195.58,92.99,,,male,lightheavyweight,198.12,orthodox,,,usa
+3347074,Bobby Moffett,177.8,67.13,35.0,1990-06-01,male,featherweight,187.96,orthodox,brazilian jiu-jitsu,mma lab,usa
+4409396,Harvey Park,182.88,70.31,39.0,1986-03-22,male,lightweight,179.07,orthodox,,force of one martial arts,usa
+4234751,Lucrezia Ria,175.26,56.7,33.0,1992-06-24,female,womens-flyweight,170.18,orthodox,,,italy
+3897220,Rico Farrington,193.04,77.11,36.0,1989-06-19,male,welterweight,200.66,southpaw,,,usa
+4426144,Michal Martinek,187.96,99.79,35.0,1990-04-19,male,heavyweight,199.39,southpaw,,reinders mma,czechia
+4371004,Sarah Frota,167.64,56.7,38.0,1987-04-14,female,womens-strawweight,175.26,southpaw,brazilian jiu-jitsu,astra fight team,brazil
+4236956,Kyle Stewart,175.26,83.91,36.0,1989-01-31,male,welterweight,193.04,orthodox,,arizona combat sports,usa
+4407930,JJ Okanovich,180.34,70.31,34.0,1990-11-04,male,lightweight,193.04,orthodox,,,usa
+4064714,Alexander Poppeck,187.96,92.99,33.0,1992-04-06,male,lightheavyweight,,orthodox,,munich mma,germany
+4292650,Juan Adams,195.58,120.2,33.0,1992-01-16,male,heavyweight,203.2,orthodox,striker,jackson-wink mma,usa
+4424222,Armando Villarreal,170.18,61.23,36.0,1989-08-08,male,bantamweight,168.91,southpaw,,,usa
+4424582,Kevin Syler,175.26,70.31,32.0,1993-07-29,male,lightweight,181.61,switch,,american top team,bolivia
+4062290,Justin Sumter,187.96,83.91,35.0,1989-11-10,male,middleweight,203.2,southpaw,,fighting arts academy,usa
+4239743,Jacob Rosales,180.34,70.31,30.0,1995-07-28,male,lightweight,187.96,orthodox,,csw,usa
+2560714,Tony Johnson,187.96,92.99,42.0,1983-05-02,male,lightheavyweight,187.96,switch,,,usa
+4423425,Justin Gonzales,175.26,65.77,34.0,1991-04-28,male,featherweight,182.88,orthodox,,top notch mma,usa
+4080575,Kali Robbins,160.02,52.16,41.0,1984-07-05,female,womens-strawweight,161.29,orthodox,,,usa
+3009725,Brendan Loughnane,175.26,65.77,35.0,1989-12-05,male,lightweight,180.34,switch,striker,tiger muay thai,england
+3020777,Charles Byrd,177.8,83.91,41.0,1983-10-11,male,middleweight,185.42,orthodox,muay thai,fortis mma,usa
+4020801,Austin Arnett,182.88,65.77,33.0,1991-10-22,male,featherweight,182.88,orthodox,striker,sikjitsu,usa
+3983543,Allen Crowder,190.5,115.67,35.0,1989-11-08,male,heavyweight,194.31,orthodox,striker,team rubao carioca bjj,usa
+3611366,Te Edwards,172.72,70.31,35.0,1990-09-11,male,lightweight,182.88,orthodox,striker,mma lab,usa
+3128221,Joby Sanchez,167.64,61.23,34.0,1991-06-24,male,flyweight,172.72,orthodox,wrestling,jackson-wink mma,usa
+3971629,Dayana Silva,170.18,65.77,35.0,1990-08-17,female,womens-bantamweight,173.99,orthodox,,nova uniao ,brazil
+4372295,Gleidson Cutis,175.26,83.91,36.0,1989-02-07,male,lightweight,,orthodox,,,brazil
+3108776,Marcio Alexandre Jr.,185.42,83.91,36.0,1989-05-03,male,welterweight,190.5,southpaw,,astra fight team,brazil
+4039957,Estefani Almeida,162.56,56.7,36.0,1988-10-17,female,womens-flyweight,,orthodox,,,brazil
+4081147,Bruno Assis,187.96,83.91,33.0,1992-05-23,male,middleweight,198.12,orthodox,,american top team,brazil
+3054275,Diego Henrique da Silva,187.96,83.91,39.0,1986-08-22,male,middleweight,,orthodox,brazilian jiu-jitsu,,
+4371000,Gustavo Gabriel,167.64,56.7,31.0,1994-04-01,male,flyweight,,orthodox,,,
+4371003,Mayana Kellem,165.1,61.23,44.0,1981-07-07,female,womens-bantamweight,,orthodox,,,brazil
+4358020,Tebaris Gordon,185.42,106.59,,,male,heavyweight,,orthodox,striker,,
+4354425,Devonte Smith,175.26,70.76,32.0,1993-07-30,male,lightweight,193.04,orthodox,striker,factoryx muay thai,usa
+4354424,Dennis Bryant,182.88,92.99,,,male,lightheavyweight,,orthodox,,,usa
+4070902,Alex Gilpin,170.18,65.77,33.0,1992-03-26,male,featherweight,,orthodox,,chosen few gym,usa
+3254940,Garrett Gross,175.26,83.91,37.0,1988-08-08,male,lightweight,175.26,orthodox,striker,sabens martial arts,usa
+4349155,Mitchell Sipe,190.5,120.2,29.0,1996-04-09,male,heavyweight,193.04,orthodox,striker,,usa
+4234510,Shawn Teed,195.58,113.4,33.0,1992-02-13,male,heavyweight,,orthodox,brazilian jiu-jitsu,ricardo almeida jiu-jitsu,usa
+4081555,Chris Birchler,190.5,92.99,38.0,1987-06-05,male,lightheavyweight,,switch,,allstar bjj,usa
+3028694,Josh Appelt,177.8,110.22,42.0,1983-06-19,male,heavyweight,,southpaw,striker,team alpha male,usa
+4037324,Jamie Colleen Miller,157.48,52.16,39.0,1985-11-02,female,womens-strawweight,165.1,orthodox,striker,renzo gracie jiu-jitsu,usa
+4349152,Chibwikem Onyenegecha,190.5,83.91,31.0,1994-04-18,male,middleweight,,orthodox,,,
+4079844,Angelo Trevino,177.8,77.11,32.0,1993-06-10,male,welterweight,,switch,striker,team alpha male,usa
+4354319,Antonio Jones,182.88,83.91,40.0,1985-04-12,male,middleweight,,orthodox,,,
+4357555,Joey Gomez,177.8,70.31,36.0,1989-08-28,male,lightweight,,,,,usa
+4339489,Alton Cunningham,187.96,92.99,32.0,1993-06-19,male,lightheavyweight,195.58,orthodox,striker,pura vida bjj,usa
+4239492,Ricky Palacios,167.64,70.31,38.0,1987-07-05,male,bantamweight,,orthodox,,,usa
+3084125,Rilley Dutro,172.72,56.7,38.0,1987-09-03,male,flyweight,177.8,orthodox,striker,i & i training center,usa
+4243343,Max Mustaki,182.88,70.31,37.0,1987-11-07,male,lightweight,,orthodox,,checkmat,usa
+4039866,Jaimelene Nievera,165.1,56.7,40.0,1984-10-28,female,womens-flyweight,,orthodox,brazilian jiu-jitsu,dragon house mma,usa
+4339144,Yazan Hajeh,170.18,65.77,33.0,1992-09-04,male,featherweight,,orthodox,striker,10th planet jiu-jitsu,usa
+3146345,Emiliano Sordi,187.96,93.44,34.0,1991-02-15,male,lightheavyweight,195.58,orthodox,striker,nova uniao ,argentina
+4339148,Tyler Hill,190.5,77.56,34.0,1991-08-10,male,welterweight,200.66,switch,,american top team d'iberville,usa
+4339131,Dashawn Boatwright,182.88,92.99,37.0,1988-02-29,male,lightheavyweight,193.04,orthodox,,,usa
+4065047,Sean Lally,182.88,77.11,34.0,1990-11-04,male,welterweight,189.23,orthodox,,sityodtong boston,usa
+4339129,Will Santiago Jr.,177.8,77.11,42.0,1983-02-08,male,welterweight,,orthodox,,,usa
+2984784,Mike Santiago,177.8,65.77,36.0,1989-07-28,male,featherweight,175.26,orthodox,brazilian jiu-jitsu,top notch fitness,usa
+3991049,Henrique da Silva,193.04,92.99,36.0,1989-09-01,male,lightheavyweight,194.31,orthodox,striker,minhoca top team,brazil
+4249191,Elias Urbina,190.5,83.91,31.0,1993-10-09,male,middleweight,195.58,southpaw,,,usa
+2951136,Adam Antolin,165.1,56.7,43.0,1982-02-28,male,flyweight,160.02,orthodox,brazilian jiu-jitsu,aka (american kickboxing academy),usa
+3153109,Kelly Velasco,175.26,61.23,,,female,womens-bantamweight,,orthodox,,,usa
+3077134,Buddy Wallace,180.34,77.11,36.0,1989-03-01,male,middleweight,175.26,orthodox,,last stand fight team,usa
+3074719,Adrian Diaz,177.8,65.77,37.0,1988-04-26,male,featherweight,,southpaw,,team alpha male,usa
+4028629,Cameron Olson,185.42,92.99,35.0,1989-11-22,male,lightheavyweight,,orthodox,,,usa
+4036096,Jaime Alvarez,172.72,56.7,37.0,1988-03-08,male,flyweight,,orthodox,,american top team,usa
+3152189,Jamelle Jones,182.88,107.5,37.0,1988-01-31,male,lightheavyweight,190.5,orthodox,,sikjitsu,
+3077954,Kevin Gray,160.02,56.7,,,male,flyweight,170.18,orthodox,brazilian jiu-jitsu,premier combat center,usa
+3164449,Donavon Frelow,167.64,61.23,40.0,1985-01-20,male,bantamweight,162.56,orthodox,,wand fight team,usa
+4013988,Shelton Graves,187.96,120.2,39.0,1985-10-23,male,heavyweight,193.04,southpaw,,,usa
+4237014,Cheyden Leialoha,172.72,65.77,31.0,1994-03-15,male,bantamweight,185.42,orthodox,,gracie technics,usa
+3120931,Jason Jackson,185.42,82.55,34.0,1990-10-30,male,welterweight,200.66,orthodox,,kill cliff fc,jamaica
+3087807,Chase Waldon,187.96,83.91,,,male,middleweight,190.5,orthodox,,,usa
+4236955,Luis Gomez,170.18,70.31,30.0,1995-01-28,male,featherweight,176.53,orthodox,,american top team,usa
+2553221,Angel De Anda,172.72,92.99,40.0,1985-05-28,male,lightheavyweight,,orthodox,striker,last stand fight team,usa
+4082018,Alfred Khashakyan,172.72,61.23,37.0,1988-07-17,male,bantamweight,177.8,orthodox,,glendale fighting club,usa
+2557012,Lazar Stojadinovic,170.18,65.77,36.0,1989-03-22,male,featherweight,172.72,southpaw,,xtreme couture,serbia
+4237605,Michael Cora,,70.31,36.0,1989-08-24,male,welterweight,195.58,southpaw,striker,,
+2506260,Greg Rebello,182.88,120.2,43.0,1982-06-13,male,heavyweight,185.42,southpaw,,,usa
+3961774,Manny Vazquez,177.8,61.23,31.0,1993-11-19,male,flyweight,182.88,orthodox,brazilian jiu-jitsu,10th planet jiu jitsu,usa
+3923647,Daniel Jolly,185.42,92.99,41.0,1984-09-03,male,lightheavyweight,190.5,orthodox,,,usa
+5296753,Baisangur Susurkaev,187.96,84.37,24.0,2001-01-08,male,middleweight,200.66,orthodox,,kill cliff fc,russia
+5302831,Donte Johnson,172.72,94.8,26.0,1999-01-25,male,middleweight,187.96,southpaw,,gnosis combat sports,usa
+5145495,Stephanie Luciano,167.64,52.62,25.0,1999-12-16,female,womens-strawweight,165.1,orthodox,muay thai,gordinho fight team,brazil
+5216713,Navajo Stirling,193.04,92.99,27.0,1997-11-07,male,lightheavyweight,200.66,orthodox,kickboxing,city kickboxing,new zealand
+5282616,Djani Barbir,190.5,84.37,28.0,1997-08-09,male,middleweight,200.66,orthodox,,american top team zagreb,croatia
+4916608,Brahyam Zurcher,177.8,66.22,29.0,1996-03-10,male,featherweight,177.8,orthodox,,cobrinha brazilian jiu-jitsu & fitness,mexico
+5308769,Jeisla Chaves,162.56,56.25,28.0,1997-02-02,female,womens-flyweight,172.72,orthodox,,gomes fight team,brazil
+5277050,Justice Torres,172.72,66.22,27.0,1997-10-19,male,featherweight,168.91,southpaw,,4oz fight club,usa
+5308871,Rafael Tobias,185.42,92.08,22.0,2003-03-20,male,lightheavyweight,189.23,orthodox,,chute boxe - monstro,brazil
+5307813,Mackson Lee,185.42,61.23,26.0,1999-01-06,male,bantamweight,190.5,orthodox,,markine fight,brazil
+5307811,Mahamed Aly,190.5,92.53,31.0,1994-01-11,male,lightheavyweight,198.12,orthodox,,team lloyd irvin,brazil
+5307814,Tommy Gantt,180.34,70.31,32.0,1993-01-09,male,lightweight,193.04,orthodox,,the academy,usa
+5293566,In Soo Hwang,180.34,84.37,31.0,1994-01-18,male,middleweight,187.96,orthodox,,team stun gun,korea
+5086848,Raphael Uchegbu,175.26,61.69,30.0,1995-08-16,male,bantamweight,185.42,orthodox,,team kaobon,england
+5292023,Anthony Guarascio,187.96,105.69,31.0,1994-02-26,male,heavyweight,182.88,orthodox,,gracie tampa west,usa
+5292014,Felipe Franco,185.42,92.53,24.0,2001-01-01,male,lightheavyweight,193.04,orthodox,,galpao da luta,brazil
+5157674,Shanelle Dyer,167.64,52.62,24.0,2001-04-23,female,womens-strawweight,165.1,orthodox,,great britain top team,england
+5145682,Bolaji Oki,177.8,70.76,29.0,1995-11-15,male,lightweight,185.42,orthodox,mixed martial artist,valon team,belgium
+5228596,Jack Congdon,187.96,77.56,28.0,1997-05-21,male,welterweight,191.77,switch,,lakeville mma,usa
+4977642,Theo Haig,187.96,83.91,29.0,1996-08-23,male,middleweight,196.85,orthodox,,aka (american kickboxing academy),usa
+4063786,Mandel Nallo,182.88,70.31,36.0,1989-07-26,male,lightweight,190.5,orthodox,brazilian jiu-jitsu,tristar gym,canada
+5212849,Tommy McMillen,182.88,65.77,27.0,1997-12-15,male,featherweight,187.96,orthodox,,red hawk academy,usa
+5216997,Trent Miller,180.34,83.46,29.0,1995-10-31,male,middleweight,182.88,orthodox,,xtreme couture,usa
+4915407,Damon Wilson,175.26,65.77,32.0,1993-04-29,male,featherweight,175.26,switch,,scorpion fighting system,usa
+5291025,Abdul-Rakhman Yakhyaev,187.96,93.44,24.0,2001-01-03,male,lightheavyweight,198.12,orthodox,,mma & combat nurnberg,turkey
+5180489,Cristian Perez,175.26,70.31,26.0,1999-08-17,male,lightweight,182.88,orthodox,,the goat shed,mexico
+4894864,Xiao Long,172.72,61.69,27.0,1998-04-13,male,bantamweight,177.8,orthodox,striker,ufc performance institute shanghai,china
+5219928,Manuel Exposito,170.18,65.77,25.0,2000-05-09,male,featherweight,172.72,orthodox,,entram gym,argentina
+5296762,Brandon Holmes,187.96,83.46,28.0,1997-02-05,male,middleweight,187.96,orthodox,,tnt martial arts & fitness,usa
+5292169,Kaushik Saikumar,177.8,61.23,27.0,1997-12-11,male,bantamweight,180.34,orthodox,,fifty/50 martial arts academy,india
+4049391,Josh Hokit,185.42,103.87,27.0,1997-11-12,male,heavyweight,185.42,orthodox,,jackson-wink mma,usa
+5290789,Tommy Cuozzi,175.26,65.77,26.0,1999-08-31,male,featherweight,180.34,orthodox,,kamicuozzi mma & fitness,usa
+5287881,Ilian Bouafia,195.58,84.37,28.0,1996-11-13,male,middleweight,198.12,southpaw,,boxing squad,france
+5290957,Ty Miller,187.96,77.11,25.0,2000-06-04,male,welterweight,195.58,orthodox,,fit nhb,usa
+5279283,George Mangos,177.8,65.77,22.0,2003-08-19,male,featherweight,177.8,switch,,lion's den,australia
+5282842,Chris Ewert,182.88,84.37,32.0,1993-09-06,male,middleweight,190.5,orthodox,,team predator mma,chile
+5144008,Payton Talbott,177.8,61.23,27.0,1998-09-09,male,bantamweight,179.07,switch,mixed martial artist,reno academy of combat,usa
+4701954,Seokhyeon Ko,177.8,76.66,32.0,1993-09-24,male,welterweight,180.34,southpaw,,havas seoul,korea
+5211221,Mansur Abdul-Malik,187.96,84.37,27.0,1997-10-07,male,middleweight,201.93,orthodox,freestyle,mma masters,usa
+5212854,Malcolm Wellmaker,177.8,61.69,31.0,1994-06-04,male,bantamweight,180.34,switch,,faglier's mixed martial arts,usa
+4601333,Rayanne dos Santos,157.48,52.62,30.0,1995-06-08,female,womens-strawweight,157.48,orthodox,boxing,marajo brothers team,brazil
+5088844,Raul Rosas Jr.,175.26,61.23,20.0,2004-10-08,male,bantamweight,170.18,switch,freestyle,10th planet jiu-jitsu,mexico
+4685888,Ronaldo Rodríguez,167.64,57.61,26.0,1999-05-07,male,flyweight,166.37,orthodox,mixed martial artist,adam coatzacoalcos,mexico
+5211223,Yuneisy Duben,162.56,56.7,29.0,1996-07-08,female,womens-flyweight,165.1,orthodox,,team ludus,venezuela
+3093513,Ismael Bonfim,172.72,70.76,29.0,1995-12-28,male,lightweight,181.61,orthodox,boxing,cerrado mma,brazil
+5057385,Antonio Monteiro,170.18,65.77,30.0,1995-07-02,male,featherweight,177.8,orthodox,,nova uniao ,brazil
+5223854,Julieta Martinez,154.94,51.71,21.0,2004-09-14,male,womens-strawweight,157.48,orthodox,,brazilian fight argentina,argentina
+5218668,Mohamed Ado,180.34,77.11,25.0,2000-05-03,male,welterweight,193.04,switch,,613 fight factory,niger
+5217455,Islem Masraf,182.88,92.53,29.0,1996-06-07,male,lightheavyweight,187.96,southpaw,,classic fight center,france
+5218818,Lucas Camacho,193.04,108.86,32.0,1992-12-15,male,heavyweight,203.2,orthodox,,nova uniao ,brazil
+4896556,Vanilto Antunes,182.88,77.56,30.0,1994-12-28,male,welterweight,182.88,orthodox,,tata fight team,brazil
+5001017,Sean Gauci,165.1,57.15,28.0,1996-10-07,male,flyweight,162.56,switch,,ignite martial arts academy,australia
+4571450,Alberto Montes,170.18,65.77,31.0,1994-05-31,male,featherweight,175.26,orthodox,,the goat shed,venezuela
+4047571,Bailey Schoenfelder,190.5,104.78,28.0,1997-09-22,male,heavyweight,193.04,orthodox,,kill cliff fc,usa
+5216849,Kevin Christian,200.66,92.99,30.0,1995-01-21,male,lightheavyweight,203.2,orthodox,,cosme junior team,brazil
+5215272,Aaron Tau,162.56,61.23,32.0,1993-08-21,male,flyweight,167.64,switch,,city kickboxing,new zealand
+5218816,Joey Hart,190.5,77.11,28.0,1997-06-24,male,welterweight,200.66,orthodox,,start bjj,usa
+5224461,Taiga Iwasaki,185.42,83.91,28.0,1997-07-07,male,middleweight,185.42,orthodox,,paraestra tokyo,japan
+4690484,Corinne Laframboise,162.56,57.15,36.0,1989-05-25,female,womens-flyweight,165.1,orthodox,,btt canada,canada
+4848673,Will Currie,190.5,83.91,26.0,1998-11-12,male,middleweight,193.04,switch,,gintas combat,england
+5211224,Jack Duffy,170.18,56.7,29.0,1995-10-02,male,flyweight,175.26,switch,,team alpha male,usa
+5144174,Billy Brand,167.64,61.23,29.0,1996-07-03,male,bantamweight,166.37,orthodox,,mmagold fight team,usa
+4813565,Ding Meng,187.96,77.11,31.0,1994-09-27,male,welterweight,185.42,orthodox,,black tiger fight club,china
+5149722,Mikheil Sazhiniani,182.88,92.99,28.0,1996-10-05,male,lightheavyweight,180.34,orthodox,,spitfire gym,georgia
+4893608,Angel Pacheco,172.72,61.23,33.0,1992-01-13,male,featherweight,177.8,orthodox,boxing,new england cartel,usa
+5145496,Igor Severino,170.18,56.7,22.0,2003-04-21,male,flyweight,176.53,orthodox,mixed martial artist,chute boxe,brazil
+4045420,Aliaskhab Khizriev,175.26,84.37,35.0,1990-08-24,male,middleweight,187.96,southpaw,mixed martial artist,fight club scorpion,russia
+5147579,Rickson Zenidim,170.18,57.15,26.0,1999-02-17,male,flyweight,171.45,orthodox,,familia zenidim,brazil
+5149442,Davi Bittencourt,165.1,60.78,30.0,1994-10-12,male,bantamweight,165.1,orthodox,,parana vale tudo,brazil
+5119702,Alexander Soldatkin,187.96,111.58,32.0,1993-06-10,male,heavyweight,190.5,orthodox,,spitfire gym,germany
+5077056,Jacobi Jones,175.26,70.76,29.0,1996-05-24,male,lightweight,182.88,orthodox,,factoryx muay thai,usa
+5068827,Chad Hanekom,193.04,83.91,35.0,1990-04-20,male,middleweight,187.96,orthodox,,fight fit militia,south africa
+5144319,Rainn Guerrero,167.64,56.7,33.0,1992-05-13,female,womens-strawweight,165.1,orthodox,,war training center,usa
+5143224,Eli Aronov,177.8,83.91,29.0,1996-06-06,male,middleweight,182.88,orthodox,,xtreme couture,israel
+5056138,Kaik Brito,180.34,76.66,28.0,1997-03-26,male,lightweight,184.15,orthodox,,black thai team,brazil
+4403762,Isis Verbeek,162.56,52.16,30.0,1995-01-12,female,womens-strawweight,162.56,orthodox,,team bigi boy,netherlands
+4764301,George Hardwick,175.26,70.31,28.0,1996-12-06,male,lightweight,182.88,orthodox,,middlesbrough fight academy,england
+5075334,Kevin Szaflarski,195.58,117.93,30.0,1994-12-30,male,heavyweight,195.58,orthodox,,akademia sportow walki wilanow,poland
+4788298,Victor Dias,167.64,56.7,34.0,1990-12-26,male,flyweight,175.26,orthodox,,american top team,brazil
+4684237,Mana Martinez,177.8,62.14,29.0,1996-03-25,male,bantamweight,177.8,orthodox,karate,metro fight club,usa
+4683396,Cheyanne Vlismas,160.02,52.16,30.0,1995-06-25,female,womens-strawweight,160.02,switch,mixed martial artist,xtreme couture,usa
+5088846,Emiliano Linares,172.72,65.32,28.0,1997-04-21,male,featherweight,184.15,orthodox,,bonebreakers mma,ecuador
+4795255,Ashiek Ajim,172.72,61.23,31.0,1994-06-19,male,bantamweight,180.34,switch,,long island mma,trinidad
+4584163,Leon Aliu,182.88,84.37,36.0,1989-07-14,male,middleweight,187.96,orthodox,,shoot team academy,albania
+5076594,Richard Jacobi,193.04,110.68,32.0,1993-09-28,male,heavyweight,190.5,orthodox,,chute boxe,brazil
+5075937,Roybert Echeverria,165.1,56.7,30.0,1995-08-21,male,flyweight,170.18,switch,,the goat shed,venezuela
+4701186,Jimmy Lawson,182.88,119.29,33.0,1991-11-13,male,heavyweight,195.58,orthodox,,killer b combat sports academy,usa
+5056143,Nayara Maia,165.1,56.7,35.0,1990-07-25,female,womens-flyweight,167.64,orthodox,,nova uniao ,brazil
+5044376,Rodrigo Lidio,180.34,70.31,36.0,1989-07-07,male,lightweight,185.42,orthodox,,fighting nerds,brazil
+4869428,Maria Silva,160.02,52.16,29.0,1995-12-19,female,womens-strawweight,165.1,orthodox,,dragon kombat,brazil
+4963260,Amiran Gogoladze,185.42,77.11,27.0,1997-12-09,male,welterweight,187.96,switch,,13 legion mma,georgia
+5077400,Josh Wang-Kim,175.26,61.23,32.0,1992-11-16,male,bantamweight,180.34,switch,,alliance jiu-jitsu,usa
+5074276,Thomas Paull,170.18,70.31,30.0,1994-10-15,male,lightweight,170.18,orthodox,,team underground mma,england
+5065494,Ivan Valenzuela,187.96,84.37,32.0,1992-11-17,male,middleweight,195.58,orthodox,,xtreme couture,mexico
+4584150,Jack Cartwright,175.26,61.69,31.0,1994-05-26,male,bantamweight,172.72,orthodox,,sbg manchester,england
+5044439,Sandra Lavado,170.18,57.15,31.0,1994-05-03,female,womens-strawweight,167.64,orthodox,,maximo's combat club,peru
+4892412,Shimon Smotritsky,187.96,77.11,25.0,2000-08-22,male,welterweight,187.96,orthodox,,xtreme couture,israel
+4895361,Qiulun,172.72,56.7,28.0,1997-07-08,male,flyweight,170.18,southpaw,,enbo gedou,china
+4884867,Jonas Bilharinho,180.34,66.22,35.0,1990-05-22,male,featherweight,190.5,switch,,team nogueira,brazil
+4286781,Shang Zhifa,170.18,56.7,39.0,1986-03-15,male,flyweight,160.02,orthodox,,longyun mma gym,china
+4021216,Oron Kahlon,172.72,63.05,40.0,1984-11-04,male,featherweight,177.8,orthodox,,xtreme couture,israel
+4568503,Yan Qihui,160.02,56.7,28.0,1996-10-21,female,womens-flyweight,157.48,orthodox,,,china
+4218124,Kolton Englund,177.8,70.31,32.0,1993-07-09,male,lightweight,175.26,orthodox,,,usa
+4892415,Xie Bin,175.26,65.77,27.0,1998-02-28,male,featherweight,180.34,orthodox,,,china
+4875514,Kaloyan Kolev,187.96,92.99,32.0,1992-10-17,male,lightheavyweight,185.42,orthodox,,warrior fight club,bulgaria
+2502713,Lorenzo Hood,190.5,116.57,36.0,1989-03-02,male,heavyweight,203.2,southpaw,,strike mma,usa
+4875515,Shonte Barnes,180.34,83.91,38.0,1987-02-09,male,middleweight,193.04,southpaw,,american top team asheville,usa
+4874989,Patrik White,182.88,70.31,32.0,1993-06-11,male,lightweight,182.88,orthodox,,avalanche wrestling association,usa
+4873641,Lucasz Sudolski,193.04,92.99,32.0,1993-06-15,male,lightheavyweight,191.77,orthodox,,,poland
+4835136,Hashem Arkhagha,187.96,85.73,36.0,1989-09-11,male,middleweight,190.5,orthodox,,,jordan
+4888600,Logan Urban,182.88,77.11,31.0,1994-04-22,male,welterweight,182.88,,,,usa
+3110833,Matheus Scheffel,187.96,117.48,32.0,1992-11-04,male,lightheavyweight,193.04,orthodox,,cm system,brazil
+4410116,Leonardo Damiani,177.8,77.11,35.0,1990-08-30,male,welterweight,175.26,orthodox,,aurora mma,italy
+4689228,Pauline Macias,162.56,52.16,37.0,1988-06-27,female,womens-strawweight,162.56,southpaw,,factoryx muay thai,usa
+4689226,Chelsea Hackett,162.56,56.7,27.0,1998-08-16,female,womens-flyweight,167.64,switch,,potential unlimited mixed martial arts,australia
+4701012,Shaheen Santana,185.42,65.77,34.0,1991-06-04,male,lightweight,190.5,orthodox,,mma masters,usa
+4606413,Danny Sabatello,177.8,61.23,32.0,1993-03-31,male,bantamweight,180.34,orthodox,,american top team,usa
+4693719,Edson Gomez,172.72,77.11,34.0,1991-02-23,male,welterweight,175.26,switch,,combined martial science,mexico
+4683397,Korey Kuppe,195.58,83.91,36.0,1989-01-23,male,welterweight,190.5,switch,,macomb martial arts,usa
+3947116,Dinis Paiva,175.26,65.77,37.0,1988-05-26,male,featherweight,180.34,southpaw,,juniko,usa
+4685886,Cameron Church,180.34,70.31,35.0,1990-09-27,male,lightweight,182.88,orthodox,,escobar training grounds,usa
+3895527,Jhonoven Pati,185.42,83.91,35.0,1990-04-29,male,middleweight,190.5,switch,,strkings,usa
+4389513,Kyron Bowen,187.96,77.11,31.0,1993-12-22,male,middleweight,198.12,orthodox,,family combat fitness,usa
+4359111,Anthony Adams,185.42,83.91,37.0,1988-01-13,male,middleweight,195.58,orthodox,,elevation fight team,usa
+4010873,Ty Flores,190.5,92.99,31.0,1993-12-22,male,lightheavyweight,185.42,switch,,elevation fight team,usa
+4573207,Kailan Hill,185.42,83.91,30.0,1994-12-01,male,middleweight,195.58,southpaw,,,puerto rico
+4573209,SangHoon Yoo,182.88,77.11,35.0,1990-01-18,male,lightweight,187.96,orthodox,,busan team m.a.d.,korea
+4423215,Leon Shahbazyan,193.04,77.11,29.0,1995-11-18,male,welterweight,189.23,orthodox,,glendale fighting club,usa
+4570799,Marcos Brigagão,190.5,92.99,29.0,1996-04-01,male,lightheavyweight,193.04,southpaw,,parana vale tudo,brazil
+4573548,Desmond Torres,167.64,61.23,28.0,1997-01-06,male,bantamweight,175.26,orthodox,,,usa
+4569668,Ricky Steele,175.26,61.23,37.0,1988-05-26,male,bantamweight,187.96,orthodox,,,usa
+4379326,Herdem Alacabek,187.96,92.99,34.0,1991-06-07,male,lightheavyweight,190.5,orthodox,,,sweden
+4565646,Devin Smyth,177.8,77.11,30.0,1995-07-21,male,welterweight,185.42,switch,,,usa
+4248475,Julius Anglickas,190.5,92.53,34.0,1991-07-23,male,lightheavyweight,195.58,orthodox,,st. charles mma,lithuania
+4350860,Marilia Santos,162.56,56.7,32.0,1992-12-10,female,womens-flyweight,172.72,orthodox,,,brazil
+4565642,Taylor Johnson,182.88,83.91,34.0,1990-11-09,female,middleweight,187.96,switch,,american top team portland,usa
+4565645,Dwight Joseph,170.18,65.77,36.0,1989-08-16,male,bantamweight,167.64,switch,,team alpha male,liberia
+4425611,Ramazan Kuramagomedov,182.88,77.11,29.0,1996-08-23,male,middleweight,185.42,orthodox,,xtreme couture,russia
+4426306,Christian Lohsen,187.96,70.31,30.0,1995-01-24,male,lightweight,190.5,southpaw,,darkwolf mma,usa
+3945573,Stephen Regman,180.34,83.91,34.0,1991-08-05,male,middleweight,194.31,orthodox,striker,pellegrino mma,usa
+4312854,Ricardo Prasel,200.66,109.77,35.0,1990-06-02,male,heavyweight,198.12,orthodox,,alemao brothers team,brazil
+4424478,Lance Lawrence,182.88,65.77,32.0,1993-06-26,male,featherweight,182.88,orthodox,,,usa
+4423875,Jesse Wallace,177.8,70.31,32.0,1992-11-17,male,lightweight,176.53,orthodox,,,usa
+4095179,Kenneth Bergh,187.96,92.99,36.0,1989-06-26,male,lightheavyweight,193.04,orthodox,,frontline academy,
+4425705,Chris Ocon,170.18,56.7,29.0,1996-02-05,male,bantamweight,175.26,orthodox,,syndicate mma,usa
+4030352,Zach Zane,177.8,65.77,35.0,1989-12-14,male,welterweight,175.26,southpaw,brazilian jiu-jitsu,black house,usa
+4392322,Richie Santiago,170.18,61.23,32.0,1992-10-10,male,bantamweight,170.18,southpaw,,tri-force mma,usa
+3039935,Alton Meeks,190.5,118.84,31.0,1994-04-05,male,heavyweight,191.77,orthodox,,fusion x-cel,usa
+4372190,Mabelly Lima,157.48,56.7,31.0,1994-01-25,female,womens-flyweight,,orthodox,,master kombat,brazil
+4030631,Gisele Moreira,167.64,61.23,44.0,1981-01-14,female,womens-bantamweight,,orthodox,,chute boxe,brazil
+4379279,Leonardo Silva De Oliveira,187.96,83.91,33.0,1992-04-23,male,middleweight,,orthodox,,,brazil
+4370999,Maiara Amanajas dos Santos,165.1,52.16,38.0,1987-07-11,female,womens-strawweight,,southpaw,,,
+4379257,Marcos Conrado Jr.,187.96,99.79,43.0,1982-03-14,male,heavyweight,,orthodox,,,
+4354427,Marty Coughran,172.72,65.77,31.0,1994-05-17,male,featherweight,,orthodox,,,usa
+4357591,Maurice Mitchell,175.26,65.77,38.0,1987-06-29,male,bantamweight,,orthodox,,team alpha male,usa
+2953005,Nick Newell,177.8,70.31,39.0,1986-03-17,male,lightweight,,southpaw,brazilian jiu-jitsu,fighting arts academy,usa
+3020395,Toby Misech,172.72,61.23,37.0,1988-03-07,male,featherweight,172.72,southpaw,,,usa
+2989137,Matt Bessette,177.8,70.31,40.0,1984-12-28,male,featherweight,179.07,orthodox,brazilian jiu-jitsu,underdog bjj,usa
+4294510,Austin Tweedy,172.72,70.31,35.0,1990-09-25,male,lightweight,,orthodox,,,usa
+4062284,Tim Caron,185.42,83.91,38.0,1987-07-24,male,middleweight,190.5,orthodox,striker,,usa
+2558159,Azunna Anyanwu,185.42,113.4,44.0,1981-08-05,male,heavyweight,195.58,orthodox,striker,renzo gracie philly,usa
+3039664,Anton Berzin,187.96,92.99,36.0,1989-09-29,male,lightheavyweight,,orthodox,brazilian jiu-jitsu,,usa
+4227123,Mark Cherico,172.72,70.31,,,male,featherweight,176.53,orthodox,,,usa
+3099608,Nick Urso,167.64,56.7,40.0,1985-09-26,male,flyweight,168.91,southpaw,,jackson-wink mma,usa
+4232927,Tiffany Masters,157.48,52.16,,,female,womens-strawweight,165.1,orthodox,,,usa
+4008509,Peter Petties,180.34,65.77,34.0,1990-12-20,male,featherweight,182.88,southpaw,striker,team lloyd irvin,usa
+4245091,Everett Sims,182.88,117.93,37.0,1988-09-04,male,heavyweight,196.85,southpaw,,,usa
+4237013,James Gray,175.26,61.23,37.0,1987-10-25,male,bantamweight,,orthodox,,,usa
+4073937,Ronaldo Candido de Oliveira,167.64,56.7,36.0,1989-04-24,male,flyweight,,southpaw,brazilian jiu-jitsu,nova uniao ,brazil
+3024141,Dan Spohn,193.04,92.99,40.0,1984-10-12,male,lightheavyweight,195.58,southpaw,,ronin training center,usa
+3895524,Thanh Le,175.26,65.77,40.0,1985-08-28,male,featherweight,189.23,orthodox,,,usa
+4040925,Sidney Outlaw,175.26,70.76,33.0,1992-04-11,male,welterweight,193.04,orthodox,,kill cliff fc,usa
+4082117,Cee Jay Hamilton,167.64,61.23,38.0,1986-10-07,male,flyweight,182.88,switch,,contemporary martial arts,usa
