@@ -1,0 +1,117 @@
+{
+  "event": "DWCS Season 10 Week 7",
+  "event_date": "2026-09-22",
+  "source_global_fights_loaded": 129284,
+  "source_global_unique_fighters": 51902,
+  "fighter_coverage": [
+    {
+      "fighter": "Alvi Dasuyev",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Callum Connor",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Damian Piwowarczyk",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Emilio Quissua",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 0,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Jaden Ortega",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Marcos Degli",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 0,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Norbert Novenyi Jr.",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Paris Moran",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Piero Guaylupo",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Theo Haig",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 1.0
+    }
+  ],
+  "bout_coverage": [
+    {
+      "fighter_a": "Norbert Novenyi Jr.",
+      "fighter_b": "Theo Haig",
+      "both_histories_established": 1
+    },
+    {
+      "fighter_a": "Alvi Dasuyev",
+      "fighter_b": "Jaden Ortega",
+      "both_histories_established": 1
+    },
+    {
+      "fighter_a": "Marcos Degli",
+      "fighter_b": "Paris Moran",
+      "both_histories_established": 1
+    },
+    {
+      "fighter_a": "Piero Guaylupo",
+      "fighter_b": "Callum Connor",
+      "both_histories_established": 1
+    },
+    {
+      "fighter_a": "Damian Piwowarczyk",
+      "fighter_b": "Emilio Quissua",
+      "both_histories_established": 1
+    }
+  ],
+  "primary_v0_4_bouts": 5,
+  "total_bouts": 5
+}
