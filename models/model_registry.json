@@ -87,6 +87,9 @@
       "one_matched_segment_log_loss": 0.7547329194742226,
       "fallback": "Use DWCS-W-v0.3 plus current tape/research if both current regional histories cannot be established."
     },
-    "limitation": "Global historical source ends 2026-01-31; 2026 current-card records must be refreshed from current research before inference."
+    "limitation": "Global historical source ends 2026-01-31; 2026 current-card records must be refreshed from current research before inference.",
+    "production_artifact": "models/dwcs_w_v0_4_promoted_logistic.joblib",
+    "coefficient_report": "reports/dwcs_w_v0_4_promoted_coefficients.csv",
+    "audited_specification": "Conservative logistic: excludes explicit global_history_available_diff and disables imputer missingness indicators."
   }
 }
