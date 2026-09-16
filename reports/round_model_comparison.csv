@@ -1,0 +1,3 @@
+architecture,n,accuracy,log_loss,brier_multiclass,promoted
+logistic,320,0.378125,1.9197547926016045,0.7397735494296089,True
+boosting,320,0.315625,1.9641237258391087,0.8246823881290183,False
