@@ -1,0 +1,15 @@
+{
+  "source": "LeandroIber/mmastats via Kaggle",
+  "license": "MIT",
+  "source_rows_loaded_before_last_dwcs_date": 125539,
+  "dwcs_rows": 416,
+  "fighter_slots": 832,
+  "fighter_slot_history_coverage": 0.8197115384615384,
+  "both_fighters_history_coverage": 0.6850961538461539,
+  "at_least_one_fighter_history_coverage": 0.9543269230769231,
+  "elo_start": 1500.0,
+  "elo_k": 24.0,
+  "feature_count_added": 32,
+  "anti_leakage": "Only global fights with event_date strictly earlier than each DWCS bout are used.",
+  "training_label_scope": "DWCS labels only; global fights are context features only."
+}

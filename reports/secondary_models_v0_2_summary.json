@@ -1,0 +1,391 @@
+{
+  "versions": {
+    "method": "DWCS-M-v0.2-global-career",
+    "duration": "DWCS-D-v0.2-global-career",
+    "round": "DWCS-R-v0.2-global-career"
+  },
+  "coverage": {
+    "rows": 416,
+    "events": 86,
+    "feature_count": 59,
+    "external_feature_count": 32,
+    "both_external_history_pct": 0.6850961538461539,
+    "at_least_one_external_history_pct": 0.9543269230769231
+  },
+  "candidate_results": {
+    "method": {
+      "classes": [
+        "A_KO_TKO",
+        "A_SUB",
+        "A_DEC",
+        "B_KO_TKO",
+        "B_SUB",
+        "B_DEC"
+      ],
+      "results": {
+        "direct_logistic": {
+          "n": 319,
+          "accuracy": 0.4482758620689655,
+          "log_loss": 1.613724856455905,
+          "brier_multiclass": 0.720217390269281
+        },
+        "direct_boosting": {
+          "n": 319,
+          "accuracy": 0.4169278996865204,
+          "log_loss": 1.7238173136167174,
+          "brier_multiclass": 0.7788442558600667
+        },
+        "conditional_winner_x_method_logistic": {
+          "n": 319,
+          "accuracy": 0.43573667711598746,
+          "log_loss": 1.5067506031241242,
+          "brier_multiclass": 0.6886081438928104
+        }
+      },
+      "promoted_architecture": "conditional_winner_x_method_logistic"
+    },
+    "duration": {
+      "under_0_5": {
+        "logistic": {
+          "n": 320,
+          "accuracy": 0.846875,
+          "brier": 0.13821485804359424,
+          "log_loss": 0.5480212497792091,
+          "auc": 0.530512041150339
+        },
+        "boosting": {
+          "n": 320,
+          "accuracy": 0.83125,
+          "brier": 0.13790776291947887,
+          "log_loss": 0.512314800122371,
+          "auc": 0.6017847400826124
+        },
+        "promoted_architecture": "boosting"
+      },
+      "under_1_5": {
+        "logistic": {
+          "n": 320,
+          "accuracy": 0.590625,
+          "brier": 0.2617063567110659,
+          "log_loss": 0.8363620977139498,
+          "auc": 0.549828178694158
+        },
+        "boosting": {
+          "n": 320,
+          "accuracy": 0.60625,
+          "brier": 0.2524202716654898,
+          "log_loss": 0.7270946173176093,
+          "auc": 0.5934789723449518
+        },
+        "promoted_architecture": "boosting"
+      },
+      "under_2_5": {
+        "logistic": {
+          "n": 320,
+          "accuracy": 0.51875,
+          "brier": 0.2859268235174418,
+          "log_loss": 0.8638139016087398,
+          "auc": 0.5173213794188196
+        },
+        "boosting": {
+          "n": 320,
+          "accuracy": 0.584375,
+          "brier": 0.2740633167024118,
+          "log_loss": 0.7779958540873017,
+          "auc": 0.5795289213951477
+        },
+        "promoted_architecture": "boosting"
+      },
+      "goes_distance": {
+        "logistic": {
+          "n": 320,
+          "accuracy": 0.54375,
+          "brier": 0.2747957616097859,
+          "log_loss": 0.8661907690992765,
+          "auc": 0.5317258370693485
+        },
+        "boosting": {
+          "n": 320,
+          "accuracy": 0.596875,
+          "brier": 0.2703560307000294,
+          "log_loss": 0.7836063233170656,
+          "auc": 0.567995476392423
+        },
+        "promoted_architecture": "boosting"
+      },
+      "round_2_starts": {
+        "logistic": {
+          "n": 320,
+          "accuracy": 0.646875,
+          "brier": 0.24968927828440987,
+          "log_loss": 0.7859311373341923,
+          "auc": 0.5495670995670996
+        },
+        "boosting": {
+          "n": 320,
+          "accuracy": 0.6125,
+          "brier": 0.2550895731611294,
+          "log_loss": 0.7601423885698451,
+          "auc": 0.5564069264069265
+        },
+        "promoted_architecture": "boosting"
+      },
+      "round_3_starts": {
+        "logistic": {
+          "n": 320,
+          "accuracy": 0.5125,
+          "brier": 0.287411185098834,
+          "log_loss": 0.86853064354345,
+          "auc": 0.5259024847632442
+        },
+        "boosting": {
+          "n": 320,
+          "accuracy": 0.58125,
+          "brier": 0.27836638317931867,
+          "log_loss": 0.7825048975984116,
+          "auc": 0.5668854508516955
+        },
+        "promoted_architecture": "boosting"
+      }
+    },
+    "round": {
+      "classes": [
+        "R1",
+        "R2",
+        "R3",
+        "DEC"
+      ],
+      "results": {
+        "logistic": {
+          "n": 320,
+          "accuracy": 0.346875,
+          "log_loss": 1.6057076924936595,
+          "brier_multiclass": 0.7893844969256699
+        },
+        "boosting": {
+          "n": 320,
+          "accuracy": 0.4125,
+          "log_loss": 1.5729258832209045,
+          "brier_multiclass": 0.7932944043444056
+        }
+      },
+      "promoted_architecture": "boosting"
+    }
+  },
+  "chronological_naive_baselines": {
+    "method": {
+      "n": 319,
+      "accuracy": 0.16614420062695925,
+      "log_loss": 1.7582568215324714,
+      "brier_multiclass": 0.8241225746248344
+    },
+    "duration": {
+      "under_0_5": {
+        "n": 320,
+        "accuracy": 0.853125,
+        "brier": 0.12591722216040271,
+        "log_loss": 0.4197221145889575,
+        "auc": 0.43757306523263967
+      },
+      "under_1_5": {
+        "n": 320,
+        "accuracy": 0.60625,
+        "brier": 0.24064741061626022,
+        "log_loss": 0.6743769482328826,
+        "auc": 0.44025118638520705
+      },
+      "under_2_5": {
+        "n": 320,
+        "accuracy": 0.540625,
+        "brier": 0.25042723133562517,
+        "log_loss": 0.6940712326806565,
+        "auc": 0.4460107742518973
+      },
+      "goes_distance": {
+        "n": 320,
+        "accuracy": 0.590625,
+        "brier": 0.24461163406563968,
+        "log_loss": 0.682680642362715,
+        "auc": 0.445211842158407
+      },
+      "round_2_starts": {
+        "n": 320,
+        "accuracy": 0.65625,
+        "brier": 0.22650566299248873,
+        "log_loss": 0.6455634674522193,
+        "auc": 0.47634199134199134
+      },
+      "round_3_starts": {
+        "n": 320,
+        "accuracy": 0.484375,
+        "brier": 0.25301179498333026,
+        "log_loss": 0.6992060825573019,
+        "auc": 0.45014846069698394
+      }
+    },
+    "round": {
+      "n": 320,
+      "accuracy": 0.3875,
+      "log_loss": 1.2566110113984688,
+      "brier_multiclass": 0.6887732358156347
+    }
+  },
+  "promotion": {
+    "method": {
+      "best_architecture": "conditional_winner_x_method_logistic",
+      "candidate": {
+        "n": 319,
+        "accuracy": 0.43573667711598746,
+        "log_loss": 1.5067506031241242,
+        "brier_multiclass": 0.6886081438928104
+      },
+      "naive": {
+        "n": 319,
+        "accuracy": 0.16614420062695925,
+        "log_loss": 1.7582568215324714,
+        "brier_multiclass": 0.8241225746248344
+      },
+      "status": "PRODUCTION_ELIGIBLE",
+      "rule": "Must beat chronological class-frequency baseline on log loss and multiclass Brier, without lower exact accuracy."
+    },
+    "duration": {
+      "under_0_5": {
+        "best_architecture": "boosting",
+        "candidate": {
+          "n": 320,
+          "accuracy": 0.83125,
+          "brier": 0.13790776291947887,
+          "log_loss": 0.512314800122371,
+          "auc": 0.6017847400826124
+        },
+        "naive": {
+          "n": 320,
+          "accuracy": 0.853125,
+          "brier": 0.12591722216040271,
+          "log_loss": 0.4197221145889575,
+          "auc": 0.43757306523263967
+        },
+        "status": "SHADOW_ONLY",
+        "rule": "Must beat chronological training-prevalence baseline on both log loss and Brier."
+      },
+      "under_1_5": {
+        "best_architecture": "boosting",
+        "candidate": {
+          "n": 320,
+          "accuracy": 0.60625,
+          "brier": 0.2524202716654898,
+          "log_loss": 0.7270946173176093,
+          "auc": 0.5934789723449518
+        },
+        "naive": {
+          "n": 320,
+          "accuracy": 0.60625,
+          "brier": 0.24064741061626022,
+          "log_loss": 0.6743769482328826,
+          "auc": 0.44025118638520705
+        },
+        "status": "SHADOW_ONLY",
+        "rule": "Must beat chronological training-prevalence baseline on both log loss and Brier."
+      },
+      "under_2_5": {
+        "best_architecture": "boosting",
+        "candidate": {
+          "n": 320,
+          "accuracy": 0.584375,
+          "brier": 0.2740633167024118,
+          "log_loss": 0.7779958540873017,
+          "auc": 0.5795289213951477
+        },
+        "naive": {
+          "n": 320,
+          "accuracy": 0.540625,
+          "brier": 0.25042723133562517,
+          "log_loss": 0.6940712326806565,
+          "auc": 0.4460107742518973
+        },
+        "status": "SHADOW_ONLY",
+        "rule": "Must beat chronological training-prevalence baseline on both log loss and Brier."
+      },
+      "goes_distance": {
+        "best_architecture": "boosting",
+        "candidate": {
+          "n": 320,
+          "accuracy": 0.596875,
+          "brier": 0.2703560307000294,
+          "log_loss": 0.7836063233170656,
+          "auc": 0.567995476392423
+        },
+        "naive": {
+          "n": 320,
+          "accuracy": 0.590625,
+          "brier": 0.24461163406563968,
+          "log_loss": 0.682680642362715,
+          "auc": 0.445211842158407
+        },
+        "status": "SHADOW_ONLY",
+        "rule": "Must beat chronological training-prevalence baseline on both log loss and Brier."
+      },
+      "round_2_starts": {
+        "best_architecture": "boosting",
+        "candidate": {
+          "n": 320,
+          "accuracy": 0.6125,
+          "brier": 0.2550895731611294,
+          "log_loss": 0.7601423885698451,
+          "auc": 0.5564069264069265
+        },
+        "naive": {
+          "n": 320,
+          "accuracy": 0.65625,
+          "brier": 0.22650566299248873,
+          "log_loss": 0.6455634674522193,
+          "auc": 0.47634199134199134
+        },
+        "status": "SHADOW_ONLY",
+        "rule": "Must beat chronological training-prevalence baseline on both log loss and Brier."
+      },
+      "round_3_starts": {
+        "best_architecture": "boosting",
+        "candidate": {
+          "n": 320,
+          "accuracy": 0.58125,
+          "brier": 0.27836638317931867,
+          "log_loss": 0.7825048975984116,
+          "auc": 0.5668854508516955
+        },
+        "naive": {
+          "n": 320,
+          "accuracy": 0.484375,
+          "brier": 0.25301179498333026,
+          "log_loss": 0.6992060825573019,
+          "auc": 0.45014846069698394
+        },
+        "status": "SHADOW_ONLY",
+        "rule": "Must beat chronological training-prevalence baseline on both log loss and Brier."
+      }
+    },
+    "round": {
+      "best_architecture": "boosting",
+      "candidate": {
+        "n": 320,
+        "accuracy": 0.4125,
+        "log_loss": 1.5729258832209045,
+        "brier_multiclass": 0.7932944043444056
+      },
+      "naive": {
+        "n": 320,
+        "accuracy": 0.3875,
+        "log_loss": 1.2566110113984688,
+        "brier_multiclass": 0.6887732358156347
+      },
+      "status": "SHADOW_ONLY",
+      "rule": "Must beat chronological class-frequency baseline on log loss and multiclass Brier, without lower exact accuracy."
+    }
+  },
+  "metric_audit": "Uses explicit probability-column class ordering; binary coefficient export supports sklearn one-row coef_ shape.",
+  "source_policy": {
+    "prediction_labels": "DWCS only",
+    "external_history": "129k-fight global MMA database used only to build pre-fight context features",
+    "anti_leakage": "Only fights strictly earlier than each historical DWCS event are included in snapshots"
+  }
+}
