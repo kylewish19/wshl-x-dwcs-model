@@ -23,7 +23,7 @@
     "OVER_1_5": 0.58026316
   },
   "DWCS-W-v0.3": {
-    "status": "PROMOTED as historical baseline component",
+    "status": "superseded historical baseline; retained as fallback",
     "trained_through": "2025-09-24 historical DWCS data",
     "training_bouts": 416,
     "events": 86,
@@ -50,5 +50,43 @@
   "DWCS-R-v0.1": {
     "status": "not promoted",
     "reason": "Exact-round fighter-level historical matrix is incomplete. No fabricated round model."
+  },
+  "DWCS-W-v0.4": {
+    "status": "PROMOTED logistic champion with regional-career coverage gate",
+    "promoted_on": "2026-09-16",
+    "historical_training_bouts": 416,
+    "walk_forward_test_bouts": 320,
+    "source_scope": "DWCS labels only; external multi-organization history used only as pre-fight fighter state",
+    "champion": {
+      "model": "L2 regularized logistic regression",
+      "conservative_audit_accuracy": 0.825,
+      "conservative_audit_brier": 0.132429093976605,
+      "conservative_audit_log_loss": 0.42979200384615945,
+      "conservative_audit_auc": 0.8950501253132832
+    },
+    "challenger": {
+      "model": "Histogram gradient boosting",
+      "accuracy": 0.784375,
+      "brier": 0.1365210447290212,
+      "log_loss": 0.41933078470998303,
+      "auc": 0.8937578320802005,
+      "status": "challenger only; lower log loss but worse accuracy/Brier and no simple weekly coefficient trail"
+    },
+    "leakage_audit": {
+      "date_leakage_violations": 0,
+      "shuffled_control_accuracy": 0.584375,
+      "shuffled_control_brier": 0.2514555345407035,
+      "shuffled_control_log_loss": 0.7152814694161285
+    },
+    "coverage_gate": {
+      "both_histories_required_for_primary_use": true,
+      "both_matched_historical_rate": 0.6850961538461539,
+      "both_matched_segment_accuracy": 0.9170506912442397,
+      "both_matched_segment_log_loss": 0.2894612967207383,
+      "one_matched_segment_accuracy": 0.6179775280898876,
+      "one_matched_segment_log_loss": 0.7547329194742226,
+      "fallback": "Use DWCS-W-v0.3 plus current tape/research if both current regional histories cannot be established."
+    },
+    "limitation": "Global historical source ends 2026-01-31; 2026 current-card records must be refreshed from current research before inference."
   }
 }
