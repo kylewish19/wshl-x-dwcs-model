@@ -1,0 +1,36 @@
+{
+  "DWCS-CAL-v0.2": {
+    "status": "active",
+    "trained_through": "2026-09-15",
+    "training_rows": 25,
+    "winner_record": "16-9",
+    "slope": 0.9147857463,
+    "intercept": -0.0205842055,
+    "brier": 0.2307256699,
+    "logloss": 0.6512034249
+  },
+  "DWCS-M-PRIOR-v0.2": {
+    "status": "active population prior; fighter matchup layer pending",
+    "trained_through": "2026-09-15",
+    "KO_TKO": 0.43529412,
+    "SUB": 0.18692810,
+    "DEC": 0.37777778
+  },
+  "DWCS-D-1.5-v0.2": {
+    "status": "active population prior; fighter matchup layer pending",
+    "trained_through": "2026-09-15",
+    "UNDER_1_5": 0.41973684,
+    "OVER_1_5": 0.58026316
+  },
+  "DWCS-W-v0.3": {
+    "status": "training engine built; historical fighter-level feature matrix incomplete",
+    "champion": "L2 regularized logistic regression",
+    "challenger": "histogram gradient boosting",
+    "validation": "event-by-event walk-forward",
+    "week6_lessons_integrated_into_feature_contract": true
+  },
+  "DWCS-R-v0.1": {
+    "status": "not promoted",
+    "reason": "Exact-round fighter-level historical matrix is incomplete. No fabricated round model."
+  }
+}
