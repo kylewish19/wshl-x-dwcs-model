@@ -13,7 +13,7 @@
     "status": "active population prior; fighter matchup layer pending",
     "trained_through": "2026-09-15",
     "KO_TKO": 0.43529412,
-    "SUB": 0.18692810,
+    "SUB": 0.1869281,
     "DEC": 0.37777778
   },
   "DWCS-D-1.5-v0.2": {
@@ -23,11 +23,29 @@
     "OVER_1_5": 0.58026316
   },
   "DWCS-W-v0.3": {
-    "status": "training engine built; historical fighter-level feature matrix incomplete",
-    "champion": "L2 regularized logistic regression",
-    "challenger": "histogram gradient boosting",
-    "validation": "event-by-event walk-forward",
-    "week6_lessons_integrated_into_feature_contract": true
+    "status": "PROMOTED as historical baseline component",
+    "trained_through": "2025-09-24 historical DWCS data",
+    "training_bouts": 416,
+    "events": 86,
+    "walk_forward_test_bouts": 320,
+    "walk_forward_folds": 66,
+    "champion": {
+      "model": "L2 regularized logistic regression",
+      "accuracy": 0.6125,
+      "brier": 0.23410518132477084,
+      "log_loss": 0.6827514663121712,
+      "auc": 0.6746945488721805
+    },
+    "challenger": {
+      "model": "Histogram gradient boosting",
+      "accuracy": 0.603125,
+      "brier": 0.24720585762534103,
+      "log_loss": 0.7016521006175489,
+      "auc": 0.6412515664160401
+    },
+    "promotion_decision": "Champion retained because it beat challenger on both Brier score and log loss.",
+    "limitation": "Historical baseline lacks full pre-DWCS regional career records for debutants; use as a real ML component, not the entire handicapping system.",
+    "next_upgrade": "Add pre-fight regional career-strength/opponent-quality features and save prospective Week 7+ feature rows so coefficients retrain after each card."
   },
   "DWCS-R-v0.1": {
     "status": "not promoted",
