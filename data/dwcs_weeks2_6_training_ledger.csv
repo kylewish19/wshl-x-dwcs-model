@@ -1,0 +1,26 @@
+week,event_date,fighter_a,fighter_b,locked_pick,locked_probability,actual_winner,actual_method,actual_round,actual_time,projected_method,projected_round,pick_correct,provenance
+2,2026-08-18,Roman Puga,Taner Trembley,Taner Trembley,0.6030,Puga,DEC,3,,SUB,2,0,historical_backfill
+2,2026-08-18,Alik Lorenz,Mahamed Aly,Mahamed Aly,0.6230,Lorenz,KO/TKO,1,,KO/TKO,,0,historical_backfill
+2,2026-08-18,Logan Paxton,Cristian Perez,Cristian Perez,0.6100,Cristian Perez,KO/TKO,2,,DEC,,1,historical_backfill
+2,2026-08-18,Douglas Rodrigues,Trent Miller,Douglas Rodrigues,0.6874,Trent Miller,SUB,2,,KO/TKO,,0,historical_backfill
+2,2026-08-18,Namo Fazil,Kaik Brito,Kaik Brito,0.5576,Kaik Brito,KO/TKO,3,,KO/TKO,,1,historical_backfill
+3,2026-08-25,Nick Galanti,Carlos Petruzzella,Nick Galanti,0.6589,Nick Galanti,KO/TKO,1,0:35,DEC,,1,prospective_lock
+3,2026-08-25,Ronald Humphrey,Alexis Miranda,Ronald Humphrey,0.7366,Ronald Humphrey,SUB,1,4:03,KO/TKO,2,1,prospective_lock
+3,2026-08-25,Sean Clancy Jr.,Gary Balletto,Sean Clancy Jr.,0.8268,Sean Clancy Jr.,KO/TKO,2,3:54,KO/TKO,1,1,prospective_lock
+3,2026-08-25,Mario Piazzon,Guilherme Uriel,Guilherme Uriel,0.5559,Guilherme Uriel,SUB,1,0:50,KO/TKO,1,1,prospective_lock
+3,2026-08-25,Bella Mir,Alex Apodaca,Bella Mir,0.8255,Alex Apodaca,DEC,3,5:00,SUB,1,0,prospective_lock
+4,2026-09-01,Charlie Cleveland,Gabriel Lourenco,Charlie Cleveland,0.566495,Gabriel Lourenco,KO/TKO,1,2:02,KO/TKO,1,0,prospective_lock
+4,2026-09-01,Liam McCracken,Silvestre Sanchez,Liam McCracken,0.575318,Silvestre Sanchez,KO/TKO,3,2:44,DEC,,0,prospective_lock
+4,2026-09-01,Adam Livingston,Hunter Smith,Adam Livingston,0.614888,Adam Livingston,DEC,3,5:00,KO/TKO,2,1,prospective_lock
+4,2026-09-01,Brandon Holmes,Modestino Rodrigues,Modestino Rodrigues,0.550515,Modestino Rodrigues,KO/TKO,1,0:15,KO/TKO,1,1,prospective_lock
+4,2026-09-01,Adam Darby,Patrick Rivera,Adam Darby,0.682134,Adam Darby,KO/TKO,3,2:42,SUB,1,1,prospective_lock
+5,2026-09-08,Christian Natividad,Colton Loud,Christian Natividad,0.7168,Christian Natividad,KO/TKO,1,1:10,DEC,,1,prospective_manual_extension
+5,2026-09-08,Won Il Kwon,Apollo Gomes,Won Il Kwon,0.6402,Apollo Gomes,DEC,3,5:00,,,0,prospective_manual_extension
+5,2026-09-08,Martin Kozak,Christian Echols,Martin Kozak,0.7956,Martin Kozak,KO/TKO,2,1:32,KO/TKO,,1,prospective_manual_extension
+5,2026-09-08,Isaac Moreno,Reginaldo Junior,Isaac Moreno,0.6128,Isaac Moreno,DEC,3,5:00,,,1,prospective_manual_extension
+5,2026-09-08,Arlind Berisha,Quentin Pasley,Arlind Berisha,0.7323,Quentin Pasley,KO/TKO,1,4:41,,,0,prospective_manual_extension
+6,2026-09-15,Mayton Perea,Zevan Hunt,Mayton Perea,0.5600,Mayton Perea,KO/TKO,1,0:45,KO/TKO,1,1,prospective_lock_v0_2
+6,2026-09-15,Igor Cavalcanti,Oscar Ravello,Igor Cavalcanti,0.6010,Igor Cavalcanti,KO/TKO,1,1:38,KO/TKO,1,1,prospective_lock_v0_2
+6,2026-09-15,Akbar Abdullaev,Ednilson Barros Santos,Akbar Abdullaev,0.9500,Akbar Abdullaev,KO/TKO,1,0:19,KO/TKO,1,1,prospective_lock_v0_2
+6,2026-09-15,Luis Hernandez,Hugo Guillon,Hugo Guillon,0.5950,Luis Hernandez,SUB,2,1:01,KO/TKO,1,0,prospective_lock_v0_2
+6,2026-09-15,Tyshawn Williams,Antonio Monteiro,Tyshawn Williams,0.6840,Tyshawn Williams,DEC,3,5:00,DEC,3,1,prospective_lock_v0_2
