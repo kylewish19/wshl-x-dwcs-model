@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - "src/augment_regional_career.py"
+      - "src/audit_regional_candidate.py"
       - ".github/workflows/train_regional_candidate.yml"
       - "requirements.txt"
 
@@ -28,9 +29,10 @@ jobs:
       - name: Download public MMA Global Database
         run: |
           mkdir -p .cache/mmaglobal
-          curl -L --fail --retry 3             "https://www.kaggle.com/api/v1/datasets/download/leandroiber/mmastats"             -o /tmp/mmastats.zip
+          curl -L --fail --retry 3 \
+            "https://www.kaggle.com/api/v1/datasets/download/leandroiber/mmastats" \
+            -o /tmp/mmastats.zip
           unzip -q /tmp/mmastats.zip -d .cache/mmaglobal
-          find .cache/mmaglobal -maxdepth 3 -type f | sort | head -50
 
       - name: Find DuckDB and evaluate candidate
         run: |
@@ -47,7 +49,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add             data/processed/dwcs_historical_prefight_matrix_regional_candidate.csv             reports/regional_candidate_*             reports/regional_history_link_coverage.csv             models/dwcs_w_v0_4_regional_candidate_*.joblib \
+          git add \
+            data/processed/dwcs_historical_prefight_matrix_regional_candidate.csv \
+            reports/regional_candidate_* \
+            reports/regional_history_link_coverage.csv \
+            reports/dwcs_w_v0_4_promoted_coefficients.csv \
+            models/dwcs_w_v0_4_regional_candidate_*.joblib \
             models/dwcs_w_v0_4_promoted_logistic.joblib
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
