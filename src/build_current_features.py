@@ -46,7 +46,7 @@ def main():
     if snaps._key.duplicated().any():
         dup=snaps.loc[snaps._key.duplicated(keep=False),"fighter_name"].tolist()
         raise ValueError(f"duplicate fighter snapshots: {dup}")
-    smap={r._key:r for r in snaps.itertuples(index=False)}
+    smap={str(r["_key"]):r for _,r in snaps.iterrows()}
 
     rows=[]
     for b in bouts.itertuples(index=False):
