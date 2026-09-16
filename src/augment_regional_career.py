@@ -220,6 +220,7 @@ def prefight_state(timelines, fighter: str, event_date: pd.Timestamp):
         return None
     snap = dict(seq[i][1])
     last_date = snap.pop("last_date")
+    snap["_source_last_date"] = last_date
     snap["days_since_last_fight"] = float((event_date - last_date).days) if last_date is not None else np.nan
     return snap
 
@@ -315,6 +316,8 @@ def main():
             "fighter_a_matched": int(a is not None),
             "fighter_b_matched": int(b is not None),
             "both_matched": int(a is not None and b is not None),
+            "fighter_a_last_source_date": "" if a is None else str(a.get("_source_last_date", "").date()),
+            "fighter_b_last_source_date": "" if b is None else str(b.get("_source_last_date", "").date()),
         })
         for f in global_feature_names:
             av = np.nan if a is None else a.get(f, np.nan)
