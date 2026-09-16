@@ -47,7 +47,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add             data/processed/dwcs_historical_prefight_matrix_regional_candidate.csv             reports/regional_candidate_*             reports/regional_history_link_coverage.csv             models/dwcs_w_v0_4_regional_candidate_*.joblib
+          git add             data/processed/dwcs_historical_prefight_matrix_regional_candidate.csv             reports/regional_candidate_*             reports/regional_history_link_coverage.csv             models/dwcs_w_v0_4_regional_candidate_*.joblib \
+            models/dwcs_w_v0_4_promoted_logistic.joblib
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
           else
