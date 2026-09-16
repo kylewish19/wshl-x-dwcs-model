@@ -1,0 +1,68 @@
+{
+  "model_version": "DWCS-W-v0.3-historical-baseline",
+  "source_scope": "DWCS only, ESPN/Kaggle mirror through 2025",
+  "important_limitation": "This baseline has physical attributes and prior-DWCS history/stats, but not full pre-DWCS regional career records for debutants. It is a real leakage-safe baseline, not the final career-strength model.",
+  "matrix": {
+    "raw_history_rows": 848,
+    "raw_attribute_rows": 766,
+    "raw_stats_rows": 582,
+    "canonical_bouts": 424,
+    "usable_win_loss_bouts": 416,
+    "ambiguous_bouts_removed": 8,
+    "incomplete_bouts_removed": 0,
+    "event_count": 86,
+    "fighter_count": 751,
+    "date_min": "2017-07-11",
+    "date_max": "2025-09-24",
+    "target_rate_winner_a": 0.5024038461538461
+  },
+  "features": [
+    "age_diff",
+    "height_diff",
+    "reach_diff",
+    "height_missing_diff",
+    "reach_missing_diff",
+    "southpaw_diff",
+    "switch_diff",
+    "striker_style_diff",
+    "grappler_style_diff",
+    "prior_dwcs_bouts_diff",
+    "prior_dwcs_wins_diff",
+    "prior_dwcs_win_pct_diff",
+    "prior_dwcs_finish_pct_diff",
+    "prior_dwcs_ko_win_pct_diff",
+    "prior_dwcs_sub_win_pct_diff",
+    "prior_dwcs_dec_win_pct_diff",
+    "prior_dwcs_avg_duration_diff",
+    "prior_dwcs_over25_rate_diff",
+    "prior_dwcs_stats_available_diff",
+    "prior_dwcs_sig_landed_pm_diff",
+    "prior_dwcs_sig_attempted_pm_diff",
+    "prior_dwcs_sig_accuracy_diff",
+    "prior_dwcs_td_landed_per15_diff",
+    "prior_dwcs_td_attempted_per15_diff",
+    "prior_dwcs_td_accuracy_diff",
+    "prior_dwcs_kd_per15_diff",
+    "prior_dwcs_sub_attempts_per15_diff"
+  ],
+  "walk_forward": {
+    "min_train_events": 20,
+    "fold_count": 66,
+    "champion": {
+      "n": 320,
+      "accuracy": 0.6125,
+      "brier": 0.23410518132477084,
+      "log_loss": 0.6827514663121712,
+      "auc": 0.6746945488721805
+    },
+    "challenger": {
+      "n": 320,
+      "accuracy": 0.603125,
+      "brier": 0.24720585762534103,
+      "log_loss": 0.7016521006175489,
+      "auc": 0.6412515664160401
+    }
+  },
+  "promotion_recommendation": "champion",
+  "week6_feature_contract_status": "Tape-derived Week 6 lesson features are defined in docs/feature_contract.md but are not retroactively invented for historical fights."
+}
