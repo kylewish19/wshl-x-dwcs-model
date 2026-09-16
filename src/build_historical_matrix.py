@@ -419,3 +419,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Trigger stamp: workflow active as of 2026-09-16.
