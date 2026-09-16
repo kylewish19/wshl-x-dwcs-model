@@ -2,44 +2,70 @@
 
 Last updated: 2026-09-16
 
-## Historical fighter-level winner model
+## Production winner model
 
-### DWCS-W-v0.3 — PROMOTED BASELINE
+### DWCS-W-v0.4 — PROMOTED LOGISTIC CHAMPION
 
-Training matrix:
+Historical label set:
 - 416 usable DWCS bouts
 - 86 events
-- 751 fighters
-- historical range: 2017-07-11 through 2025-09-24
-- DWCS only; no UFC training rows
+- 751 DWCS fighters
+- 320 held-out bouts across 66 future-event walk-forward folds
+- DWCS fights only are prediction labels
 
-Event-by-event walk-forward validation:
-- 66 future-event folds
-- 320 held-out bouts
+External pre-fight state:
+- MMA Global Database career history
+- 125,539 source fights loaded before the historical DWCS cutoff
+- record/form/finish mix/opponent quality/Elo/activity features only
+- external fights are state inputs, never DWCS prediction labels
+- raw external database is not committed to this repository
 
-Champion — L2 logistic regression:
-- accuracy: 61.25%
-- Brier: 0.2341
-- log loss: 0.6828
-- AUC: 0.6747
+Conservative anti-leakage audit:
+- accuracy: 82.50%
+- Brier: 0.1324
+- log loss: 0.4298
+- AUC: 0.8951
+- date-leakage violations: 0
+- explicit history-availability feature removed in audit
+- missingness indicators disabled in audit
+- shuffled regional-feature control: 58.44% accuracy, 0.7153 log loss
 
-Challenger — histogram gradient boosting:
-- accuracy: 60.31%
-- Brier: 0.2472
-- log loss: 0.7017
-- AUC: 0.6413
+### Coverage gate
 
-Decision: keep the logistic champion. It beat the challenger on both probability-quality metrics.
+The regional model is strongest only when both fighters have established pre-fight career histories.
 
-Important limitation: this historical source contains physical attributes and prior-DWCS history/stats but not the complete regional career ledger that most DWCS debutants bring into their first appearance. Therefore DWCS-W-v0.3 is a real ML baseline component, not the finished all-information winner system.
+Historical held-out segment results:
+- both histories matched: 217 fights, 91.71% accuracy, 0.2895 log loss
+- one history matched: 89 fights, 61.80% accuracy, 0.7547 log loss
+- neither matched: 14 fights, too small for a reliable standalone conclusion
 
-## Current-season learning layers
+Production rule:
+- use DWCS-W-v0.4 as the primary ML winner component only when both fighters' current career histories are established;
+- if one/both histories cannot be established, fall back to DWCS-W-v0.3 plus current tape/research rather than treating missing history as neutral.
+
+### Champion vs challenger
+
+Logistic remains champion because:
+- it supports the requested week-to-week coefficient audit;
+- it had better accuracy and Brier than the boosting challenger;
+- it passed the conservative no-missingness audit.
+
+Histogram gradient boosting remains challenger:
+- accuracy: 78.44%
+- Brier: 0.1365
+- log loss: 0.4193
+- AUC: 0.8938
+
+Its log loss was slightly better, so it remains useful as a disagreement check but does not replace the logistic champion.
+
+## Current-season learning
 
 - Weeks 2-6 recoverable winner ledger: 16-9
-- Week 6 prospective winners: 4-1
-- calibration layer trained weekly
-- method population prior trained weekly
-- O/U 1.5 population prior trained weekly
+- Week 6 prospective winner record: 4-1
+- calibration layer retrains weekly
+- method population prior retrains weekly
+- O/U 1.5 population prior retrains weekly
+- coefficient-delta reporting is enabled after each retrain
 
 ## Week 6 lessons in feature contract
 
@@ -50,11 +76,12 @@ Important limitation: this historical source contains physical attributes and pr
 - early_finish_hazard_diff
 - round-dependent cardio treatment
 
-These tape-derived variables are not retroactively fabricated for historical fights.
+These tape-derived features are saved prospectively; they are not retroactively fabricated for old fights.
 
-## Next upgrade
+## Current limitation / Week 7 rule
 
-1. Add pre-fight regional career record / opponent-quality features.
-2. Create and save the actual pre-fight feature row for every Week 7+ matchup.
-3. After each card, append labels and retrain DWCS-W so the fitted coefficients actually change week to week.
-4. Keep a coefficient-delta report for every retrain.
+The global career source currently ends 2026-01-31. Every 2026 card therefore requires a fresh current-record/tape research pass before inference. Stale January records must never be presented as current fighter state.
+
+## Next milestone
+
+Build the Week 7 pre-fight feature capture format so the current regional record, opponent-quality state, tape scores, and model probabilities are frozen in GitHub before the card. After Week 7, append the outcomes and produce a real coefficient-delta report.
