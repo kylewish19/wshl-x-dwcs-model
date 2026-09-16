@@ -166,11 +166,22 @@ def promote(summary, naive):
 
 
 def save_logistic_coefficients(model, features, path, label_prefix):
+    """Export standardized logistic coefficients for binary or multiclass fits."""
     clf = model.named_steps["model"]
     rows = []
     classes = [str(c) for c in clf.classes_]
-    for i, cls in enumerate(classes):
-        for feat, coef in zip(features, clf.coef_[i]):
+
+    if clf.coef_.shape[0] == 1 and len(classes) == 2:
+        # sklearn stores one coefficient vector for the positive class.
+        vectors = [
+            (classes[0], -clf.coef_[0]),
+            (classes[1], clf.coef_[0]),
+        ]
+    else:
+        vectors = [(cls, clf.coef_[i]) for i, cls in enumerate(classes)]
+
+    for cls, vector in vectors:
+        for feat, coef in zip(features, vector):
             rows.append({
                 "model": label_prefix,
                 "class": cls,
@@ -243,6 +254,7 @@ def main():
         "candidate_results": summary,
         "chronological_naive_baselines": naive,
         "promotion": promotion,
+        "metric_audit": "Uses explicit probability-column class ordering; binary coefficient export supports sklearn one-row coef_ shape.",
         "source_policy": {
             "prediction_labels": "DWCS only",
             "external_history": "129k-fight global MMA database used only to build pre-fight context features",
