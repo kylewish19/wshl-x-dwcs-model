@@ -89,9 +89,9 @@ def build_histories(global_df):
         common = {
             "date": pd.Timestamp(row.event_date),
             "method": meth,
-            "major": bool(row.is_major_org),
+            "major": bool(row.is_major_org) if pd.notna(row.is_major_org) else False,
             "org": str(row.organization),
-            "title": bool(row.is_title_fight),
+            "title": bool(row.is_title_fight) if pd.notna(row.is_title_fight) else False,
             "duration": dur,
             "round": int(row.round_num) if pd.notna(row.round_num) else None,
         }
