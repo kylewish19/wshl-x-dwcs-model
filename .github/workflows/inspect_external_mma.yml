@@ -1,0 +1,47 @@
+name: Inspect external MMA history source
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/inspect_external_mma.yml"
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Download CC0 external MMA dataset
+        run: |
+          python -m pip install --upgrade pip kagglehub pandas
+          python - <<'PY'
+          import kagglehub, pathlib, shutil
+          p = pathlib.Path(kagglehub.dataset_download("binduvr/pro-mma-fights"))
+          print("DATASET_DIR", p)
+          for f in sorted(p.rglob('*')):
+              if f.is_file():
+                  print("FILE", f.name, f.stat().st_size)
+          PY
+
+      - name: Inspect CSV schema
+        run: |
+          python - <<'PY'
+          import kagglehub, pandas as pd, pathlib, json
+          p = pathlib.Path(kagglehub.dataset_download("binduvr/pro-mma-fights"))
+          csvs = list(p.rglob('*.csv'))
+          if not csvs:
+              raise SystemExit('No CSV found')
+          for f in csvs:
+              df = pd.read_csv(f)
+              print('CSV', f.name)
+              print('SHAPE', df.shape)
+              print('COLUMNS', json.dumps(list(df.columns)))
+              print('HEAD')
+              print(df.head(3).to_csv(index=False))
+          PY
