@@ -1,0 +1,41 @@
+name: Train DWCS method duration round models
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/train_secondary_models.py"
+      - "data/processed/dwcs_historical_prefight_matrix_2017_2025.csv"
+      - ".github/workflows/train_secondary_models.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Train and walk-forward validate secondary models
+        run: python src/train_secondary_models.py
+
+      - name: Commit generated artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/secondary_models_* reports/method_model_comparison.csv reports/duration_model_comparison.csv reports/round_model_comparison.csv models/dwcs_m_* models/dwcs_d_* models/dwcs_r_*
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Train DWCS method duration and round fighter-specific baselines [skip ci]"
+            git push
+          fi
