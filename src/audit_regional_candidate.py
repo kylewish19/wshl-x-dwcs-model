@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import joblib
 import numpy as np
 import pandas as pd
 from sklearn.impute import SimpleImputer
@@ -16,6 +17,8 @@ MATRIX = ROOT / "data" / "processed" / "dwcs_historical_prefight_matrix_regional
 COVERAGE = ROOT / "reports" / "regional_history_link_coverage.csv"
 OUT_JSON = ROOT / "reports" / "regional_candidate_audit.json"
 OUT_SEG = ROOT / "reports" / "regional_candidate_segment_scores.csv"
+OUT_MODEL = ROOT / "models" / "dwcs_w_v0_4_promoted_logistic.joblib"
+OUT_COEF = ROOT / "reports" / "dwcs_w_v0_4_promoted_coefficients.csv"
 
 NON_FEATURE = {
     "event_date", "event_id", "bout_key", "fighter_a_id", "fighter_b_id",
@@ -108,6 +111,18 @@ def main():
         and float(cov.both_matched.mean()) >= 0.60
     )
 
+    # Fit the exact conservative audited specification on the full historical matrix.
+    promoted_model=model(False)
+    promoted_model.fit(df[conservative],df.winner_a.astype(int))
+    joblib.dump(promoted_model,OUT_MODEL)
+    coef=promoted_model.named_steps["model"].coef_[0]
+    pd.DataFrame({
+        "feature":conservative,
+        "coefficient_standardized":coef,
+    }).sort_values(
+        "coefficient_standardized",key=lambda x:x.abs(),ascending=False
+    ).to_csv(OUT_COEF,index=False)
+
     report={
         "candidate":"DWCS-W-v0.4-regional-career",
         "date_leakage_violations":violations,
@@ -118,6 +133,7 @@ def main():
         "shuffled_regional_control":shuffle_score,
         "audit_pass":bool(audit_pass),
         "promotion_guidance":"Eligible for promotion as logistic champion" if audit_pass else "Do not promote; investigate",
+        "promoted_artifact":str(OUT_MODEL.relative_to(ROOT)) if audit_pass else None,
         "notes":[
             "Conservative audit removes explicit history-availability differential and disables imputer missingness indicators.",
             "Shuffle control permutes all regional features across fights with a fixed seed; it should lose the regional signal.",
