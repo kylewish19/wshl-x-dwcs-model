@@ -1,0 +1,64 @@
+name: Inspect DWCS source dataset
+
+on:
+  push:
+    paths:
+      - '.github/workflows/inspect_dwcs_source.yml'
+  workflow_dispatch:
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download CC0 ESPN MMA dataset
+        run: |
+          set -euxo pipefail
+          mkdir -p source_data
+          curl -L --fail --retry 3 \
+            'https://www.kaggle.com/api/v1/datasets/download/nickshillito/comprehensive-ufc-data' \
+            -o source_data/source.zip
+          unzip -o source_data/source.zip -d source_data/unpacked
+          find source_data/unpacked -maxdepth 2 -type f -printf '%p %s bytes\n'
+
+      - name: Inventory CSV schemas and DWCS markers
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import pandas as pd
+          import json
+
+          root = Path('source_data/unpacked')
+          report = {}
+          for p in sorted(root.rglob('*.csv')):
+              df = pd.read_csv(p, low_memory=False)
+              item = {
+                  'rows': int(len(df)),
+                  'columns': list(df.columns),
+              }
+              # Search object-like columns for obvious DWCS / Contender Series text.
+              hits = {}
+              for c in df.columns:
+                  if df[c].dtype == 'object':
+                      s = df[c].astype(str)
+                      mask = s.str.contains('Contender|DWCS', case=False, na=False, regex=True)
+                      if mask.any():
+                          vals = s[mask].drop_duplicates().head(20).tolist()
+                          hits[c] = {'count': int(mask.sum()), 'examples': vals}
+              item['dwcs_marker_hits'] = hits
+              report[p.name] = item
+              print('\n===', p.name, '===')
+              print('rows:', len(df))
+              print('columns:', list(df.columns))
+              print('DWCS markers:', json.dumps(hits, indent=2)[:8000])
+          Path('source_schema_report.json').write_text(json.dumps(report, indent=2))
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dwcs-source-schema
+          path: source_schema_report.json
+          if-no-files-found: error
