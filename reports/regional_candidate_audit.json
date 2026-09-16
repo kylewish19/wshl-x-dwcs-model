@@ -6,22 +6,22 @@
   "baseline_same_fold": {
     "n": 320,
     "accuracy": 0.6125,
-    "brier": 0.23410518132476862,
-    "log_loss": 0.6827514663121659,
+    "brier": 0.23410518132477015,
+    "log_loss": 0.6827514663121697,
     "auc": 0.6746945488721805
   },
   "regional_conservative_no_availability_feature_no_missing_indicators": {
     "n": 320,
     "accuracy": 0.825,
-    "brier": 0.132429093976605,
-    "log_loss": 0.42979200384615945,
+    "brier": 0.13242909397660493,
+    "log_loss": 0.4297920038461588,
     "auc": 0.8950501253132832
   },
   "shuffled_regional_control": {
     "n": 320,
     "accuracy": 0.584375,
-    "brier": 0.2514555345407035,
-    "log_loss": 0.7152814694161285,
+    "brier": 0.25145553454069847,
+    "log_loss": 0.7152814694161157,
     "auc": 0.6360040726817042
   },
   "audit_pass": true,
