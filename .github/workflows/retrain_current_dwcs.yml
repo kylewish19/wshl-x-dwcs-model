@@ -1,0 +1,37 @@
+name: Retrain DWCS current season
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/current/current_season_prefight_features.csv"
+      - "data/current/current_season_results.csv"
+      - "src/retrain_current_season.py"
+
+permissions:
+  contents: write
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Retrain current model
+        run: python src/retrain_current_season.py
+      - name: Commit coefficient changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/current_* reports/weekly models/dwcs_w_logistic_current.joblib
+          if git diff --cached --quiet; then
+            echo "No retrain changes."
+          else
+            git commit -m "Retrain DWCS-W current model [skip ci]"
+            git push
+          fi
