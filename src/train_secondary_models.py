@@ -55,7 +55,6 @@ def make_logistic(C=0.35):
         ("scale", StandardScaler()),
         ("model", LogisticRegression(
             C=C,
-            penalty="l2",
             solver="lbfgs",
             max_iter=5000,
         )),
@@ -88,14 +87,23 @@ def align_proba(model, X, classes):
 
 
 def multiclass_metrics(y, p, classes):
+    """Metrics with probability columns interpreted in the explicit class order.
+
+    sklearn.log_loss sorts string labels lexicographically, which can silently
+    mismatch a custom probability-column order. Index the observed class
+    directly so the metric always matches align_proba() and our saved class list.
+    """
     y = np.asarray(y).astype(str)
-    idx = np.array([classes.index(v) for v in y])
+    p = np.asarray(p, dtype=float)
+    idx = np.array([classes.index(v) for v in y], dtype=int)
     onehot = np.eye(len(classes))[idx]
     pred = np.array(classes)[np.argmax(p, axis=1)]
+    eps = 1e-12
+    ll = -np.mean(np.log(np.clip(p[np.arange(len(y)), idx], eps, 1.0)))
     return {
         "n": int(len(y)),
         "accuracy": float(np.mean(pred == y)),
-        "log_loss": float(log_loss(y, p, labels=classes)),
+        "log_loss": float(ll),
         "brier_multiclass": float(np.mean(np.sum((p - onehot) ** 2, axis=1))),
     }
 
