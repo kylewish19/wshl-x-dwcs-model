@@ -41,6 +41,7 @@ jobs:
           fi
           echo "Using $DB"
           python src/augment_regional_career.py --database "$DB"
+          python src/audit_regional_candidate.py
 
       - name: Commit derived candidate artifacts
         run: |
@@ -51,5 +52,6 @@ jobs:
             echo "No generated changes to commit."
           else
             git commit -m "Evaluate DWCS-W v0.4 regional career candidate [skip ci]"
+            git pull --rebase origin main
             git push
           fi
