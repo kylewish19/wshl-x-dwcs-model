@@ -1,0 +1,48 @@
+name: Build global career layer and train DWCS secondary v0.2
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/enrich_with_global_career.py"
+      - "src/train_secondary_models_v0_2.py"
+      - ".github/workflows/train_secondary_models_v0_2.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build leakage-safe global career snapshots
+        run: python src/enrich_with_global_career.py
+
+      - name: Train Method O-U Round v0.2 with no-skill gates
+        run: python src/train_secondary_models_v0_2.py
+
+      - name: Commit enriched data and audit artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed/dwcs_historical_prefight_matrix_enriched_2017_2025.csv
+          git add reports/global_career_enrichment_report.json
+          git add reports/secondary_models_v0_2_* reports/*coefficients_v0_2.csv
+          git add models/*v0_2.joblib
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "Train DWCS Method Duration Round v0.2 with global career context [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
