@@ -1,0 +1,55 @@
+name: Evaluate DWCS regional-career candidate
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/augment_regional_career.py"
+      - ".github/workflows/train_regional_candidate.yml"
+      - "requirements.txt"
+
+permissions:
+  contents: write
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Download public MMA Global Database
+        run: |
+          mkdir -p .cache/mmaglobal
+          curl -L --fail --retry 3             "https://www.kaggle.com/api/v1/datasets/download/leandroiber/mmastats"             -o /tmp/mmastats.zip
+          unzip -q /tmp/mmastats.zip -d .cache/mmaglobal
+          find .cache/mmaglobal -maxdepth 3 -type f | sort | head -50
+
+      - name: Find DuckDB and evaluate candidate
+        run: |
+          DB="$(find .cache/mmaglobal -type f -name '*.duckdb' | head -1)"
+          if [ -z "$DB" ]; then
+            echo "No DuckDB file found in downloaded dataset" >&2
+            exit 2
+          fi
+          echo "Using $DB"
+          python src/augment_regional_career.py --database "$DB"
+
+      - name: Commit derived candidate artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add             data/processed/dwcs_historical_prefight_matrix_regional_candidate.csv             reports/regional_candidate_*             reports/regional_history_link_coverage.csv             models/dwcs_w_v0_4_regional_candidate_*.joblib
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Evaluate DWCS-W v0.4 regional career candidate [skip ci]"
+            git push
+          fi
