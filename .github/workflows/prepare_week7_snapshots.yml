@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - "src/prepare_week7_snapshots.py"
+      - "src/build_current_features.py"
       - "data/current/week7_matchups.csv"
       - "data/current/week7_current_records.csv"
       - "data/current/week7_postcutoff_fights.csv"
