@@ -26,6 +26,7 @@
   },
   "audit_pass": true,
   "promotion_guidance": "Eligible for promotion as logistic champion",
+  "promoted_artifact": "models/dwcs_w_v0_4_promoted_logistic.joblib",
   "notes": [
     "Conservative audit removes explicit history-availability differential and disables imputer missingness indicators.",
     "Shuffle control permutes all regional features across fights with a fixed seed; it should lose the regional signal.",
