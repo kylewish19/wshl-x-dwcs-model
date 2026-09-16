@@ -7,22 +7,16 @@ from scipy.stats import beta
 from calibration import fit_anchor_calibrator
 
 ROOT = Path(__file__).resolve().parents[1]
-HISTORICAL = {
-    "bouts": 356,
-    "ko_tko": 151,
-    "submission": 67,
-    "decision_or_other": 138,
-    "inside_7m30": 146,
-    "not_inside_7m30": 210,
-}
+HISTORICAL = json.loads(
+    (ROOT / "data" / "historical_aggregate_counts.json").read_text()
+)
 
 def refit_calibration(ledger):
-    fit = fit_anchor_calibrator(
+    return fit_anchor_calibrator(
         ledger.locked_probability.values,
         ledger.pick_correct.values,
         lam=4.0,
     )
-    return fit
 
 def update_method_prior(ledger):
     classes = ["KO/TKO", "SUB", "DEC"]
@@ -38,28 +32,36 @@ def update_method_prior(ledger):
     p = alpha / alpha.sum()
     return dict(zip(classes, p.tolist()))
 
-def elapsed_seconds(round_number, clock):
+def under_1_5_label(round_number, clock):
+    """Return 1 for Under 1.5, 0 for Over 1.5, None if R2 clock is unknown."""
+    r = int(round_number)
+    if r == 1:
+        return 1
+    if r >= 3:
+        return 0
     if pd.isna(clock) or str(clock).strip() == "":
         return None
     mm, ss = map(int, str(clock).split(":"))
-    return (int(round_number) - 1) * 300 + mm * 60 + ss
+    elapsed = 300 + mm * 60 + ss
+    return int(elapsed < 450)
 
 def update_ou15_prior(ledger):
     a = HISTORICAL["inside_7m30"] + 0.5
     b = HISTORICAL["not_inside_7m30"] + 0.5
 
-    known = []
+    labels = []
     for _, row in ledger.iterrows():
-        sec = elapsed_seconds(row.actual_round, row.actual_time)
-        if sec is not None:
-            known.append(int(sec < 450))
+        label = under_1_5_label(row.actual_round, row.actual_time)
+        if label is not None:
+            labels.append(label)
 
-    a += sum(known)
-    b += len(known) - sum(known)
+    a += sum(labels)
+    b += len(labels) - sum(labels)
 
     return {
         "UNDER_1_5": a / (a + b),
         "OVER_1_5": b / (a + b),
+        "known_labeled_rows": len(labels),
         "under_95_ci": [
             float(beta.ppf(0.025, a, b)),
             float(beta.ppf(0.975, a, b)),
