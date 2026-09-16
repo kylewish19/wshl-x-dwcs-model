@@ -2,3 +2,5 @@ numpy
 pandas
 scipy
 scikit-learn
+duckdb
+joblib
