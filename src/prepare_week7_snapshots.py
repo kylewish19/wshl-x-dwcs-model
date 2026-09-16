@@ -178,14 +178,14 @@ def main():
     # Prefer rows with more populated physical fields.
     master["_coverage"]=master[["dob","height_cm","reach_cm","stance"]].notna().sum(axis=1)
     master=master.sort_values("_coverage",ascending=False).drop_duplicates("_key")
-    master_map={r._key:r for r in master.itertuples(index=False)}
+    master_map={str(r["_key"]):r for _,r in master.iterrows()}
     recents=current_recent_results(con,targets,postcut)
     con.close()
 
     attrs=pd.read_csv(RAW/"espn_dwcs_fighter_attributes_2017_2025.csv",keep_default_na=False)
     attrs["_key"]=attrs.name.map(norm_name)
     attrs=attrs.drop_duplicates("_key")
-    attr_map={r._key:r for r in attrs.itertuples(index=False)}
+    attr_map={str(r["_key"]):r for _,r in attrs.iterrows()}
     dwcs=build_prior_dwcs()
 
     record_map={norm_name(r.fighter_name):r for r in records.itertuples(index=False)}
