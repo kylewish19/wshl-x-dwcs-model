@@ -1,0 +1,9 @@
+{
+  "bouts": 356,
+  "ko_tko": 151,
+  "submission": 67,
+  "decision_or_other": 138,
+  "inside_7m30": 146,
+  "not_inside_7m30": 210,
+  "note": "DWCS-only historical population prior used by the current rebuild. Keep source provenance documented before replacing these counts."
+}
