@@ -1,9 +1,9 @@
-event_date,fighter_name,opponent_name,result,method,source
-2026-02-27,Theo Haig,Lance Wright,W,SUB,Sherdog
-2026-03-26,Norbert Novenyi Jr.,Clement Giordanengo,W,KO/TKO,Sherdog
-2026-06-06,Alvi Dasuyev,Mohamed Soumah,W,SUB,Sherdog
-2026-02-26,Jaden Ortega,Ricardo Chavez,W,KO/TKO,Sherdog
-2026-05-17,Paris Moran,Roybert Echeverria,W,DEC,Sherdog
-2026-05-27,Piero Guaylupo,Maicon Miler,W,KO/TKO,Sherdog
-2026-04-04,Callum Connor,Iwanderson da Silva Caldas,W,KO/TKO,Sherdog
-2026-03-14,Damian Piwowarczyk,Sergiusz Zajac,W,KO/TKO,Sherdog
+event_date,fighter_name,opponent_name,result,method,is_major_org,source
+2026-02-27,Theo Haig,Lance Wright,W,SUB,1,Sherdog
+2026-03-26,Norbert Novenyi Jr.,Clement Giordanengo,W,KO/TKO,0,Sherdog
+2026-06-06,Alvi Dasuyev,Mohamed Soumah,W,SUB,0,Sherdog
+2026-02-26,Jaden Ortega,Ricardo Chavez,W,KO/TKO,0,Sherdog
+2026-05-17,Paris Moran,Roybert Echeverria,W,DEC,0,Sherdog
+2026-05-27,Piero Guaylupo,Maicon Miler,W,KO/TKO,0,Sherdog
+2026-04-04,Callum Connor,Iwanderson da Silva Caldas,W,KO/TKO,0,Sherdog
+2026-03-14,Damian Piwowarczyk,Sergiusz Zajac,W,KO/TKO,1,Sherdog
