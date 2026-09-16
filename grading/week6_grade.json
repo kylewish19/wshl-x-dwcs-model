@@ -1,0 +1,20 @@
+{
+  "week": 6,
+  "event_date": "2026-09-15",
+  "winner_record": "4-1",
+  "winner_accuracy": 0.80,
+  "method_record": "4-1",
+  "round_bucket_record": "4-1",
+  "ou_1_5_record": "5-0",
+  "ou_2_5_direction_record": "5-0",
+  "primary_miss": "Luis Hernandez defeated Hugo Guillon by submission in Round 2.",
+  "lessons": [
+    "Preserve access-before-weapon: initial access, sustained access, and finish access are separate.",
+    "Separate being hurt from recovery after being hurt.",
+    "Add scramble conversion and counter-grappling transition features.",
+    "Increase value of credible multi-route finishing ability.",
+    "Keep durability more influential for method/duration than winner probability.",
+    "Make cardio penalties round-dependent instead of suppressing valid early-finish probability.",
+    "Increase ultra-early finish hazard only when matchup-specific evidence supports it."
+  ]
+}
