@@ -1,0 +1,57 @@
+name: Prepare DWCS Week 7 snapshots
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/prepare_week7_snapshots.py"
+      - "data/current/week7_matchups.csv"
+      - "data/current/week7_current_records.csv"
+      - "data/current/week7_postcutoff_fights.csv"
+      - ".github/workflows/prepare_week7_snapshots.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Download MMA Global Database
+        run: |
+          mkdir -p .cache/mmaglobal
+          curl -L --fail --retry 3 \
+            "https://www.kaggle.com/api/v1/datasets/download/leandroiber/mmastats" \
+            -o /tmp/mmastats.zip
+          unzip -q /tmp/mmastats.zip -d .cache/mmaglobal
+      - name: Build Week 7 fighter snapshots
+        run: |
+          DB="$(find .cache/mmaglobal -type f -name '*.duckdb' | head -1)"
+          test -n "$DB"
+          python src/prepare_week7_snapshots.py --database "$DB"
+          python src/build_current_features.py \
+            --snapshots data/current/week7_fighter_snapshots.csv \
+            --matchups data/current/week7_matchups.csv \
+            --out data/current/week7_model_features.csv
+      - name: Commit snapshots and model feature rows
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/current/week7_fighter_snapshots.csv \
+            data/current/week7_model_features.csv \
+            reports/week7_snapshot_coverage.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Prepare Week 7 v0.4 fighter snapshots [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
