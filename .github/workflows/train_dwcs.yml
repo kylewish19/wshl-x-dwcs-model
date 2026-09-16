@@ -1,0 +1,42 @@
+name: Train DWCS historical baseline
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/raw/**"
+      - "src/build_historical_matrix.py"
+      - "requirements.txt"
+      - ".github/workflows/train_dwcs.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build matrix and train
+        run: python src/build_historical_matrix.py
+
+      - name: Commit generated model artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed reports/winner_walk_forward_* reports/historical_feature_coverage.csv reports/winner_logistic_coefficients.csv models/*.joblib
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Train DWCS-W v0.3 historical baseline [skip ci]"
+            git push
+          fi
