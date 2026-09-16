@@ -1,0 +1,69 @@
+{
+  "candidate_version": "DWCS-W-v0.4-regional-career",
+  "source": {
+    "dataset": "MMA Global Database / fights_career_longitudinal",
+    "source_repository": "LeandroIber/Database-complete-mma",
+    "training_use": "external career state only; DWCS rows remain the only prediction labels",
+    "raw_database_committed": false,
+    "source_fights_loaded_before_dwcs_cutoff": 125539,
+    "source_unique_normalized_fighters": 51224
+  },
+  "linkage": {
+    "dwcs_bouts": 416,
+    "both_fighters_with_prior_global_history_rate": 0.6850961538461539,
+    "at_least_one_fighter_with_prior_global_history_rate": 0.9543269230769231
+  },
+  "features_added": [
+    "global_history_available_diff",
+    "global_career_bouts_diff",
+    "global_career_wins_diff",
+    "global_career_losses_diff",
+    "global_career_win_pct_diff",
+    "global_recent3_win_pct_diff",
+    "global_recent5_win_pct_diff",
+    "global_career_finish_pct_diff",
+    "global_ko_win_pct_diff",
+    "global_sub_win_pct_diff",
+    "global_decision_win_pct_diff",
+    "global_finish_loss_pct_diff",
+    "global_avg_opp_win_pct_diff",
+    "global_avg_opp_elo_diff",
+    "global_quality_win_count_diff",
+    "global_elo_diff",
+    "global_major_bouts_diff",
+    "global_major_win_pct_diff",
+    "global_win_streak_diff",
+    "global_days_since_last_fight_diff"
+  ],
+  "same_fold_comparison": {
+    "baseline_logistic": {
+      "n": 320,
+      "accuracy": 0.61875,
+      "brier": 0.23340618650976844,
+      "log_loss": 0.6819947640523251,
+      "auc": 0.6730106516290726
+    },
+    "regional_logistic": {
+      "n": 320,
+      "accuracy": 0.815625,
+      "brier": 0.1338990307427838,
+      "log_loss": 0.433003663530116,
+      "auc": 0.8925046992481201
+    },
+    "regional_boosting": {
+      "n": 320,
+      "accuracy": 0.784375,
+      "brier": 0.1365210447290212,
+      "log_loss": 0.41933078470998303,
+      "auc": 0.8937578320802005
+    }
+  },
+  "promotion_recommendation": "PROMOTE_REGIONAL_BOOSTING",
+  "selected_model": "regional_boosting",
+  "promotion_rule": "Must improve both walk-forward Brier score and log loss versus baseline on identical folds.",
+  "important_limitations": [
+    "Name linkage is normalized exact-name matching; unmatched aliases remain missing rather than guessed.",
+    "The source database currently ends 2026-01-31, so current-season 2026 prospect records still require weekly research/current-source updates.",
+    "Regional metadata supplies career/opponent-strength state, not fabricated strike/takedown statistics."
+  ]
+}

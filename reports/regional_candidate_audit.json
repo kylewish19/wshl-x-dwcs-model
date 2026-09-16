@@ -1,0 +1,34 @@
+{
+  "candidate": "DWCS-W-v0.4-regional-career",
+  "date_leakage_violations": 0,
+  "both_matched_rate": 0.6850961538461539,
+  "at_least_one_matched_rate": 0.9543269230769231,
+  "baseline_same_fold": {
+    "n": 320,
+    "accuracy": 0.6125,
+    "brier": 0.23410518132476862,
+    "log_loss": 0.6827514663121659,
+    "auc": 0.6746945488721805
+  },
+  "regional_conservative_no_availability_feature_no_missing_indicators": {
+    "n": 320,
+    "accuracy": 0.825,
+    "brier": 0.132429093976605,
+    "log_loss": 0.42979200384615945,
+    "auc": 0.8950501253132832
+  },
+  "shuffled_regional_control": {
+    "n": 320,
+    "accuracy": 0.584375,
+    "brier": 0.2514555345407035,
+    "log_loss": 0.7152814694161285,
+    "auc": 0.6360040726817042
+  },
+  "audit_pass": true,
+  "promotion_guidance": "Eligible for promotion as logistic champion",
+  "notes": [
+    "Conservative audit removes explicit history-availability differential and disables imputer missingness indicators.",
+    "Shuffle control permutes all regional features across fights with a fixed seed; it should lose the regional signal.",
+    "Every linked source state must end strictly before the DWCS target event date."
+  ]
+}
