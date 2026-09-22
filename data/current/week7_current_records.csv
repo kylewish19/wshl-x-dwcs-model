@@ -1,11 +1,11 @@
-fighter_name,as_of_date,wins,losses,nc,ko_wins,sub_wins,dec_wins,ko_losses,sub_losses,dec_losses,dob,height_cm,association,last_fight_date,last_opponent,last_result,last_method,source,record_status
-Norbert Novenyi Jr.,2026-09-16,10,1,0,4,5,1,0,0,1,1999-10-06,180.34,London Shootfighters,2026-03-26,Clement Giordanengo,W,KO/TKO,Sherdog,RECONCILED
-Theo Haig,2026-09-16,7,1,0,0,7,0,1,0,0,1996-08-23,187.96,American Kickboxing Academy,2026-02-27,Lance Wright,W,SUB,Sherdog,RECONCILED
-Alvi Dasuyev,2026-09-16,9,0,0,6,3,0,0,0,0,,185.42,,2026-06-06,Mohamed Soumah,W,SUB,Sherdog,RECONCILED
-Jaden Ortega,2026-09-16,6,0,0,5,0,1,0,0,0,2002-09-18,185.42,Sikjitsu,2026-02-26,Ricardo Chavez,W,KO/TKO,Sherdog,RECONCILED
-Marcos Degli,2026-09-16,14,3,0,9,4,1,0,1,2,2000-05-13,167.64,Vale Top Team,2026-01-23,Luis Aguiar,W,KO/TKO,Sherdog,RECONCILED
-Paris Moran,2026-09-16,14,3,1,4,2,8,1,1,1,1996-02-04,172.72,4oz. Fight Club,2026-05-17,Roybert Echeverria,W,DEC,Sherdog,RECONCILED
-Piero Guaylupo,2026-09-16,12,0,0,11,0,1,0,0,0,2004-10-29,175.26,Los Perros Sarnosos,2026-05-27,Maicon Miler,W,KO/TKO,Sherdog,RECONCILED
-Callum Connor,2026-09-16,8,0,0,5,1,2,0,0,0,,182.88,Manchester Top Team,2026-04-04,Iwanderson da Silva Caldas,W,KO/TKO,Sherdog,RECONCILED
-Damian Piwowarczyk,2026-09-16,11,4,0,6,4,1,1,1,2,1997-09-14,198.12,Czerwony Smok,2026-03-14,Sergiusz Zajac,W,KO/TKO,Sherdog,RECONCILED
-Emilio Quissua,2026-09-16,8,0,0,5,0,3,0,0,0,1997-04-21,193.04,Planet Eater,2026-01-31,Jorick Montagnac,W,KO/TKO,Sherdog,RECONCILED
+fighter_name,as_of_date,wins,losses,nc,ko_wins,sub_wins,dec_wins,ko_losses,sub_losses,dec_losses,dob,height_cm,association,last_fight_date,last_opponent,last_result,last_method,source,record_status,recent3_win_pct,recent5_win_pct,current_win_streak
+Norbert Novenyi Jr.,2026-09-22,10,1,0,4,5,1,0,0,1,1999-10-06,180.34,London Shootfighters,2026-03-26,Clement Giordanengo,W,KO/TKO,Sherdog,RECONCILED,1.0,0.8,3
+Theo Haig,2026-09-22,7,1,0,0,7,0,1,0,0,1996-08-23,187.96,American Kickboxing Academy,2026-02-27,Lance Wright,W,SUB,Sherdog,RECONCILED,0.6666666667,0.8,1
+Alvi Dasuyev,2026-09-22,9,0,0,6,3,0,0,0,0,,185.42,,2026-06-06,Mohamed Soumah,W,SUB,Sherdog,RECONCILED,1.0,1.0,9
+Jaden Ortega,2026-09-22,6,0,0,5,0,1,0,0,0,2002-09-18,185.42,Sikjitsu,2026-02-26,Ricardo Chavez,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,6
+Marcos Degli,2026-09-22,14,3,0,9,4,1,0,1,2,2000-05-13,167.64,Vale Top Team,2026-01-23,Luis Aguiar,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,12
+Paris Moran,2026-09-22,14,3,1,4,2,8,1,1,1,1996-02-04,172.72,4oz. Fight Club,2026-05-17,Roybert Echeverria,W,DEC,Sherdog,RECONCILED,0.6666666667,0.8,2
+Piero Guaylupo,2026-09-22,12,0,0,11,0,1,0,0,0,2004-10-29,175.26,Los Perros Sarnosos,2026-05-27,Maicon Miler,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,12
+Callum Connor,2026-09-22,8,0,0,5,1,2,0,0,0,,182.88,Manchester Top Team,2026-04-04,Iwanderson da Silva Caldas,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,8
+Damian Piwowarczyk,2026-09-22,11,4,0,6,4,1,1,1,2,1997-09-14,198.12,Czerwony Smok,2026-03-14,Sergiusz Zajac,W,KO/TKO,Sherdog,RECONCILED,1.0,0.6,3
+Emilio Quissua,2026-09-22,8,0,0,5,0,3,0,0,0,1997-04-21,193.04,Planet Eater,2026-01-31,Jorick Montagnac,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,8
