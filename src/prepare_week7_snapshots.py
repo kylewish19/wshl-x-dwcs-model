@@ -243,13 +243,22 @@ def main():
             actual=1.0 if str(u.result).upper()=="W" else 0.0
             elo+=32.0*(actual-exp)
 
-        seq=[v for _,v in recents.get(key,[])]
-        recent3=ratio(sum(seq[-3:]),len(seq[-3:]))
-        recent5=ratio(sum(seq[-5:]),len(seq[-5:]))
-        streak=0
-        for v in reversed(seq):
-            if v==1: streak+=1
-            else: break
+        # Current-form inputs are reconciled from the fighter's professional
+        # record. The global database can contain amateur/duplicate history,
+        # which is useful for broader context but must not define pro win streak.
+        recent3=safe(getattr(rec,"recent3_win_pct",""),np.nan)
+        recent5=safe(getattr(rec,"recent5_win_pct",""),np.nan)
+        streak=safe(getattr(rec,"current_win_streak",""),np.nan)
+        if not (np.isfinite(recent3) and np.isfinite(recent5) and np.isfinite(streak)):
+            seq=[v for _,v in recents.get(key,[])]
+            recent3=ratio(sum(seq[-3:]),len(seq[-3:]))
+            recent5=ratio(sum(seq[-5:]),len(seq[-5:]))
+            streak=0
+            for v in reversed(seq):
+                if v==1: streak+=1
+                else: break
+        # Integrity guard: a professional win streak cannot exceed total pro wins.
+        streak=min(float(streak),float(wins))
 
         # Static physical/style state.
         gm=master_map.get(key)
