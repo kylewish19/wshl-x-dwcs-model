@@ -13,7 +13,9 @@ SECONDARY_FEATURES_PATH = ROOT / "data" / "current" / "week7_secondary_model_fea
 OUT_DIR = ROOT / "official_picks"
 REPORT_DIR = ROOT / "reports"
 
-WINNER_MODEL = ROOT / "models" / "dwcs_w_v0_4_promoted_logistic.joblib"\nWINNER_BASELINE_MODEL = ROOT / "models" / "dwcs_w_logistic_v0_3.joblib"\nWINNER_CHALLENGER_MODEL = ROOT / "models" / "dwcs_w_v0_4_regional_candidate_boosting.joblib"
+WINNER_MODEL = ROOT / "models" / "dwcs_w_v0_4_promoted_logistic.joblib"
+WINNER_BASELINE_MODEL = ROOT / "models" / "dwcs_w_logistic_v0_3.joblib"
+WINNER_CHALLENGER_MODEL = ROOT / "models" / "dwcs_w_v0_4_regional_candidate_boosting.joblib"
 METHOD_MODEL = ROOT / "models" / "dwcs_m_conditional_method_logistic_v0_2.joblib"
 DIRECT_METHOD_MODEL = ROOT / "models" / "dwcs_m_direct_logistic_v0_2.joblib"
 ROUND_MODEL = ROOT / "models" / "dwcs_r_boosting_v0_2.joblib"
@@ -75,7 +77,11 @@ def main():
         if missing:
             raise SystemExit(f"{label} feature file missing trained columns: {missing}")
 
-    p_a_win = winner.predict_proba(wdf[wf])[:, list(winner.classes_).index(1)]\n    bf = list(winner_baseline.feature_names_in_)\n    cf = list(winner_challenger.feature_names_in_)\n    p_a_baseline = winner_baseline.predict_proba(wdf[bf])[:, list(winner_baseline.classes_).index(1)]\n    p_a_challenger = winner_challenger.predict_proba(wdf[cf])[:, list(winner_challenger.classes_).index(1)]
+    p_a_win = winner.predict_proba(wdf[wf])[:, list(winner.classes_).index(1)]
+    bf = list(winner_baseline.feature_names_in_)
+    cf = list(winner_challenger.feature_names_in_)
+    p_a_baseline = winner_baseline.predict_proba(wdf[bf])[:, list(winner_baseline.classes_).index(1)]
+    p_a_challenger = winner_challenger.predict_proba(wdf[cf])[:, list(winner_challenger.classes_).index(1)]
 
     xa = sdf[mf].copy()
     xb = -sdf[mf].copy()
@@ -130,7 +136,10 @@ def main():
             "fight": f"{f_a} vs {f_b}",
             "winner_pick": pick,
             "winner_probability": p_pick,
-            "winner_fair_american": fair_american(p_pick),\n            "winner_v0_3_a_probability": float(p_a_baseline[i]),\n            "winner_v0_4_boosting_a_probability": float(p_a_challenger[i]),\n            "winner_all_models_same_side": ((p_a>=0.5)==(p_a_baseline[i]>=0.5)==(p_a_challenger[i]>=0.5)),
+            "winner_fair_american": fair_american(p_pick),
+            "winner_v0_3_a_probability": float(p_a_baseline[i]),
+            "winner_v0_4_boosting_a_probability": float(p_a_challenger[i]),
+            "winner_all_models_same_side": ((p_a>=0.5)==(p_a_baseline[i]>=0.5)==(p_a_challenger[i]>=0.5)),
             "top_winner_method": f"{method_fighter} by {method_name}",
             "top_winner_method_probability": float(jp[top_joint_idx]),
             "direct_method_top_class": direct_cls,
@@ -164,7 +173,11 @@ def main():
     for i,r in wdf.iterrows():
         detail.append({
             "fight": f"{r.fighter_a} vs {r.fighter_b}",
-            "winner": {str(r.fighter_a):float(p_a_win[i]), str(r.fighter_b):float(1-p_a_win[i])},\n            "winner_diagnostics": {\n                "v0_3_baseline_a_probability": float(p_a_baseline[i]),\n                "v0_4_boosting_challenger_a_probability": float(p_a_challenger[i])\n            },
+            "winner": {str(r.fighter_a):float(p_a_win[i]), str(r.fighter_b):float(1-p_a_win[i])},
+            "winner_diagnostics": {
+                "v0_3_baseline_a_probability": float(p_a_baseline[i]),
+                "v0_4_boosting_challenger_a_probability": float(p_a_challenger[i])
+            },
             "joint_winner_method": {JOINT_ORDER[j]:float(joint[i,j]) for j in range(6)},
             "direct_six_class_diagnostic": {JOINT_ORDER[j]:float(direct_joint[i,j]) for j in range(6)},
             "round_shadow": {ROUND_ORDER[j]:float(round_probs[i,j]) for j in range(4)},
