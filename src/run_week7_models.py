@@ -80,6 +80,11 @@ def main():
             raise SystemExit(f"{label} feature file missing trained columns: {missing}")
 
     p_a_win = winner.predict_proba(wdf[wf])[:, list(winner.classes_).index(1)]
+    # The exploratory boosting challenger was trained with an explicit A-minus-B
+    # history-availability flag. All Week 7 rows have both histories established,
+    # so the correct current value is 1-1 = 0 rather than a missing field.
+    if "global_history_available_diff" not in wdf.columns:
+        wdf["global_history_available_diff"] = 0.0
     bf = list(winner_baseline.feature_names_in_)
     cf = list(winner_challenger.feature_names_in_)
     p_a_baseline = winner_baseline.predict_proba(wdf[bf])[:, list(winner_baseline.classes_).index(1)]
