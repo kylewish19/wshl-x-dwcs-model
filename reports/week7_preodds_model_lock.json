@@ -16,20 +16,20 @@
     {
       "fight": "Norbert Novenyi Jr. vs Theo Haig",
       "winner": {
-        "Norbert Novenyi Jr.": 0.6193969233564794,
-        "Theo Haig": 0.38060307664352055
+        "Norbert Novenyi Jr.": 0.3020437302630385,
+        "Theo Haig": 0.6979562697369615
       },
       "winner_diagnostics": {
         "v0_3_baseline_a_probability": 0.4074617553505661,
-        "v0_4_boosting_challenger_a_probability": 0.8788842991876807
+        "v0_4_boosting_challenger_a_probability": 0.5200484768038282
       },
       "joint_winner_method": {
-        "A_KO_TKO": 0.0014545028730215046,
-        "A_SUB": 0.13311952808817828,
-        "A_DEC": 0.48482289239527976,
-        "B_KO_TKO": 0.3779264071272166,
-        "B_SUB": 0.0006078183761687318,
-        "B_DEC": 0.002068851140135231
+        "A_KO_TKO": 0.0007092761634414504,
+        "A_SUB": 0.06491462472355221,
+        "A_DEC": 0.23641982937604492,
+        "B_KO_TKO": 0.6930477485358364,
+        "B_SUB": 0.0011146274755567652,
+        "B_DEC": 0.003793893725568306
       },
       "direct_six_class_diagnostic": {
         "A_KO_TKO": 0.007868097271790952,
@@ -42,7 +42,7 @@
       "round_shadow": {
         "R1": 0.42905478340968195,
         "R2": 0.3302893951835076,
-        "R3": 0.036951855024520926,
+        "R3": 0.03695185502452093,
         "DEC": 0.20370396638228958
       },
       "duration_shadow": {
@@ -56,12 +56,12 @@
       "monte_carlo": {
         "fight": "Norbert Novenyi Jr. vs Theo Haig",
         "joint_outcome_counts_10000": {
-          "A_KO_TKO": 13,
-          "A_SUB": 1304,
-          "A_DEC": 4829,
-          "B_KO_TKO": 3824,
-          "B_SUB": 5,
-          "B_DEC": 25
+          "A_KO_TKO": 5,
+          "A_SUB": 673,
+          "A_DEC": 2369,
+          "B_KO_TKO": 6904,
+          "B_SUB": 12,
+          "B_DEC": 37
         },
         "round_counts_10000": {
           "R1": 4330,
@@ -82,20 +82,20 @@
     {
       "fight": "Alvi Dasuyev vs Jaden Ortega",
       "winner": {
-        "Alvi Dasuyev": 0.7121293675895911,
-        "Jaden Ortega": 0.2878706324104089
+        "Alvi Dasuyev": 0.961592478586953,
+        "Jaden Ortega": 0.03840752141304704
       },
       "winner_diagnostics": {
         "v0_3_baseline_a_probability": 0.5023953291380967,
-        "v0_4_boosting_challenger_a_probability": 0.5037400983232004
+        "v0_4_boosting_challenger_a_probability": 0.4644586941598515
       },
       "joint_winner_method": {
-        "A_KO_TKO": 0.29409434251762606,
-        "A_SUB": 0.3723219499777206,
-        "A_DEC": 0.04571307509424446,
-        "B_KO_TKO": 0.022167375595717204,
-        "B_SUB": 0.002537738310180133,
-        "B_DEC": 0.26316551850451153
+        "A_KO_TKO": 0.3971173225409022,
+        "A_SUB": 0.5027485215547751,
+        "A_DEC": 0.06172663449127574,
+        "B_KO_TKO": 0.002957557517189725,
+        "B_SUB": 0.00033858347297474796,
+        "B_DEC": 0.03511138042288257
       },
       "direct_six_class_diagnostic": {
         "A_KO_TKO": 0.03169713709973535,
@@ -122,12 +122,12 @@
       "monte_carlo": {
         "fight": "Alvi Dasuyev vs Jaden Ortega",
         "joint_outcome_counts_10000": {
-          "A_KO_TKO": 3029,
-          "A_SUB": 3726,
-          "A_DEC": 443,
-          "B_KO_TKO": 223,
-          "B_SUB": 21,
-          "B_DEC": 2558
+          "A_KO_TKO": 4084,
+          "A_SUB": 4976,
+          "A_DEC": 584,
+          "B_KO_TKO": 33,
+          "B_SUB": 5,
+          "B_DEC": 318
         },
         "round_counts_10000": {
           "R1": 1921,
@@ -148,20 +148,20 @@
     {
       "fight": "Marcos Degli vs Paris Moran",
       "winner": {
-        "Marcos Degli": 0.9452324230516712,
-        "Paris Moran": 0.05476757694832879
+        "Marcos Degli": 0.9857331839262953,
+        "Paris Moran": 0.014266816073704724
       },
       "winner_diagnostics": {
         "v0_3_baseline_a_probability": 0.5816825304012953,
         "v0_4_boosting_challenger_a_probability": 0.8824422563521701
       },
       "joint_winner_method": {
-        "A_KO_TKO": 0.8004979898370653,
-        "A_SUB": 0.06254539316481296,
-        "A_DEC": 0.08218904004979297,
-        "B_KO_TKO": 0.0026514218766674896,
-        "B_SUB": 0.004995023401843218,
-        "B_DEC": 0.04712113166981809
+        "A_KO_TKO": 0.83479725515674,
+        "A_SUB": 0.06522530124942906,
+        "A_DEC": 0.08571062752012629,
+        "B_KO_TKO": 0.0006906887314715568,
+        "B_SUB": 0.001301191035440224,
+        "B_DEC": 0.012274936306792944
       },
       "direct_six_class_diagnostic": {
         "A_KO_TKO": 0.22504400457613083,
@@ -188,12 +188,12 @@
       "monte_carlo": {
         "fight": "Marcos Degli vs Paris Moran",
         "joint_outcome_counts_10000": {
-          "A_KO_TKO": 7952,
-          "A_SUB": 609,
-          "A_DEC": 887,
-          "B_KO_TKO": 18,
-          "B_SUB": 46,
-          "B_DEC": 488
+          "A_KO_TKO": 8308,
+          "A_SUB": 647,
+          "A_DEC": 902,
+          "B_KO_TKO": 6,
+          "B_SUB": 10,
+          "B_DEC": 127
         },
         "round_counts_10000": {
           "R1": 345,
@@ -214,20 +214,20 @@
     {
       "fight": "Piero Guaylupo vs Callum Connor",
       "winner": {
-        "Piero Guaylupo": 0.8094539696418307,
-        "Callum Connor": 0.1905460303581693
+        "Piero Guaylupo": 0.9475035062544604,
+        "Callum Connor": 0.05249649374553955
       },
       "winner_diagnostics": {
         "v0_3_baseline_a_probability": 0.5272321919738164,
         "v0_4_boosting_challenger_a_probability": 0.5018979148481042
       },
       "joint_winner_method": {
-        "A_KO_TKO": 0.382152420445776,
-        "A_SUB": 0.17671162164613918,
-        "A_DEC": 0.2505899275499156,
-        "B_KO_TKO": 0.04616455801774179,
-        "B_SUB": 0.01446920636431838,
-        "B_DEC": 0.12991226597610916
+        "A_KO_TKO": 0.4473271759433342,
+        "A_SUB": 0.2068491691747654,
+        "A_DEC": 0.2933271611363608,
+        "B_KO_TKO": 0.012718593122557156,
+        "B_SUB": 0.0039863470258581285,
+        "B_DEC": 0.03579155359712427
       },
       "direct_six_class_diagnostic": {
         "A_KO_TKO": 0.3066897139873158,
@@ -254,12 +254,12 @@
       "monte_carlo": {
         "fight": "Piero Guaylupo vs Callum Connor",
         "joint_outcome_counts_10000": {
-          "A_KO_TKO": 3854,
-          "A_SUB": 1762,
-          "A_DEC": 2515,
-          "B_KO_TKO": 446,
-          "B_SUB": 145,
-          "B_DEC": 1278
+          "A_KO_TKO": 4499,
+          "A_SUB": 2059,
+          "A_DEC": 2928,
+          "B_KO_TKO": 124,
+          "B_SUB": 45,
+          "B_DEC": 345
         },
         "round_counts_10000": {
           "R1": 1109,
@@ -280,28 +280,28 @@
     {
       "fight": "Damian Piwowarczyk vs Emilio Quissua",
       "winner": {
-        "Damian Piwowarczyk": 0.1735541847655556,
-        "Emilio Quissua": 0.8264458152344444
+        "Damian Piwowarczyk": 0.2495526361847334,
+        "Emilio Quissua": 0.7504473638152667
       },
       "winner_diagnostics": {
         "v0_3_baseline_a_probability": 0.48644484719883635,
         "v0_4_boosting_challenger_a_probability": 0.04515652616171367
       },
       "joint_winner_method": {
-        "A_KO_TKO": 0.014067015066670227,
-        "A_SUB": 0.02541605876929213,
-        "A_DEC": 0.13407111092959326,
-        "B_KO_TKO": 0.6492525135875346,
-        "B_SUB": 0.052893360410945264,
-        "B_DEC": 0.12429994123596455
+        "A_KO_TKO": 0.020226885902405626,
+        "A_SUB": 0.03654561528361229,
+        "A_DEC": 0.19278013499871544,
+        "B_KO_TKO": 0.5895484353490066,
+        "B_SUB": 0.048029383357049774,
+        "B_DEC": 0.11286954510921024
       },
       "direct_six_class_diagnostic": {
-        "A_KO_TKO": 0.04149541092866779,
+        "A_KO_TKO": 0.0414954109286678,
         "A_SUB": 0.04206509192399808,
         "A_DEC": 0.5250128857644903,
         "B_KO_TKO": 0.2793302498307916,
         "B_SUB": 0.019711947096397186,
-        "B_DEC": 0.09238441445565494
+        "B_DEC": 0.09238441445565493
       },
       "round_shadow": {
         "R1": 0.18983731064942802,
@@ -320,12 +320,12 @@
       "monte_carlo": {
         "fight": "Damian Piwowarczyk vs Emilio Quissua",
         "joint_outcome_counts_10000": {
-          "A_KO_TKO": 120,
-          "A_SUB": 274,
-          "A_DEC": 1396,
-          "B_KO_TKO": 6477,
-          "B_SUB": 537,
-          "B_DEC": 1196
+          "A_KO_TKO": 188,
+          "A_SUB": 393,
+          "A_DEC": 1976,
+          "B_KO_TKO": 5871,
+          "B_SUB": 477,
+          "B_DEC": 1095
         },
         "round_counts_10000": {
           "R1": 1892,
