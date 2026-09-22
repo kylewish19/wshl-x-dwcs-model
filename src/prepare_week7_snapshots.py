@@ -14,7 +14,7 @@ import pandas as pd
 
 from augment_regional_career import build_timelines, prefight_state, expected
 
-ROOT=Path(__file__).resolve().parents[1]
+# Week 7 form integrity fix: current pro form overrides mixed-source recent history.\nROOT=Path(__file__).resolve().parents[1]
 CURRENT=ROOT/"data"/"current"
 RAW=ROOT/"data"/"raw"
 REPORTS=ROOT/"reports"
