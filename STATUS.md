@@ -85,3 +85,17 @@ The global career source currently ends 2026-01-31. Every 2026 card therefore re
 ## Next milestone
 
 Build the Week 7 pre-fight feature capture format so the current regional record, opponent-quality state, tape scores, and model probabilities are frozen in GitHub before the card. After Week 7, append the outcomes and produce a real coefficient-delta report.
+
+
+## Week 7 preflight audit — 2026-09-22
+
+The live pre-odds run exposed two important runtime issues before results were known:
+
+1. **DWCS-M-v0.2 conditional method requires a plausibility gate.** Theo Haig's conditional output incorrectly concentrated on KO/TKO despite a 7-SUB / 0-KO professional win history. The direct six-class model and career route both favored submission. Going forward, no method is promoted from the conditional model alone.
+2. **DWCS-D/R remain shadow-only.** Independent duration classifiers produced non-nested survival probabilities on Week 7 and some severe method/distance conflicts. The next duration architecture should be a coherent survival/hazard model.
+
+The audited pre-odds card is:
+- `official_picks/week7_preodds_audited_lock.csv`
+- audit notes: `reports/week7_preodds_audit.md`
+
+These changes were made before sportsbook odds and before fight outcomes.
