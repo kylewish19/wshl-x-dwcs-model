@@ -65,6 +65,8 @@ def main():
         raise SystemExit("Week 7 contains a row failing the v0.4 both-histories production gate.")
 
     winner = joblib.load(WINNER_MODEL)
+    winner_baseline = joblib.load(WINNER_BASELINE_MODEL)
+    winner_challenger = joblib.load(WINNER_CHALLENGER_MODEL)
     method = joblib.load(METHOD_MODEL)
     direct = joblib.load(DIRECT_METHOD_MODEL)
     round_model = joblib.load(ROUND_MODEL)
