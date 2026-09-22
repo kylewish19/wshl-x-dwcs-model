@@ -1,0 +1,347 @@
+{
+  "event": "DWCS Season 10 Week 7",
+  "event_date": "2026-09-22",
+  "lock_type": "PRE_ODDS",
+  "odds_used": false,
+  "models": {
+    "winner": "DWCS-W-v0.4 promoted logistic",
+    "method": "DWCS-M-v0.2 conditional winner x method logistic",
+    "duration": "DWCS-D-v0.2 shadow boosting",
+    "round": "DWCS-R-v0.2 shadow boosting"
+  },
+  "simulation_runs_per_fight": 10000,
+  "secondary_feature_schema": "Rebuilt from same ext_* historical feature engineering used to train M/D/R v0.2, with known 2026 post-cutoff fights appended without fabricated duration/round data.",
+  "note": "Duration and round remain shadow-only because historical probability metrics did not beat chronological naive baselines.",
+  "fights": [
+    {
+      "fight": "Norbert Novenyi Jr. vs Theo Haig",
+      "winner": {
+        "Norbert Novenyi Jr.": 0.6193969233564794,
+        "Theo Haig": 0.38060307664352055
+      },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.4074617553505661,
+        "v0_4_boosting_challenger_a_probability": 0.8788842991876807
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.0014545028730215046,
+        "A_SUB": 0.13311952808817828,
+        "A_DEC": 0.48482289239527976,
+        "B_KO_TKO": 0.3779264071272166,
+        "B_SUB": 0.0006078183761687318,
+        "B_DEC": 0.002068851140135231
+      },
+      "direct_six_class_diagnostic": {
+        "A_KO_TKO": 0.007868097271790952,
+        "A_SUB": 0.08785298300331675,
+        "A_DEC": 0.2407899256409101,
+        "B_KO_TKO": 0.23706189940246322,
+        "B_SUB": 0.4082026218664048,
+        "B_DEC": 0.01822447281511423
+      },
+      "round_shadow": {
+        "R1": 0.42905478340968195,
+        "R2": 0.3302893951835076,
+        "R3": 0.036951855024520926,
+        "DEC": 0.20370396638228958
+      },
+      "duration_shadow": {
+        "under_0_5": 0.039954993505902765,
+        "under_1_5": 0.4839729642184604,
+        "under_2_5": 0.48002940914494807,
+        "goes_distance": 0.3000656591047886,
+        "round_2_starts": 0.6572042231715955,
+        "round_3_starts": 0.34353057666263764
+      },
+      "monte_carlo": {
+        "fight": "Norbert Novenyi Jr. vs Theo Haig",
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 13,
+          "A_SUB": 1304,
+          "A_DEC": 4829,
+          "B_KO_TKO": 3824,
+          "B_SUB": 5,
+          "B_DEC": 25
+        },
+        "round_counts_10000": {
+          "R1": 4330,
+          "R2": 3268,
+          "R3": 371,
+          "DEC": 2031
+        },
+        "duration_yes_counts_10000": {
+          "under_0_5": 392,
+          "under_1_5": 4891,
+          "under_2_5": 4721,
+          "goes_distance": 3063,
+          "round_2_starts": 6584,
+          "round_3_starts": 3426
+        }
+      }
+    },
+    {
+      "fight": "Alvi Dasuyev vs Jaden Ortega",
+      "winner": {
+        "Alvi Dasuyev": 0.7121293675895911,
+        "Jaden Ortega": 0.2878706324104089
+      },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.5023953291380967,
+        "v0_4_boosting_challenger_a_probability": 0.5037400983232004
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.29409434251762606,
+        "A_SUB": 0.3723219499777206,
+        "A_DEC": 0.04571307509424446,
+        "B_KO_TKO": 0.022167375595717204,
+        "B_SUB": 0.002537738310180133,
+        "B_DEC": 0.26316551850451153
+      },
+      "direct_six_class_diagnostic": {
+        "A_KO_TKO": 0.03169713709973535,
+        "A_SUB": 0.25651862596972547,
+        "A_DEC": 0.05414857912941432,
+        "B_KO_TKO": 0.005384460682614415,
+        "B_SUB": 0.002265167615415895,
+        "B_DEC": 0.6499860295030947
+      },
+      "round_shadow": {
+        "R1": 0.19175102854581388,
+        "R2": 0.297701350991052,
+        "R3": 0.06504517757789256,
+        "DEC": 0.4455024428852416
+      },
+      "duration_shadow": {
+        "under_0_5": 0.03044725286795273,
+        "under_1_5": 0.22008565330769775,
+        "under_2_5": 0.4693524947144681,
+        "goes_distance": 0.4232844922667092,
+        "round_2_starts": 0.7986026988556411,
+        "round_3_starts": 0.7909575137651478
+      },
+      "monte_carlo": {
+        "fight": "Alvi Dasuyev vs Jaden Ortega",
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 3029,
+          "A_SUB": 3726,
+          "A_DEC": 443,
+          "B_KO_TKO": 223,
+          "B_SUB": 21,
+          "B_DEC": 2558
+        },
+        "round_counts_10000": {
+          "R1": 1921,
+          "R2": 3050,
+          "R3": 659,
+          "DEC": 4370
+        },
+        "duration_yes_counts_10000": {
+          "under_0_5": 284,
+          "under_1_5": 2155,
+          "under_2_5": 4598,
+          "goes_distance": 4233,
+          "round_2_starts": 7992,
+          "round_3_starts": 7896
+        }
+      }
+    },
+    {
+      "fight": "Marcos Degli vs Paris Moran",
+      "winner": {
+        "Marcos Degli": 0.9452324230516712,
+        "Paris Moran": 0.05476757694832879
+      },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.5816825304012953,
+        "v0_4_boosting_challenger_a_probability": 0.8824422563521701
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.8004979898370653,
+        "A_SUB": 0.06254539316481296,
+        "A_DEC": 0.08218904004979297,
+        "B_KO_TKO": 0.0026514218766674896,
+        "B_SUB": 0.004995023401843218,
+        "B_DEC": 0.04712113166981809
+      },
+      "direct_six_class_diagnostic": {
+        "A_KO_TKO": 0.22504400457613083,
+        "A_SUB": 0.15677158434983804,
+        "A_DEC": 0.19079672184679342,
+        "B_KO_TKO": 0.002801725159734305,
+        "B_SUB": 0.012939461829942978,
+        "B_DEC": 0.41164650223756044
+      },
+      "round_shadow": {
+        "R1": 0.03648945271324793,
+        "R2": 0.003017062962232113,
+        "R3": 0.008425118792910613,
+        "DEC": 0.9520683655316095
+      },
+      "duration_shadow": {
+        "under_0_5": 0.1790543927796434,
+        "under_1_5": 0.24149252784790162,
+        "under_2_5": 0.17025224617748227,
+        "goes_distance": 0.8456685956112787,
+        "round_2_starts": 0.8373968500536632,
+        "round_3_starts": 0.8319756959138104
+      },
+      "monte_carlo": {
+        "fight": "Marcos Degli vs Paris Moran",
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 7952,
+          "A_SUB": 609,
+          "A_DEC": 887,
+          "B_KO_TKO": 18,
+          "B_SUB": 46,
+          "B_DEC": 488
+        },
+        "round_counts_10000": {
+          "R1": 345,
+          "R2": 35,
+          "R3": 95,
+          "DEC": 9525
+        },
+        "duration_yes_counts_10000": {
+          "under_0_5": 1781,
+          "under_1_5": 2428,
+          "under_2_5": 1710,
+          "goes_distance": 8461,
+          "round_2_starts": 8346,
+          "round_3_starts": 8362
+        }
+      }
+    },
+    {
+      "fight": "Piero Guaylupo vs Callum Connor",
+      "winner": {
+        "Piero Guaylupo": 0.8094539696418307,
+        "Callum Connor": 0.1905460303581693
+      },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.5272321919738164,
+        "v0_4_boosting_challenger_a_probability": 0.5018979148481042
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.382152420445776,
+        "A_SUB": 0.17671162164613918,
+        "A_DEC": 0.2505899275499156,
+        "B_KO_TKO": 0.04616455801774179,
+        "B_SUB": 0.01446920636431838,
+        "B_DEC": 0.12991226597610916
+      },
+      "direct_six_class_diagnostic": {
+        "A_KO_TKO": 0.3066897139873158,
+        "A_SUB": 0.11268970436060326,
+        "A_DEC": 0.2174597621252313,
+        "B_KO_TKO": 0.1257744044935957,
+        "B_SUB": 0.026557907803083414,
+        "B_DEC": 0.21082850723017052
+      },
+      "round_shadow": {
+        "R1": 0.11154970118418356,
+        "R2": 0.20954260492896812,
+        "R3": 0.012464650992041687,
+        "DEC": 0.6664430428948066
+      },
+      "duration_shadow": {
+        "under_0_5": 0.07010664155911761,
+        "under_1_5": 0.20882139203711758,
+        "under_2_5": 0.27591941912090706,
+        "goes_distance": 0.6763866297805644,
+        "round_2_starts": 0.8775111836195644,
+        "round_3_starts": 0.7187474135234153
+      },
+      "monte_carlo": {
+        "fight": "Piero Guaylupo vs Callum Connor",
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 3854,
+          "A_SUB": 1762,
+          "A_DEC": 2515,
+          "B_KO_TKO": 446,
+          "B_SUB": 145,
+          "B_DEC": 1278
+        },
+        "round_counts_10000": {
+          "R1": 1109,
+          "R2": 2109,
+          "R3": 133,
+          "DEC": 6649
+        },
+        "duration_yes_counts_10000": {
+          "under_0_5": 695,
+          "under_1_5": 2070,
+          "under_2_5": 2826,
+          "goes_distance": 6712,
+          "round_2_starts": 8783,
+          "round_3_starts": 7262
+        }
+      }
+    },
+    {
+      "fight": "Damian Piwowarczyk vs Emilio Quissua",
+      "winner": {
+        "Damian Piwowarczyk": 0.1735541847655556,
+        "Emilio Quissua": 0.8264458152344444
+      },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.48644484719883635,
+        "v0_4_boosting_challenger_a_probability": 0.04515652616171367
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.014067015066670227,
+        "A_SUB": 0.02541605876929213,
+        "A_DEC": 0.13407111092959326,
+        "B_KO_TKO": 0.6492525135875346,
+        "B_SUB": 0.052893360410945264,
+        "B_DEC": 0.12429994123596455
+      },
+      "direct_six_class_diagnostic": {
+        "A_KO_TKO": 0.04149541092866779,
+        "A_SUB": 0.04206509192399808,
+        "A_DEC": 0.5250128857644903,
+        "B_KO_TKO": 0.2793302498307916,
+        "B_SUB": 0.019711947096397186,
+        "B_DEC": 0.09238441445565494
+      },
+      "round_shadow": {
+        "R1": 0.18983731064942802,
+        "R2": 0.1883335819063956,
+        "R3": 0.3599508712541535,
+        "DEC": 0.2618782361900229
+      },
+      "duration_shadow": {
+        "under_0_5": 0.20568491072811945,
+        "under_1_5": 0.25963479759372415,
+        "under_2_5": 0.4369570981280691,
+        "goes_distance": 0.2475748604824363,
+        "round_2_starts": 0.8706335001057691,
+        "round_3_starts": 0.6762969846860816
+      },
+      "monte_carlo": {
+        "fight": "Damian Piwowarczyk vs Emilio Quissua",
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 120,
+          "A_SUB": 274,
+          "A_DEC": 1396,
+          "B_KO_TKO": 6477,
+          "B_SUB": 537,
+          "B_DEC": 1196
+        },
+        "round_counts_10000": {
+          "R1": 1892,
+          "R2": 1805,
+          "R3": 3614,
+          "DEC": 2689
+        },
+        "duration_yes_counts_10000": {
+          "under_0_5": 2001,
+          "under_1_5": 2646,
+          "under_2_5": 4384,
+          "goes_distance": 2459,
+          "round_2_starts": 8729,
+          "round_3_starts": 6746
+        }
+      }
+    }
+  ]
+}
