@@ -7,6 +7,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
+# Re-run after corrected professional current-form inputs.
 ROOT = Path(__file__).resolve().parents[1]
 WINNER_FEATURES_PATH = ROOT / "data" / "current" / "week7_model_features.csv"
 SECONDARY_FEATURES_PATH = ROOT / "data" / "current" / "week7_secondary_model_features.csv"
