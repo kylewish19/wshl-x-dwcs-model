@@ -19,6 +19,10 @@
         "Norbert Novenyi Jr.": 0.3020437302630385,
         "Theo Haig": 0.6979562697369615
       },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.4074617553505661,
+        "v0_4_boosting_challenger_a_probability": 0.5200484768038282
+      },
       "joint_winner_method": {
         "A_KO_TKO": 0.0007092761634414504,
         "A_SUB": 0.06491462472355221,
@@ -38,7 +42,7 @@
       "round_shadow": {
         "R1": 0.42905478340968195,
         "R2": 0.3302893951835076,
-        "R3": 0.036951855024520926,
+        "R3": 0.03695185502452093,
         "DEC": 0.20370396638228958
       },
       "duration_shadow": {
@@ -80,6 +84,10 @@
       "winner": {
         "Alvi Dasuyev": 0.961592478586953,
         "Jaden Ortega": 0.03840752141304704
+      },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.5023953291380967,
+        "v0_4_boosting_challenger_a_probability": 0.4644586941598515
       },
       "joint_winner_method": {
         "A_KO_TKO": 0.3971173225409022,
@@ -143,6 +151,10 @@
         "Marcos Degli": 0.9857331839262953,
         "Paris Moran": 0.014266816073704724
       },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.5816825304012953,
+        "v0_4_boosting_challenger_a_probability": 0.8824422563521701
+      },
       "joint_winner_method": {
         "A_KO_TKO": 0.83479725515674,
         "A_SUB": 0.06522530124942906,
@@ -204,6 +216,10 @@
       "winner": {
         "Piero Guaylupo": 0.9475035062544604,
         "Callum Connor": 0.05249649374553955
+      },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.5272321919738164,
+        "v0_4_boosting_challenger_a_probability": 0.5018979148481042
       },
       "joint_winner_method": {
         "A_KO_TKO": 0.4473271759433342,
@@ -267,21 +283,25 @@
         "Damian Piwowarczyk": 0.2495526361847334,
         "Emilio Quissua": 0.7504473638152667
       },
+      "winner_diagnostics": {
+        "v0_3_baseline_a_probability": 0.48644484719883635,
+        "v0_4_boosting_challenger_a_probability": 0.04515652616171367
+      },
       "joint_winner_method": {
         "A_KO_TKO": 0.020226885902405626,
         "A_SUB": 0.03654561528361229,
         "A_DEC": 0.19278013499871544,
         "B_KO_TKO": 0.5895484353490066,
         "B_SUB": 0.048029383357049774,
-        "B_DEC": 0.11286954510921021
+        "B_DEC": 0.11286954510921024
       },
       "direct_six_class_diagnostic": {
-        "A_KO_TKO": 0.04149541092866779,
+        "A_KO_TKO": 0.0414954109286678,
         "A_SUB": 0.04206509192399808,
         "A_DEC": 0.5250128857644903,
         "B_KO_TKO": 0.2793302498307916,
         "B_SUB": 0.019711947096397186,
-        "B_DEC": 0.09238441445565494
+        "B_DEC": 0.09238441445565493
       },
       "round_shadow": {
         "R1": 0.18983731064942802,
