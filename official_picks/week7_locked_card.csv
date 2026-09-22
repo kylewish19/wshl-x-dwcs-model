@@ -1,0 +1,6 @@
+event_date,event_id,fight,official_winner,winner_probability,winner_confidence,method_forecast,method_status,round_shadow_top,duration_shadow_note,simulation_runs,preodds
+2026-09-22,DWCS_S10_W7,"Norbert Novenyi Jr. vs Theo Haig","Theo Haig",0.697956,"LOW","Theo Haig by SUB","SIDE ONLY — NO METHOD BET","R1 42.9%","Shadow only; cross-market inconsistency",10000,TRUE
+2026-09-22,DWCS_S10_W7,"Alvi Dasuyev vs Jaden Ortega","Alvi Dasuyev",0.961592,"LOW","Alvi Dasuyev by SUB","SIDE ONLY — NO METHOD BET","DEC 44.6%","Shadow only; winner-model disagreement drives confidence down",10000,TRUE
+2026-09-22,DWCS_S10_W7,"Marcos Degli vs Paris Moran","Marcos Degli",0.985733,"HIGH","Marcos Degli by KO/TKO","METHOD LEAN","DEC 95.2%","Shadow only; method/round conflict, no total promotion",10000,TRUE
+2026-09-22,DWCS_S10_W7,"Piero Guaylupo vs Callum Connor","Piero Guaylupo",0.947504,"LOW","Piero Guaylupo by KO/TKO","METHOD LEAN","DEC 66.6%","Shadow only; strong winner-model disagreement",10000,TRUE
+2026-09-22,DWCS_S10_W7,"Damian Piwowarczyk vs Emilio Quissua","Emilio Quissua",0.750447,"MEDIUM-HIGH","Emilio Quissua by KO/TKO","METHOD QUALIFIED — PRICE PENDING","R3 36.0%","Shadow only; no total promotion before odds",10000,TRUE
