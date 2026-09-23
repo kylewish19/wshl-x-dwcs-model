@@ -1,13 +1,14 @@
 {
   "DWCS-CAL-v0.2": {
-    "status": "active",
+    "status": "development/retrospective-only",
     "trained_through": "2026-09-15",
     "training_rows": 25,
     "winner_record": "16-9",
     "slope": 0.9147857463,
     "intercept": -0.0205842055,
     "brier": 0.2307256699,
-    "logloss": 0.6512034249
+    "logloss": 0.6512034249,
+    "note": "Uses Week 6 probabilities generated after the event; do not use as clean prospective calibration evidence."
   },
   "DWCS-M-PRIOR-v0.2": {
     "status": "active population prior; fighter matchup layer pending",
@@ -91,5 +92,64 @@
     "production_artifact": "models/dwcs_w_v0_4_promoted_logistic.joblib",
     "coefficient_report": "reports/dwcs_w_v0_4_promoted_coefficients.csv",
     "audited_specification": "Conservative logistic: excludes explicit global_history_available_diff and disables imputer missingness indicators."
+  },
+  "DWCS-CAL-v0.1-clean": {
+    "status": "active clean calibration fallback",
+    "trained_through": "2026-09-08 (Week 5)",
+    "training_rows": 20,
+    "slope": 0.8796896918,
+    "intercept": -0.0668995437,
+    "brier": 0.245755,
+    "logloss": 0.686674,
+    "note": "Last clean recoverable calibration state before the retrospective Week 6 diagnostic."
+  },
+  "DWCS-W-v0.5": {
+    "status": "ACTIVE current-season retrain for Week 8",
+    "parent": "DWCS-W-v0.4",
+    "trained_through": "2026-09-22",
+    "historical_training_bouts": 416,
+    "new_prospective_week7_rows": 5,
+    "total_training_rows": 421,
+    "model": "L2 regularized logistic regression",
+    "artifact": "models/dwcs_w_v0_5_week7_logistic.joblib",
+    "coefficient_delta_report": "reports/winner_v0_5_week7_coefficient_delta.csv",
+    "validation_note": "Inherits v0.4 historical validation; Week 7 labels are appended for forward use and are not counted as holdout validation.",
+    "orientation_control": "Week 7 rows were deterministically hash-oriented before refit to avoid card-order bias."
+  },
+  "DWCS-M-v0.3": {
+    "status": "PROMOTED for Week 8+ with plausibility gate",
+    "trained_through": "2026-09-22",
+    "historical_walk_forward_test_bouts": 319,
+    "exact_winner_method_accuracy": 0.5799373040752351,
+    "log_loss": 1.1937154454968144,
+    "brier_multiclass": 0.5569264643576686,
+    "previous_v0_2": {
+      "accuracy": 0.43573667711598746,
+      "log_loss": 1.5067506031241242,
+      "brier_multiclass": 0.6886081438928104
+    },
+    "architecture": "P(winner) x P(method | candidate winner) using candidate offense, opponent method-specific vulnerability, and explicit KO/SUB/DEC route-access interactions.",
+    "artifact": "models/dwcs_m_v0_3_candidate_method_logistic.joblib",
+    "coefficient_report": "reports/method_v0_3_coefficients.csv",
+    "gate": "Career-route plausibility and model-disagreement checks remain mandatory before a method is bet-qualified."
+  },
+  "DWCS-D-v0.3": {
+    "status": "SHADOW",
+    "trained_through": "2026-09-22",
+    "architecture": "coherent interval hazard/survival models at 2.5, 5, 7.5, 10, 12.5 and 15 minutes",
+    "reason": "Fixes probability nesting and cross-market contradictions, but historical walk-forward probability quality still does not beat the chronological naive baseline across the core totals.",
+    "artifacts": "models/dwcs_d_hazard_*_v0_3.joblib",
+    "week7_main_totals_grade": "12-3 directional (diagnostic; not promotion evidence)"
+  },
+  "DWCS-R-v0.3": {
+    "status": "SHADOW",
+    "trained_through": "2026-09-22",
+    "architecture": "R1/R2/R3/DEC derived from the same coherent survival curve as DWCS-D-v0.3",
+    "historical_walk_forward": {
+      "accuracy": 0.396875,
+      "log_loss": 1.432322960957459,
+      "brier_multiclass": 0.7494026879738496
+    },
+    "reason": "Probability quality improved versus the independent v0.2 round model but still trails the chronological class-frequency baseline."
   }
 }
