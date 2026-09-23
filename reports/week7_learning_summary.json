@@ -1,0 +1,182 @@
+{
+  "event": "DWCS Season 10 Week 7 learning update",
+  "graded_event_date": "2026-09-22",
+  "winner": {
+    "version": "DWCS-W-v0.5-week7-retrain",
+    "historical_rows": 416,
+    "new_week7_rows": 5,
+    "training_rows": 421,
+    "orientation_control": "Current rows deterministically hash-oriented before fitting to avoid card-order bias.",
+    "largest_coefficient_changes": [
+      {
+        "feature": "global_major_bouts_diff",
+        "coefficient_before": -0.17434808226137485,
+        "coefficient_after": -0.0038862047546560042,
+        "delta": 0.17046187750671885,
+        "abs_delta": 0.17046187750671885
+      },
+      {
+        "feature": "global_elo_diff",
+        "coefficient_before": 0.14510099202250015,
+        "coefficient_after": 0.29576644586340184,
+        "delta": 0.1506654538409017,
+        "abs_delta": 0.1506654538409017
+      },
+      {
+        "feature": "global_career_wins_diff",
+        "coefficient_before": 0.2660699315915009,
+        "coefficient_after": 0.1667397717883576,
+        "delta": -0.09933015980314328,
+        "abs_delta": 0.09933015980314328
+      },
+      {
+        "feature": "global_win_streak_diff",
+        "coefficient_before": 1.3376776278957971,
+        "coefficient_after": 1.2388028117332364,
+        "delta": -0.09887481616256077,
+        "abs_delta": 0.09887481616256077
+      },
+      {
+        "feature": "prior_dwcs_td_attempted_per15_diff",
+        "coefficient_before": 0.1142219662182583,
+        "coefficient_after": 0.024606248475550832,
+        "delta": -0.08961571774270746,
+        "abs_delta": 0.08961571774270746
+      },
+      {
+        "feature": "global_recent3_win_pct_diff",
+        "coefficient_before": 1.170516969303014,
+        "coefficient_after": 1.2520771371800068,
+        "delta": 0.08156016787699283,
+        "abs_delta": 0.08156016787699283
+      },
+      {
+        "feature": "global_quality_win_count_diff",
+        "coefficient_before": 0.03387036168485772,
+        "coefficient_after": 0.11284492982024467,
+        "delta": 0.07897456813538695,
+        "abs_delta": 0.07897456813538695
+      },
+      {
+        "feature": "global_career_bouts_diff",
+        "coefficient_before": 0.1598021296083467,
+        "coefficient_after": 0.09160821405920708,
+        "delta": -0.06819391554913962,
+        "abs_delta": 0.06819391554913962
+      },
+      {
+        "feature": "global_major_win_pct_diff",
+        "coefficient_before": -0.5938654349187922,
+        "coefficient_after": -0.6570630037839464,
+        "delta": -0.06319756886515426,
+        "abs_delta": 0.06319756886515426
+      },
+      {
+        "feature": "global_recent5_win_pct_diff",
+        "coefficient_before": -0.10114347901789379,
+        "coefficient_after": -0.16405173585061336,
+        "delta": -0.06290825683271957,
+        "abs_delta": 0.06290825683271957
+      }
+    ],
+    "artifact": "models/dwcs_w_v0_5_week7_logistic.joblib"
+  },
+  "method": {
+    "version": "DWCS-M-v0.3-candidate-access",
+    "historical_walk_forward": {
+      "n": 319,
+      "accuracy": 0.5799373040752351,
+      "log_loss": 1.1937154454968144,
+      "brier_multiclass": 0.5569264643576686
+    },
+    "previous_v0_2_reference": {
+      "accuracy": 0.4357366771,
+      "log_loss": 1.5067506031,
+      "brier_multiclass": 0.6886081439
+    },
+    "week7_rows_added": 5,
+    "training_rows": 420,
+    "architecture": "P(winner) x P(method|candidate winner), with candidate offense, opponent vulnerability and explicit route-access interactions.",
+    "artifact": "models/dwcs_m_v0_3_candidate_method_logistic.joblib",
+    "promotion_note": "Promote only if walk-forward probability quality is not worse than v0.2 and Week 8 pre-fight plausibility checks pass."
+  },
+  "duration_and_round": {
+    "version": "DWCS-D-v0.3-coherent-hazard",
+    "round_version": "DWCS-R-v0.3-hazard-derived",
+    "historical_walk_forward": {
+      "duration": {
+        "under_0_5": {
+          "n": 320,
+          "accuracy": 0.84375,
+          "brier": 0.13634512636145088,
+          "log_loss": 0.5138452202148784,
+          "auc": 0.5259917387576962
+        },
+        "under_1_5": {
+          "n": 320,
+          "accuracy": 0.596875,
+          "brier": 0.25250142759909994,
+          "log_loss": 0.7282837946710397,
+          "auc": 0.553632793323515
+        },
+        "under_2_5": {
+          "n": 320,
+          "accuracy": 0.509375,
+          "brier": 0.2764750108032934,
+          "log_loss": 0.7901051047415797,
+          "auc": 0.5138610357437773
+        },
+        "goes_distance": {
+          "n": 320,
+          "accuracy": 0.53125,
+          "brier": 0.2632541100091646,
+          "log_loss": 0.7652677733099418,
+          "auc": 0.5334412955465587
+        },
+        "round_2_starts": {
+          "n": 320,
+          "accuracy": 0.65,
+          "brier": 0.23296030942787244,
+          "log_loss": 0.6934130728444006,
+          "auc": 0.5892864907169877
+        },
+        "round_3_starts": {
+          "n": 320,
+          "accuracy": 0.509375,
+          "brier": 0.2773888984566694,
+          "log_loss": 0.791667636702146,
+          "auc": 0.5264885138302859
+        }
+      },
+      "round": {
+        "n": 320,
+        "accuracy": 0.396875,
+        "log_loss": 1.432322960957459,
+        "brier_multiclass": 0.7494026879738496
+      }
+    },
+    "week7_rows_added": 5,
+    "training_rows": 421,
+    "boundaries_seconds": [
+      150,
+      300,
+      450,
+      600,
+      750,
+      900
+    ],
+    "coherence_guarantee": "Survival probabilities are multiplied across ordered intervals, so O/U thresholds and round-start/distance markets are nested by construction.",
+    "status": "SHADOW until walk-forward beats the prior/previous model on probability quality."
+  },
+  "prospective_only_features": [
+    "submission_access_quality_diff",
+    "back_exposure_created_diff",
+    "back_exposure_allowed_diff",
+    "durability_after_clean_damage_diff",
+    "failed_finish_cardio_cost_diff",
+    "late_round_momentum_reversal_diff",
+    "size_physicality_edge_diff",
+    "decision_resilience_diff"
+  ],
+  "anti_overfit_rule": "Week 7 result-derived concepts are added to the prospective feature contract now, but are not retroactively fabricated for historical or Week 7 prefight rows. They begin receiving real values from Week 8 onward."
+}
