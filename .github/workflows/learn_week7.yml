@@ -1,0 +1,51 @@
+name: Learn from DWCS Week 7
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/learn_from_week7.py"
+      - "data/current/week7_results.csv"
+      - "data/current/week7_current_records.csv"
+      - "data/current/week7_model_features.csv"
+      - "data/current/week7_secondary_model_features.csv"
+      - "data/current/week7_fighter_snapshots.csv"
+      - ".github/workflows/learn_week7.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  learn:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy pandas scipy scikit-learn joblib duckdb kagglehub
+
+      - name: Refit winner method duration and round challengers
+        run: python src/learn_from_week7.py
+
+      - name: Commit Week 7 learning artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed/dwcs_method_candidate_matrix_v0_3.csv
+          git add reports/week7_learning_summary.json
+          git add reports/winner_v0_5_week7_* reports/method_v0_3_coefficients.csv
+          git add models/dwcs_w_v0_5_week7_logistic.joblib
+          git add models/dwcs_m_v0_3_candidate_method_logistic.joblib
+          git add models/dwcs_d_hazard_*_v0_3.joblib
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "Learn from DWCS Week 7 results [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
