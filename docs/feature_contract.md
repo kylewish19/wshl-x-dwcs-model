@@ -74,9 +74,35 @@ All tape features must use a fixed prospective scoring rubric.
 - Ultra-early finish hazard must be matchup-specific, not globally inflated because one card had fast finishes.
 - Unknown defensive evidence is uncertainty, not assumed average defense.
 
+## Week 7 rule changes
+
+These features begin with Week 8 pre-fight capture. They are **not** retroactively assigned to Week 7 or older fights after seeing results.
+
+- submission_access_quality_diff
+- back_exposure_created_diff
+- back_exposure_allowed_diff
+- durability_after_clean_damage_diff
+- failed_finish_cardio_cost_diff
+- late_round_momentum_reversal_diff
+- size_physicality_edge_diff
+- decision_resilience_diff
+
+Method-specific rules:
+- Separate weapon from access and access from conversion.
+- Candidate method offense and opponent method-specific vulnerability must be represented separately; A-minus-B differences alone are not sufficient for DWCS-M.
+- Career route evidence is a plausibility check, not a hard manual method override.
+- High historical finish rate does not automatically beat decision when opponent durability/recovery evidence is strong.
+- Back exposure and strike-to-grapple transitions can raise submission probability even for fighters whose historical wins skew KO/TKO.
+
+Duration/round rules:
+- Independent O/U thresholds may not be promoted if they violate probability nesting.
+- The preferred challenger is a coherent survival/hazard layer across 2.5, 5, 7.5, 10, 12.5 and 15 minutes.
+- Round probabilities should be derived from the same survival curve whenever possible so R1/R2/R3/DEC and O/U markets cannot contradict one another.
+
 ## Anti-leakage
 
 - No current-fight odds.
 - No current-fight result, method, or round.
 - No statistics accumulated after event_date.
 - Week N results may train Week N+1 only.
+- A feature invented after a card may be captured prospectively starting the next card, but may not be retrospectively fabricated for earlier bouts.
