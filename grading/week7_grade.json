@@ -1,0 +1,91 @@
+{
+  "event": "DWCS Season 10 Week 7",
+  "event_date": "2026-09-22",
+  "source_results": "UFC/Sherdog verified",
+  "official_results": [
+    {
+      "fight": "Norbert Novenyi Jr. vs Theo Haig",
+      "winner": "Norbert Novenyi Jr.",
+      "method": "DEC",
+      "round": "DEC",
+      "time": "15:00"
+    },
+    {
+      "fight": "Alvi Dasuyev vs Jaden Ortega",
+      "winner": "Alvi Dasuyev",
+      "method": "DEC",
+      "round": "DEC",
+      "time": "15:00"
+    },
+    {
+      "fight": "Marcos Degli vs Paris Moran",
+      "winner": "Marcos Degli",
+      "method": "SUB",
+      "round": "R2",
+      "time": "4:46"
+    },
+    {
+      "fight": "Piero Guaylupo vs Callum Connor",
+      "winner": "Piero Guaylupo",
+      "method": "DEC",
+      "round": "DEC",
+      "time": "15:00"
+    },
+    {
+      "fight": "Damian Piwowarczyk vs Emilio Quissua",
+      "winner": "Damian Piwowarczyk",
+      "method": "KO_TKO",
+      "round": "R1",
+      "time": "4:55"
+    }
+  ],
+  "grades": {
+    "winner": {
+      "record": "3-2",
+      "accuracy": 0.6
+    },
+    "forced_winner_method": {
+      "record": "0-5",
+      "accuracy": 0
+    },
+    "exact_round_or_decision_bucket": {
+      "record": "2-3",
+      "accuracy": 0.4
+    },
+    "totals_direction_0_5_1_5_2_5": {
+      "record": "12-3",
+      "accuracy": 0.8
+    },
+    "goes_distance_direction": {
+      "record": "2-3",
+      "accuracy": 0.4
+    },
+    "round_start_direction": {
+      "record": "6-4",
+      "accuracy": 0.6
+    },
+    "all_duration_binary_shadow_markets": {
+      "record": "20-10",
+      "accuracy": 0.6666666667
+    }
+  },
+  "confidence_grades": {
+    "HIGH": "1-0",
+    "MEDIUM_HIGH": "0-1",
+    "LOW": "2-1"
+  },
+  "method_status_grades": {
+    "qualified": "0-1",
+    "leans": "0-2",
+    "side_only_forecasts": "0-2"
+  },
+  "lessons": [
+    "Method model failed to distinguish finish weapon from actual access/conversion; Week 7 exact winner+method was 0-5.",
+    "Haig anomaly confirms conditional method probabilities require career-route plausibility and out-of-distribution checks.",
+    "Dasuyev and Guaylupo were correctly picked to win but finished by decision, so undefeated/high-finish-rate priors overestimated conversion against durable opponents.",
+    "Degli side was correct but finish family was wrong; grappling dominance and back-taking access should raise SUB probability even for high-KO finishers.",
+    "Piwowarczyk-Quissua miss: size/durability/late-round momentum reversal and opponent pressure resilience were underweighted in winner and method routing.",
+    "O/U threshold directions were strong at 12-3, but logical-monotonicity issues remain; keep duration model shadow until coherent survival/hazard architecture replaces independent thresholds.",
+    "Exact round remains weak; do not promote despite 2-3 bucket grade."
+  ]
+}
