@@ -1,101 +1,126 @@
 # Current DWCS Model Status
 
-Last updated: 2026-09-16
+Last updated: 2026-09-23
 
 ## Production winner model
 
-### DWCS-W-v0.4 — PROMOTED LOGISTIC CHAMPION
+### DWCS-W-v0.5 — ACTIVE CURRENT-SEASON RETRAIN
 
-Historical label set:
-- 416 usable DWCS bouts
-- 86 events
-- 751 DWCS fighters
-- 320 held-out bouts across 66 future-event walk-forward folds
-- DWCS fights only are prediction labels
+- Parent architecture: DWCS-W-v0.4 promoted logistic champion
+- Historical DWCS training bouts: 416
+- New prospectively locked Week 7 labels appended: 5
+- Total fitted rows: 421
+- Artifact: `models/dwcs_w_v0_5_week7_logistic.joblib`
+- Week 7 coefficient delta: `reports/winner_v0_5_week7_coefficient_delta.csv`
 
-External pre-fight state:
-- MMA Global Database career history
-- 125,539 source fights loaded before the historical DWCS cutoff
-- record/form/finish mix/opponent quality/Elo/activity features only
-- external fights are state inputs, never DWCS prediction labels
-- raw external database is not committed to this repository
+Week 7 changed fitted weights rather than manually editing them. The largest movements were increased global Elo/opponent-quality influence and reduced weight on raw win streak/career volume and prior-DWCS takedown-attempt volume.
 
-Conservative anti-leakage audit:
-- accuracy: 82.50%
-- Brier: 0.1324
-- log loss: 0.4298
-- AUC: 0.8951
-- date-leakage violations: 0
-- explicit history-availability feature removed in audit
-- missingness indicators disabled in audit
-- shuffled regional-feature control: 58.44% accuracy, 0.7153 log loss
+DWCS-W-v0.5 inherits the historical validation of v0.4. Week 7 is training data for Week 8 and is not reused as holdout validation.
 
-### Coverage gate
+## Production method model
 
-The regional model is strongest only when both fighters have established pre-fight career histories.
+### DWCS-M-v0.3 — PROMOTED FOR WEEK 8+
 
-Historical held-out segment results:
-- both histories matched: 217 fights, 91.71% accuracy, 0.2895 log loss
-- one history matched: 89 fights, 61.80% accuracy, 0.7547 log loss
-- neither matched: 14 fights, too small for a reliable standalone conclusion
+Architecture:
+- P(winner) × P(method | candidate winner)
+- candidate-centered offense
+- opponent method-specific vulnerability
+- explicit KO access, SUB access, decision route and finish-conversion interactions
+- career-route plausibility and model-disagreement gates remain mandatory
 
-Production rule:
-- use DWCS-W-v0.4 as the primary ML winner component only when both fighters' current career histories are established;
-- if one/both histories cannot be established, fall back to DWCS-W-v0.3 plus current tape/research rather than treating missing history as neutral.
+Historical future-event walk-forward, 319 held-out DWCS bouts:
+- exact winner+method accuracy: 57.99%
+- log loss: 1.1937
+- multiclass Brier: 0.5569
 
-### Champion vs challenger
+Previous DWCS-M-v0.2:
+- exact winner+method accuracy: 43.57%
+- log loss: 1.5068
+- multiclass Brier: 0.6886
 
-Logistic remains champion because:
-- it supports the requested week-to-week coefficient audit;
-- it had better accuracy and Brier than the boosting challenger;
-- it passed the conservative no-missingness audit.
+The v0.3 architecture therefore improves all three primary historical winner+method metrics.
 
-Histogram gradient boosting remains challenger:
-- accuracy: 78.44%
-- Brier: 0.1365
-- log loss: 0.4193
-- AUC: 0.8938
+Artifact:
+- `models/dwcs_m_v0_3_candidate_method_logistic.joblib`
 
-Its log loss was slightly better, so it remains useful as a disagreement check but does not replace the logistic champion.
+## Duration / O-U model
 
-## Current-season learning
+### DWCS-D-v0.3 — SHADOW
 
-- Weeks 2-6 recoverable winner ledger: 16-9
-- Week 6 prospective winner record: 4-1
-- calibration layer retrains weekly
-- method population prior retrains weekly
-- O/U 1.5 population prior retrains weekly
-- coefficient-delta reporting is enabled after each retrain
+Week 7 main O/U threshold directions graded 12-3, but that single card is diagnostic only.
 
-## Week 6 lessons in feature contract
+The architecture was rebuilt as a coherent survival/hazard chain across:
+- 2.5 minutes
+- 5 minutes
+- 7.5 minutes
+- 10 minutes
+- 12.5 minutes
+- 15 minutes
 
-- recovery_after_hurt_diff
-- scramble_conversion_diff
-- counter_grappling_transition_diff
-- multi_route_finishing_diff
-- early_finish_hazard_diff
-- round-dependent cardio treatment
+This guarantees nested probabilities across U/O thresholds, round starts and goes-distance instead of fitting contradictory independent markets.
 
-These tape-derived features are saved prospectively; they are not retroactively fabricated for old fights.
+Historical probability quality still does not beat the simple chronological baseline consistently, so DWCS-D-v0.3 remains shadow.
 
-## Current limitation / Week 7 rule
+## Round model
 
-The global career source currently ends 2026-01-31. Every 2026 card therefore requires a fresh current-record/tape research pass before inference. Stale January records must never be presented as current fighter state.
+### DWCS-R-v0.3 — SHADOW
 
-## Next milestone
+R1/R2/R3/DEC probabilities are now derived from the same hazard curve as DWCS-D rather than an independent contradictory model.
 
-Build the Week 7 pre-fight feature capture format so the current regional record, opponent-quality state, tape scores, and model probabilities are frozen in GitHub before the card. After Week 7, append the outcomes and produce a real coefficient-delta report.
+Historical walk-forward:
+- accuracy: 39.69%
+- log loss: 1.4323
+- multiclass Brier: 0.7494
 
+Probability quality improved versus the independent v0.2 round model, but still trails the chronological class-frequency baseline. No promotion.
 
-## Week 7 preflight audit — 2026-09-22
+## Week 7 official grade
 
-The live pre-odds run exposed two important runtime issues before results were known:
+Official locked Week 7 card:
+- Winner: 3-2
+- Forced winner+method forecasts: 0-5
+- Exact round/decision bucket: 2-3
+- O/U 0.5/1.5/2.5 directional calls: 12-3
+- Goes distance: 2-3
+- Round 2/3 starts: 6-4
+- All duration binary shadow markets: 20-10
 
-1. **DWCS-M-v0.2 conditional method requires a plausibility gate.** Theo Haig's conditional output incorrectly concentrated on KO/TKO despite a 7-SUB / 0-KO professional win history. The direct six-class model and career route both favored submission. Going forward, no method is promoted from the conditional model alone.
-2. **DWCS-D/R remain shadow-only.** Independent duration classifiers produced non-nested survival probabilities on Week 7 and some severe method/distance conflicts. The next duration architecture should be a coherent survival/hazard model.
+Week 7 is now stored as labeled training data for Week 8.
 
-The audited pre-odds card is:
-- `official_picks/week7_preodds_audited_lock.csv`
-- audit notes: `reports/week7_preodds_audit.md`
+## Week 7 lessons encoded
 
-These changes were made before sportsbook odds and before fight outcomes.
+Starting with Week 8 pre-fight capture:
+- submission_access_quality_diff
+- back_exposure_created_diff
+- back_exposure_allowed_diff
+- durability_after_clean_damage_diff
+- failed_finish_cardio_cost_diff
+- late_round_momentum_reversal_diff
+- size_physicality_edge_diff
+- decision_resilience_diff
+
+These are prospective-only. They are not retroactively fabricated for Week 7 or older fights.
+
+Core method rule:
+- weapon ≠ access
+- access ≠ conversion
+- historical finish rate alone cannot overrule opponent-specific durability, recovery or route vulnerability
+
+## Temporal-integrity correction
+
+Week 6 model predictions were generated after the September 15 event. Week 6 is therefore a retrospective/backtest diagnostic, not a prospective lock and not clean prospective validation.
+
+The calibration fit that included Week 6 post-event probabilities is marked retrospective/development-only. The last clean recoverable calibration fallback is DWCS-CAL-v0.1 through Week 5.
+
+## Forward weekly cycle
+
+For every new DWCS card:
+
+1. Freeze current fighter records, regional history and tape features before the event.
+2. Run DWCS-W, DWCS-M, DWCS-D and DWCS-R.
+3. Run fresh 10,000-fight simulations.
+4. Lock the card before odds are allowed to influence bet selection.
+5. Grade winner, winner+method, totals and round outputs separately.
+6. Append verified outcomes.
+7. Refit all four systems.
+8. Save coefficient/model deltas and only promote challengers that earn it on chronological validation.
