@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+# Week 7 retrain trigger: winner, candidate-method, coherent duration/round.
+
 import hashlib
 import json
 from pathlib import Path
