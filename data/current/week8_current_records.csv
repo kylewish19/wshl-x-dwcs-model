@@ -1,0 +1,11 @@
+fighter_name,as_of_date,wins,losses,nc,ko_wins,sub_wins,dec_wins,ko_losses,sub_losses,dec_losses,dob,height_cm,association,last_fight_date,last_opponent,last_result,last_method,source,record_status,recent3_win_pct,recent5_win_pct,current_win_streak
+Ilias Bulaid,2026-09-29,9,0,1,5,1,3,0,0,0,1995-05-01,177.80,Mike's Gym,2026-04-11,Wellyton Silva,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,2
+Erick Visconde,2026-09-29,17,3,0,6,6,5,0,1,2,1996-11-21,170.18,CM System,2026-05-15,Gustavo Pintos,W,DEC,Sherdog,RECONCILED,1.0,0.8,4
+Camila Reynoso,2026-09-29,9,1,0,4,2,3,0,0,1,2003-08-28,157.48,ADM Sports Center,2025-12-30,Maria Luiza Feitosa de Abreu,W,KO/TKO,Sherdog,RECONCILED,1.0,0.8,3
+Aieza Ramos Bertolso,2026-09-29,7,0,0,1,4,2,0,0,0,2001-08-29,167.64,MSP,2025-09-05,Edilania Silva,W,SUB,Sherdog,RECONCILED,1.0,1.0,7
+Luca Borando,2026-09-29,9,1,0,7,1,1,0,1,0,2000-09-24,177.80,Aurora MMA,2026-07-04,Leandro Camargo,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,5
+Ian Escuza,2026-09-29,7,0,0,5,2,0,0,0,0,1996-04-28,172.72,Pitbull Martial Arts Center,2026-06-24,Octavio Lopez,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,7
+Zaurbek Sabanov,2026-09-29,5,0,0,4,0,1,0,0,0,1998-06-14,193.04,ARS Fight Club,2026-06-06,Ivan Romanov,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,5
+Adama Diop,2026-09-29,6,1,0,5,0,1,1,0,0,1994-12-10,185.42,Mantis MMA Dakar,2026-04-09,Matunga Djikasa,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,5
+Loai Abushaar,2026-09-29,7,1,0,4,3,0,1,0,0,1996-08-10,193.04,MMA Lab,2026-04-18,Alejandro Quero,W,SUB,Sherdog,RECONCILED,1.0,0.8,4
+George Staines,2026-09-29,8,0,0,1,2,5,0,0,0,2000-09-20,185.42,Hit Squad Hull,2026-06-20,Conor McCarthy,W,SUB,Sherdog,RECONCILED,1.0,1.0,8
