@@ -1,0 +1,6 @@
+event_date,event_id,fight,forced_winner,raw_winner_probability,audited_confidence,betting_side_status,method_forecast,method_status,shadow_total_lean,shadow_total_probability,simulation_runs,preodds
+2026-09-29,DWCS_S10_W8,"Ilias Bulaid vs Erick Visconde","Erick Visconde",0.919531,"MEDIUM","LEAN","Erick Visconde by DEC","METHOD LEAN — PRICE PENDING","Over 1.5 rounds",0.612507,10000,TRUE
+2026-09-29,DWCS_S10_W8,"Camila Reynoso vs Aieza Ramos Bertolso","Camila Reynoso",0.567583,"LOW","PASS","Camila Reynoso by DEC","SIDE ONLY — NO METHOD BET","Under 2.5 rounds",0.652072,10000,TRUE
+2026-09-29,DWCS_S10_W8,"Luca Borando vs Ian Escuza","Ian Escuza",0.736822,"LOW-MEDIUM","LEAN","Ian Escuza by SUB","METHOD LEAN — PRICE PENDING","Over 2.5 rounds",0.650446,10000,TRUE
+2026-09-29,DWCS_S10_W8,"Zaurbek Sabanov vs Adama Diop","Adama Diop",0.552232,"VERY LOW","PASS","Adama Diop by DEC","SIDE ONLY — NO METHOD BET","Over 1.5 rounds",0.681975,10000,TRUE
+2026-09-29,DWCS_S10_W8,"Loai Abushaar vs George Staines","George Staines",0.956101,"MEDIUM","LEAN","RAW MODEL: George Staines by KO/TKO","REJECTED BY ROUTE-PLAUSIBILITY GATE — SIDE ONLY","Over 1.5 rounds",0.712738,10000,TRUE
