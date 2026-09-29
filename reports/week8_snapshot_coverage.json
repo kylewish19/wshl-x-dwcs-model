@@ -1,0 +1,117 @@
+{
+  "event": "DWCS Season 10 Week 8",
+  "event_date": "2026-09-29",
+  "source_global_fights_loaded": 129285,
+  "source_global_unique_fighters": 51902,
+  "fighter_coverage": [
+    {
+      "fighter": "Adama Diop",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Aieza Ramos Bertolso",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 0,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Camila Reynoso",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 0,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Erick Visconde",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "George Staines",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 2,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Ian Escuza",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Ilias Bulaid",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Loai Abushaar",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 2,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Luca Borando",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 2,
+      "prior_dwcs_bouts": 0.0
+    },
+    {
+      "fighter": "Zaurbek Sabanov",
+      "history_established": 1,
+      "global_history_matched": 1,
+      "current_record_reconciled": 1,
+      "postcut_updates": 1,
+      "prior_dwcs_bouts": 0.0
+    }
+  ],
+  "bout_coverage": [
+    {
+      "fighter_a": "Ilias Bulaid",
+      "fighter_b": "Erick Visconde",
+      "both_histories_established": 1
+    },
+    {
+      "fighter_a": "Camila Reynoso",
+      "fighter_b": "Aieza Ramos Bertolso",
+      "both_histories_established": 1
+    },
+    {
+      "fighter_a": "Luca Borando",
+      "fighter_b": "Ian Escuza",
+      "both_histories_established": 1
+    },
+    {
+      "fighter_a": "Zaurbek Sabanov",
+      "fighter_b": "Adama Diop",
+      "both_histories_established": 1
+    },
+    {
+      "fighter_a": "Loai Abushaar",
+      "fighter_b": "George Staines",
+      "both_histories_established": 1
+    }
+  ],
+  "primary_v0_4_bouts": 5,
+  "total_bouts": 5
+}

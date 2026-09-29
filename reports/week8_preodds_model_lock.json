@@ -1,0 +1,450 @@
+{
+  "event": "DWCS Season 10 Week 8",
+  "event_date": "2026-09-29",
+  "lock_type": "PRE_ODDS",
+  "odds_used": false,
+  "models": {
+    "winner": "DWCS-W-v0.5 current-season retrain",
+    "method": "DWCS-M-v0.3 candidate-access promoted",
+    "duration": "DWCS-D-v0.3 coherent hazard SHADOW",
+    "round": "DWCS-R-v0.3 hazard-derived SHADOW"
+  },
+  "simulation_runs_per_fight": 10000,
+  "fights": [
+    {
+      "fight": "Ilias Bulaid vs Erick Visconde",
+      "winner_pick": "Erick Visconde",
+      "winner_probability": 0.9195314779174208,
+      "winner_models_agree": true,
+      "winner_model_disagreement_range": 0.3660763576423697,
+      "winner_three_model_median_a": 0.12467598070349659,
+      "method_forecast": "Erick Visconde by DEC",
+      "method_joint_probability": 0.6465645508561347,
+      "method_conditional_probability_given_win": 0.7031456414308852,
+      "method_career_smoothed_plausibility": 0.3,
+      "method_career_win_count": 5,
+      "method_status": "FORECAST_ONLY",
+      "round_top_shadow": "DEC",
+      "round_top_probability_shadow": 0.4468918525220184,
+      "under_0_5_probability_shadow": 0.1532691622708815,
+      "under_1_5_probability_shadow": 0.3874927859748525,
+      "under_2_5_probability_shadow": 0.5091888984391919,
+      "goes_distance_probability_shadow": 0.4468918525220184,
+      "round_2_starts_probability_shadow": 0.6984251097479213,
+      "round_3_starts_probability_shadow": 0.5312987435672549,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Ilias Bulaid": 0.08046852208257912,
+        "Erick Visconde": 0.9195314779174208,
+        "v0_3_baseline_a": 0.4465448797249488,
+        "v0_4_boosting_challenger_a": 0.12467598070349659
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.13222857403986507,
+        "SUB": 0.07343145664390414,
+        "DEC": 0.7943399693162309
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.0852559449299446,
+        "SUB": 0.21159841363917023,
+        "DEC": 0.7031456414308852
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.010640237930074832,
+        "A_SUB": 0.005908920790505952,
+        "A_DEC": 0.06391936336199834,
+        "B_KO_TKO": 0.0783955250426782,
+        "B_SUB": 0.19457140201860795,
+        "B_DEC": 0.6465645508561347
+      },
+      "duration_shadow": {
+        "under_0_5": 0.1532691622708815,
+        "under_1_5": 0.3874927859748525,
+        "under_2_5": 0.5091888984391919,
+        "goes_distance": 0.4468918525220184,
+        "round_2_starts": 0.6984251097479213,
+        "round_3_starts": 0.5312987435672549
+      },
+      "round_shadow": {
+        "R1": 0.30157489025207873,
+        "R2": 0.16712636618066634,
+        "R3": 0.08440689104523652,
+        "DEC": 0.4468918525220184
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 117,
+          "A_SUB": 54,
+          "A_DEC": 672,
+          "B_KO_TKO": 777,
+          "B_SUB": 1912,
+          "B_DEC": 6468
+        },
+        "round_counts_10000": {
+          "R1": 1550,
+          "R2": 884,
+          "R3": 426,
+          "DEC": 7140
+        },
+        "duration_counts_10000": {
+          "under_0_5": 782,
+          "under_1_5": 2005,
+          "under_2_5": 2644,
+          "goes_distance": 7140,
+          "round_2_starts": 8450,
+          "round_3_starts": 7566
+        },
+        "note": "Winner+method uses promoted M-v0.3; finish timing uses D-v0.3 conditional on a finish. D/R standalone probabilities remain shadow."
+      }
+    },
+    {
+      "fight": "Camila Reynoso vs Aieza Ramos Bertolso",
+      "winner_pick": "Camila Reynoso",
+      "winner_probability": 0.5675829548117147,
+      "winner_models_agree": false,
+      "winner_model_disagreement_range": 0.508059852931796,
+      "winner_three_model_median_a": 0.5617564491798153,
+      "method_forecast": "Camila Reynoso by DEC",
+      "method_joint_probability": 0.4712498053241828,
+      "method_conditional_probability_given_win": 0.8302747665854612,
+      "method_career_smoothed_plausibility": 0.3333333333333333,
+      "method_career_win_count": 3,
+      "method_status": "FORECAST_ONLY",
+      "round_top_shadow": "R1",
+      "round_top_probability_shadow": 0.4778481909177653,
+      "under_0_5_probability_shadow": 0.13735784056752876,
+      "under_1_5_probability_shadow": 0.5148423292763481,
+      "under_2_5_probability_shadow": 0.6520715072676522,
+      "goes_distance_probability_shadow": 0.27754215018220074,
+      "round_2_starts_probability_shadow": 0.5221518090822347,
+      "round_3_starts_probability_shadow": 0.3822541920658337,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Camila Reynoso": 0.5675829548117147,
+        "Aieza Ramos Bertolso": 0.4324170451882853,
+        "v0_3_baseline_a": 0.5617564491798153,
+        "v0_4_boosting_challenger_a": 0.05952310187991872
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.12087207182394574,
+        "SUB": 0.04885316159059318,
+        "DEC": 0.8302747665854612
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.13831985043118294,
+        "SUB": 0.2865952802933879,
+        "DEC": 0.5750848692754292
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.06860492768004893,
+        "A_SUB": 0.027728221807483047,
+        "A_DEC": 0.4712498053241828,
+        "B_KO_TKO": 0.0598118610143377,
+        "B_SUB": 0.12392868426937519,
+        "B_DEC": 0.2486764999045724
+      },
+      "duration_shadow": {
+        "under_0_5": 0.13735784056752876,
+        "under_1_5": 0.5148423292763481,
+        "under_2_5": 0.6520715072676522,
+        "goes_distance": 0.27754215018220074,
+        "round_2_starts": 0.5221518090822347,
+        "round_3_starts": 0.3822541920658337
+      },
+      "round_shadow": {
+        "R1": 0.4778481909177653,
+        "R2": 0.13989761701640097,
+        "R3": 0.10471204188363298,
+        "DEC": 0.27754215018220074
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 693,
+          "A_SUB": 281,
+          "A_DEC": 4646,
+          "B_KO_TKO": 618,
+          "B_SUB": 1163,
+          "B_DEC": 2599
+        },
+        "round_counts_10000": {
+          "R1": 1876,
+          "R2": 501,
+          "R3": 378,
+          "DEC": 7245
+        },
+        "duration_counts_10000": {
+          "under_0_5": 562,
+          "under_1_5": 2025,
+          "under_2_5": 2507,
+          "goes_distance": 7245,
+          "round_2_starts": 8124,
+          "round_3_starts": 7623
+        },
+        "note": "Winner+method uses promoted M-v0.3; finish timing uses D-v0.3 conditional on a finish. D/R standalone probabilities remain shadow."
+      }
+    },
+    {
+      "fight": "Luca Borando vs Ian Escuza",
+      "winner_pick": "Ian Escuza",
+      "winner_probability": 0.7368220222818849,
+      "winner_models_agree": false,
+      "winner_model_disagreement_range": 0.5206981439534023,
+      "winner_three_model_median_a": 0.2631779777181152,
+      "method_forecast": "Ian Escuza by SUB",
+      "method_joint_probability": 0.4547875232481,
+      "method_conditional_probability_given_win": 0.6172284615484968,
+      "method_career_smoothed_plausibility": 0.3,
+      "method_career_win_count": 2,
+      "method_status": "FORECAST_ONLY",
+      "round_top_shadow": "DEC",
+      "round_top_probability_shadow": 0.6202396650667634,
+      "under_0_5_probability_shadow": 0.07238314833064174,
+      "under_1_5_probability_shadow": 0.2812285710379234,
+      "under_2_5_probability_shadow": 0.34955435485211095,
+      "goes_distance_probability_shadow": 0.6202396650667634,
+      "round_2_starts_probability_shadow": 0.765846777664149,
+      "round_3_starts_probability_shadow": 0.6963701871168848,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Luca Borando": 0.2631779777181152,
+        "Ian Escuza": 0.7368220222818849,
+        "v0_3_baseline_a": 0.5513096614327759,
+        "v0_4_boosting_challenger_a": 0.030611517479373664
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.21070221331963485,
+        "SUB": 0.1440002638489415,
+        "DEC": 0.6452975228314237
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.20316607690642527,
+        "SUB": 0.6172284615484968,
+        "DEC": 0.17960546154507792
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.055452182402192414,
+        "A_SUB": 0.03789769823063943,
+        "A_DEC": 0.16982809708528335,
+        "B_KO_TKO": 0.1496972396452692,
+        "B_SUB": 0.4547875232481,
+        "B_DEC": 0.13233725938851562
+      },
+      "duration_shadow": {
+        "under_0_5": 0.07238314833064174,
+        "under_1_5": 0.2812285710379234,
+        "under_2_5": 0.34955435485211095,
+        "goes_distance": 0.6202396650667634,
+        "round_2_starts": 0.765846777664149,
+        "round_3_starts": 0.6963701871168848
+      },
+      "round_shadow": {
+        "R1": 0.234153222335851,
+        "R2": 0.06947659054726418,
+        "R3": 0.07613052205012139,
+        "DEC": 0.6202396650667634
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 546,
+          "A_SUB": 379,
+          "A_DEC": 1699,
+          "B_KO_TKO": 1543,
+          "B_SUB": 4550,
+          "B_DEC": 1283
+        },
+        "round_counts_10000": {
+          "R1": 4387,
+          "R2": 1292,
+          "R3": 1339,
+          "DEC": 2982
+        },
+        "duration_counts_10000": {
+          "under_0_5": 1354,
+          "under_1_5": 5256,
+          "under_2_5": 6492,
+          "goes_distance": 2982,
+          "round_2_starts": 5613,
+          "round_3_starts": 4321
+        },
+        "note": "Winner+method uses promoted M-v0.3; finish timing uses D-v0.3 conditional on a finish. D/R standalone probabilities remain shadow."
+      }
+    },
+    {
+      "fight": "Zaurbek Sabanov vs Adama Diop",
+      "winner_pick": "Adama Diop",
+      "winner_probability": 0.5522323982450604,
+      "winner_models_agree": false,
+      "winner_model_disagreement_range": 0.20640378149226712,
+      "winner_three_model_median_a": 0.5285978241840736,
+      "method_forecast": "Adama Diop by DEC",
+      "method_joint_probability": 0.3711875960826078,
+      "method_conditional_probability_given_win": 0.6721583109976977,
+      "method_career_smoothed_plausibility": 0.2222222222222222,
+      "method_career_win_count": 1,
+      "method_status": "FORECAST_ONLY",
+      "round_top_shadow": "DEC",
+      "round_top_probability_shadow": 0.5049801218148262,
+      "under_0_5_probability_shadow": 0.14358038310452126,
+      "under_1_5_probability_shadow": 0.318024868866879,
+      "under_2_5_probability_shadow": 0.45121577684065706,
+      "goes_distance_probability_shadow": 0.5049801218148262,
+      "round_2_starts_probability_shadow": 0.7646067086879365,
+      "round_3_starts_probability_shadow": 0.6019251161562036,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Zaurbek Sabanov": 0.44776760175493957,
+        "Adama Diop": 0.5522323982450604,
+        "v0_3_baseline_a": 0.5285978241840736,
+        "v0_4_boosting_challenger_a": 0.6541713832472067
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.9452856401004764,
+        "SUB": 0.006474221107576589,
+        "DEC": 0.04824013879194696
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.24735275557627928,
+        "SUB": 0.08048893342602301,
+        "DEC": 0.6721583109976977
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.4232682840411733,
+        "A_SUB": 0.0028989464585707776,
+        "A_DEC": 0.021600371255195518,
+        "B_KO_TKO": 0.13659620542441295,
+        "B_SUB": 0.04444859673803969,
+        "B_DEC": 0.3711875960826078
+      },
+      "duration_shadow": {
+        "under_0_5": 0.14358038310452126,
+        "under_1_5": 0.318024868866879,
+        "under_2_5": 0.45121577684065706,
+        "goes_distance": 0.5049801218148262,
+        "round_2_starts": 0.7646067086879365,
+        "round_3_starts": 0.6019251161562036
+      },
+      "round_shadow": {
+        "R1": 0.23539329131206355,
+        "R2": 0.16268159253173287,
+        "R3": 0.09694499434137738,
+        "DEC": 0.5049801218148262
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 4202,
+          "A_SUB": 36,
+          "A_DEC": 226,
+          "B_KO_TKO": 1320,
+          "B_SUB": 472,
+          "B_DEC": 3744
+        },
+        "round_counts_10000": {
+          "R1": 2886,
+          "R2": 2014,
+          "R3": 1130,
+          "DEC": 3970
+        },
+        "duration_counts_10000": {
+          "under_0_5": 1747,
+          "under_1_5": 3946,
+          "under_2_5": 5527,
+          "goes_distance": 3970,
+          "round_2_starts": 7114,
+          "round_3_starts": 5100
+        },
+        "note": "Winner+method uses promoted M-v0.3; finish timing uses D-v0.3 conditional on a finish. D/R standalone probabilities remain shadow."
+      }
+    },
+    {
+      "fight": "Loai Abushaar vs George Staines",
+      "winner_pick": "George Staines",
+      "winner_probability": 0.9561005600226757,
+      "winner_models_agree": true,
+      "winner_model_disagreement_range": 0.3621585619961184,
+      "winner_three_model_median_a": 0.0466440102208333,
+      "method_forecast": "George Staines by KO_TKO",
+      "method_joint_probability": 0.5917090796960706,
+      "method_conditional_probability_given_win": 0.6188774533110168,
+      "method_career_smoothed_plausibility": 0.18181818181818182,
+      "method_career_win_count": 1,
+      "method_status": "FORECAST_ONLY",
+      "round_top_shadow": "DEC",
+      "round_top_probability_shadow": 0.3671321937046091,
+      "under_0_5_probability_shadow": 0.12468941232898378,
+      "under_1_5_probability_shadow": 0.28726153345975636,
+      "under_2_5_probability_shadow": 0.575502209897589,
+      "goes_distance_probability_shadow": 0.3671321937046091,
+      "round_2_starts_probability_shadow": 0.7892612924376076,
+      "round_3_starts_probability_shadow": 0.5968711754236374,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Loai Abushaar": 0.04389943997732421,
+        "George Staines": 0.9561005600226757,
+        "v0_3_baseline_a": 0.4060580019734426,
+        "v0_4_boosting_challenger_a": 0.0466440102208333
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.06490430842101713,
+        "SUB": 0.07444030375724413,
+        "DEC": 0.8606553878217387
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.6188774533110168,
+        "SUB": 0.12970599922968543,
+        "DEC": 0.2514165474592978
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.00284926279179818,
+        "A_SUB": 0.0032678876466849206,
+        "A_DEC": 0.03778228953884111,
+        "B_KO_TKO": 0.5917090796960706,
+        "B_SUB": 0.12401197850180298,
+        "B_DEC": 0.24037950182480228
+      },
+      "duration_shadow": {
+        "under_0_5": 0.12468941232898378,
+        "under_1_5": 0.28726153345975636,
+        "under_2_5": 0.575502209897589,
+        "goes_distance": 0.3671321937046091,
+        "round_2_starts": 0.7892612924376076,
+        "round_3_starts": 0.5968711754236374
+      },
+      "round_shadow": {
+        "R1": 0.21073870756239244,
+        "R2": 0.19239011701397013,
+        "R3": 0.22973898171902835,
+        "DEC": 0.3671321937046091
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 37,
+          "A_SUB": 33,
+          "A_DEC": 374,
+          "B_KO_TKO": 5806,
+          "B_SUB": 1266,
+          "B_DEC": 2484
+        },
+        "round_counts_10000": {
+          "R1": 2362,
+          "R2": 2166,
+          "R3": 2614,
+          "DEC": 2858
+        },
+        "duration_counts_10000": {
+          "under_0_5": 1392,
+          "under_1_5": 3209,
+          "under_2_5": 6481,
+          "goes_distance": 2858,
+          "round_2_starts": 7638,
+          "round_3_starts": 5472
+        },
+        "note": "Winner+method uses promoted M-v0.3; finish timing uses D-v0.3 conditional on a finish. D/R standalone probabilities remain shadow."
+      }
+    }
+  ]
+}
