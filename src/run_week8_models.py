@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+# Week 8 pre-odds execution trigger.
+
 import json
 from pathlib import Path
 
