@@ -19,7 +19,7 @@
       "winner_models_agree": false,
       "winner_model_disagreement_range": 0.26238627371517553,
       "method_forecast": "Alivia Bierley by DEC",
-      "method_joint_probability": 0.3312018124089237,
+      "method_joint_probability": 0.3448230745158574,
       "method_conditional_probability_given_win": 0.6462969007318193,
       "method_status": "FORECAST_ONLY",
       "under_0_5_probability": 0.060494867657312046,
@@ -49,12 +49,12 @@
         "DEC": 0.6379717824992284
       },
       "joint_winner_method": {
-        "A_KO_TKO": 0.1538187530353801,
-        "A_SUB": 0.027440212309535028,
-        "A_DEC": 0.3312018124089237,
-        "B_KO_TKO": 0.15515930089387867,
-        "B_SUB": 0.02134365469761163,
-        "B_DEC": 0.31103626665467093
+        "A_KO_TKO": 0.16014482213753145,
+        "A_SUB": 0.02856873972132529,
+        "A_DEC": 0.3448230745158574,
+        "B_KO_TKO": 0.14845191133394262,
+        "B_SUB": 0.020420988728733908,
+        "B_DEC": 0.2975904635626093
       },
       "duration": {
         "under_0_5": 0.060494867657312046,
@@ -85,12 +85,12 @@
       },
       "monte_carlo": {
         "joint_outcome_counts_10000": {
-          "A_KO_TKO": 1476,
-          "A_SUB": 275,
-          "A_DEC": 3314,
-          "B_KO_TKO": 1633,
-          "B_SUB": 215,
-          "B_DEC": 3087
+          "A_KO_TKO": 1599,
+          "A_SUB": 297,
+          "A_DEC": 3475,
+          "B_KO_TKO": 1474,
+          "B_SUB": 197,
+          "B_DEC": 2958
         },
         "round_counts_10000": {
           "R1": 2665,
@@ -98,7 +98,7 @@
           "R3": 313,
           "DEC": 6401
         },
-        "note": "Joint winner+method uses W-v0.6 and M-v0.4. Finish timing uses D-v0.4 conditional on a finish; standalone D/R probabilities are separately reported as production outputs."
+        "note": "Fallback-gated fights use v0.3 winner probability consistently with M-v0.4 conditional method probabilities. Primary fights use W-v0.6. D/R-v0.4 timing outputs are unchanged."
       }
     },
     {
@@ -109,7 +109,7 @@
       "winner_models_agree": false,
       "winner_model_disagreement_range": 0.2501845789522357,
       "method_forecast": "Ozzy Martin by DEC",
-      "method_joint_probability": 0.22204033267154974,
+      "method_joint_probability": 0.26619679604190133,
       "method_conditional_probability_given_win": 0.5095130325400097,
       "method_status": "FORECAST_ONLY",
       "under_0_5_probability": 0.07099897529697596,
@@ -139,12 +139,12 @@
         "DEC": 0.5095130325400097
       },
       "joint_winner_method": {
-        "A_KO_TKO": 0.17876864910136875,
-        "A_SUB": 0.10489858963177648,
-        "A_DEC": 0.280543451688961,
-        "B_KO_TKO": 0.19080450242650596,
-        "B_SUB": 0.02294447447983807,
-        "B_DEC": 0.22204033267154974
+        "A_KO_TKO": 0.15130937624024557,
+        "A_SUB": 0.08878592664570324,
+        "A_DEC": 0.23745133666738177,
+        "B_KO_TKO": 0.2287491943701859,
+        "B_SUB": 0.027507370034582264,
+        "B_DEC": 0.26619679604190133
       },
       "duration": {
         "under_0_5": 0.07099897529697596,
@@ -175,12 +175,12 @@
       },
       "monte_carlo": {
         "joint_outcome_counts_10000": {
-          "A_KO_TKO": 1760,
-          "A_SUB": 1040,
-          "A_DEC": 2844,
-          "B_KO_TKO": 1928,
-          "B_SUB": 237,
-          "B_DEC": 2191
+          "A_KO_TKO": 1506,
+          "A_SUB": 915,
+          "A_DEC": 2392,
+          "B_KO_TKO": 2212,
+          "B_SUB": 249,
+          "B_DEC": 2726
         },
         "round_counts_10000": {
           "R1": 3399,
@@ -188,7 +188,7 @@
           "R3": 533,
           "DEC": 5035
         },
-        "note": "Joint winner+method uses W-v0.6 and M-v0.4. Finish timing uses D-v0.4 conditional on a finish; standalone D/R probabilities are separately reported as production outputs."
+        "note": "Fallback-gated fights use v0.3 winner probability consistently with M-v0.4 conditional method probabilities. Primary fights use W-v0.6. D/R-v0.4 timing outputs are unchanged."
       }
     },
     {
@@ -461,5 +461,6 @@
         "note": "Joint winner+method uses W-v0.6 and M-v0.4. Finish timing uses D-v0.4 conditional on a finish; standalone D/R probabilities are separately reported as production outputs."
       }
     }
-  ]
+  ],
+  "coherence_audit": "Fallback-gated fights use the same v0.3 winner component for side, joint winner+method probabilities, and Monte Carlo. Primary-coverage fights use W-v0.6."
 }
