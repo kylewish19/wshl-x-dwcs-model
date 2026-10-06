@@ -1,0 +1,71 @@
+name: Run DWCS Week 9 models
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/current/week9_matchups.csv"
+      - "data/current/week9_current_records.csv"
+      - "data/current/week9_postcutoff_fights.csv"
+      - "data/current/week9_tape_features.csv"
+      - "src/prepare_week9_snapshots.py"
+      - "src/prepare_week9_ext_features.py"
+      - "src/run_week9_models.py"
+      - ".github/workflows/run_week9_models.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy pandas scipy scikit-learn joblib duckdb kagglehub
+
+      - name: Download MMA Global Database
+        run: |
+          mkdir -p .cache/mmaglobal
+          curl -L --fail --retry 3 "https://www.kaggle.com/api/v1/datasets/download/leandroiber/mmastats" -o /tmp/mmastats.zip
+          unzip -q /tmp/mmastats.zip -d .cache/mmaglobal
+          find .cache/mmaglobal -type f -name '*.duckdb' -print
+
+      - name: Build Week 9 fighter snapshots
+        run: |
+          DB="$(find .cache/mmaglobal -type f -name '*.duckdb' | head -1)"
+          test -n "$DB"
+          python src/prepare_week9_snapshots.py --database "$DB"
+          python src/build_current_features.py \
+            --snapshots data/current/week9_fighter_snapshots.csv \
+            --matchups data/current/week9_matchups.csv \
+            --out data/current/week9_model_features.csv
+
+      - name: Build Week 9 secondary feature schema
+        run: python src/prepare_week9_ext_features.py
+
+      - name: Run W v0.6 M v0.4 D v0.4 R v0.4
+        run: python src/run_week9_models.py
+
+      - name: Commit Week 9 pre-odds lock
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current/week9_fighter_snapshots.csv
+          git add data/current/week9_model_features.csv
+          git add data/current/week9_secondary_model_features.csv
+          git add reports/week9_snapshot_coverage.json
+          git add reports/week9_preodds_model_lock.json
+          git add official_picks/week9_preodds_model_lock.csv
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "Lock DWCS Week 9 pre-odds model card [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
