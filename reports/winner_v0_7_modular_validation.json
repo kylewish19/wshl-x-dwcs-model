@@ -1,0 +1,386 @@
+{
+  "version": "DWCS-W-v0.7-modular-challenger",
+  "built_on": "2026-10-06 pre-Week-9 event start",
+  "status": "DEVELOPMENT CHALLENGER \u2014 original Week 9 lock remains unchanged",
+  "design": {
+    "modules": {
+      "resume_form": [
+        "global_career_bouts_diff",
+        "global_career_wins_diff",
+        "global_career_losses_diff",
+        "global_career_win_pct_diff",
+        "global_recent3_win_pct_diff",
+        "global_recent5_win_pct_diff",
+        "global_win_streak_diff",
+        "global_elo_diff",
+        "global_avg_opp_win_pct_diff",
+        "global_avg_opp_elo_diff",
+        "global_quality_win_count_diff",
+        "global_major_bouts_diff",
+        "global_major_win_pct_diff",
+        "global_days_since_last_fight_diff"
+      ],
+      "striking": [
+        "striker_style_diff",
+        "prior_dwcs_sig_landed_pm_diff",
+        "prior_dwcs_sig_attempted_pm_diff",
+        "prior_dwcs_sig_accuracy_diff",
+        "prior_dwcs_kd_per15_diff",
+        "prior_dwcs_ko_win_pct_diff",
+        "global_ko_win_pct_diff",
+        "global_career_finish_pct_diff",
+        "global_finish_loss_pct_diff"
+      ],
+      "grappling": [
+        "grappler_style_diff",
+        "prior_dwcs_td_landed_per15_diff",
+        "prior_dwcs_td_attempted_per15_diff",
+        "prior_dwcs_td_accuracy_diff",
+        "prior_dwcs_sub_attempts_per15_diff",
+        "prior_dwcs_sub_win_pct_diff",
+        "global_sub_win_pct_diff",
+        "global_finish_loss_pct_diff"
+      ],
+      "durability": [
+        "global_finish_loss_pct_diff",
+        "prior_dwcs_avg_duration_diff",
+        "prior_dwcs_over25_rate_diff",
+        "global_career_losses_diff",
+        "global_decision_win_pct_diff",
+        "global_recent5_win_pct_diff"
+      ],
+      "cardio_decision": [
+        "prior_dwcs_avg_duration_diff",
+        "prior_dwcs_over25_rate_diff",
+        "prior_dwcs_dec_win_pct_diff",
+        "global_decision_win_pct_diff",
+        "global_recent5_win_pct_diff",
+        "global_days_since_last_fight_diff",
+        "global_win_streak_diff"
+      ],
+      "physical_quality": [
+        "age_diff",
+        "height_diff",
+        "reach_diff",
+        "height_missing_diff",
+        "reach_missing_diff",
+        "southpaw_diff",
+        "switch_diff",
+        "global_avg_opp_win_pct_diff",
+        "global_avg_opp_elo_diff",
+        "global_quality_win_count_diff",
+        "global_major_bouts_diff",
+        "global_major_win_pct_diff",
+        "global_elo_diff"
+      ]
+    },
+    "meta": "L2 logistic stacking model trained only on chronological out-of-fold module predictions plus Week 7/8 chronological development rows",
+    "tape_rule": "Prospectively frozen tape concepts are displayed as audit dimensions but are not assigned invented historical weights. Future labeled weeks can train them legitimately."
+  },
+  "historical_nested_validation": {
+    "modular_meta": {
+      "n": 258,
+      "accuracy": 0.7674418604651163,
+      "brier": 0.1501237466731591,
+      "log_loss": 0.45160576169066957,
+      "auc": 0.865551312359823
+    },
+    "full_feature_logistic_same_rows": {
+      "n": 258,
+      "accuracy": 0.813953488372093,
+      "brier": 0.13429186444896585,
+      "log_loss": 0.4378874692879726,
+      "auc": 0.8911923380008485
+    },
+    "module_same_rows": {
+      "resume_form": {
+        "n": 258,
+        "accuracy": 0.751937984496124,
+        "brier": 0.15029656148699333,
+        "log_loss": 0.47092317222754043,
+        "auc": 0.8565496756986118
+      },
+      "striking": {
+        "n": 258,
+        "accuracy": 0.624031007751938,
+        "brier": 0.2171196455476739,
+        "log_loss": 0.622435338267148,
+        "auc": 0.7205552524701461
+      },
+      "grappling": {
+        "n": 258,
+        "accuracy": 0.5852713178294574,
+        "brier": 0.23898085164140295,
+        "log_loss": 0.7115771306613022,
+        "auc": 0.644996059889677
+      },
+      "durability": {
+        "n": 258,
+        "accuracy": 0.6782945736434108,
+        "brier": 0.1932483052434971,
+        "log_loss": 0.5725941149852303,
+        "auc": 0.7736861247499547
+      },
+      "cardio_decision": {
+        "n": 258,
+        "accuracy": 0.7093023255813954,
+        "brier": 0.16595937003505004,
+        "log_loss": 0.5084045136990327,
+        "auc": 0.8261199005879857
+      },
+      "physical_quality": {
+        "n": 258,
+        "accuracy": 0.7093023255813954,
+        "brier": 0.19625130797696944,
+        "log_loss": 0.5790538636022243,
+        "auc": 0.7809904831181427
+      }
+    },
+    "promotion_test": {
+      "lower_brier": false,
+      "lower_log_loss": false,
+      "accuracy_not_lower": false
+    },
+    "earns_historical_promotion_gate": false
+  },
+  "meta_training_rows": 329,
+  "final_training_rows": 425,
+  "week9_rerun": [
+    {
+      "fight": "Alivia Bierley vs Summer Onley",
+      "fighter_a": "Alivia Bierley",
+      "fighter_b": "Summer Onley",
+      "v0_7_probability_a": 0.3493418301491845,
+      "v0_7_pick": "Summer Onley",
+      "v0_7_pick_probability": 0.6506581698508155,
+      "module_probabilities_a": {
+        "resume_form": 0.4383950941476052,
+        "striking": 0.5126798190037734,
+        "grappling": 0.4937503097771773,
+        "durability": 0.5178272669904662,
+        "cardio_decision": 0.4065771312143158,
+        "physical_quality": 0.6859865655117179
+      },
+      "confidence_audit": {
+        "audited_confidence": "MEDIUM",
+        "direct_skill_stat_coverage": "LOW",
+        "all_modules_same_side": false,
+        "module_spread": 0.27940943429740206,
+        "warning": null
+      },
+      "tape_audit": {
+        "fighter_a_evidence": "full amateur fight source located + current regional history",
+        "fighter_b_evidence": "current UFC preview + full regional result history; no full pro playback verified",
+        "a_minus_b_dimension_diffs": {
+          "submission_access_quality": 0.0,
+          "back_exposure_created": 0.0,
+          "back_exposure_allowed": null,
+          "durability_after_clean_damage": -1.0,
+          "failed_finish_cardio_cost": null,
+          "late_round_momentum_reversal": 0.0,
+          "size_physicality": 1.0,
+          "decision_resilience": 0.0,
+          "elite_amateur_pedigree": -1.0,
+          "amateur_fight_sample": 0.0,
+          "pre_ufc_championship_experience": -2.0,
+          "five_round_experience": null,
+          "grappling_generated_tko_access": 0.0,
+          "slam_ground_damage_tko_access": 0.0,
+          "early_finish_route_strength": -1.0,
+          "post_high_output_round_freshness": 0.0
+        },
+        "note": "Prospectively frozen tape fields are audit-only in v0.7; no retrospective coefficients are invented. They begin accumulating labeled evidence for future trained inclusion."
+      }
+    },
+    {
+      "fight": "Salhahuddin Everett vs Ozzy Martin",
+      "fighter_a": "Salhahuddin Everett",
+      "fighter_b": "Ozzy Martin",
+      "v0_7_probability_a": 0.5997832130011764,
+      "v0_7_pick": "Salhahuddin Everett",
+      "v0_7_pick_probability": 0.5997832130011764,
+      "module_probabilities_a": {
+        "resume_form": 0.5762499287705513,
+        "striking": 0.5513565312127814,
+        "grappling": 0.494238566941654,
+        "durability": 0.50758053395646,
+        "cardio_decision": 0.5146789103750888,
+        "physical_quality": 0.5847906150406752
+      },
+      "confidence_audit": {
+        "audited_confidence": "MEDIUM",
+        "direct_skill_stat_coverage": "LOW",
+        "all_modules_same_side": false,
+        "module_spread": 0.09055204809902118,
+        "warning": null
+      },
+      "tape_audit": {
+        "fighter_a_evidence": "current UFC preview/reports + regional result history",
+        "fighter_b_evidence": "current UFC preview/reports + regional result history",
+        "a_minus_b_dimension_diffs": {
+          "submission_access_quality": 2.0,
+          "back_exposure_created": 2.0,
+          "back_exposure_allowed": null,
+          "durability_after_clean_damage": 0.0,
+          "failed_finish_cardio_cost": null,
+          "late_round_momentum_reversal": 0.0,
+          "size_physicality": 1.0,
+          "decision_resilience": null,
+          "elite_amateur_pedigree": 1.0,
+          "amateur_fight_sample": 1.0,
+          "pre_ufc_championship_experience": 0.0,
+          "five_round_experience": null,
+          "grappling_generated_tko_access": 1.0,
+          "slam_ground_damage_tko_access": 0.0,
+          "early_finish_route_strength": 0.0,
+          "post_high_output_round_freshness": 0.0
+        },
+        "note": "Prospectively frozen tape fields are audit-only in v0.7; no retrospective coefficients are invented. They begin accumulating labeled evidence for future trained inclusion."
+      }
+    },
+    {
+      "fight": "Roque Conceicao Moreira Junior vs Alexander Chavez",
+      "fighter_a": "Roque Conceicao Moreira Junior",
+      "fighter_b": "Alexander Chavez",
+      "v0_7_probability_a": 0.040356115467679615,
+      "v0_7_pick": "Alexander Chavez",
+      "v0_7_pick_probability": 0.9596438845323204,
+      "module_probabilities_a": {
+        "resume_form": 0.04439748179335905,
+        "striking": 0.41952641564022186,
+        "grappling": 0.39896114763253293,
+        "durability": 0.1414679029818391,
+        "cardio_decision": 0.02109588059160065,
+        "physical_quality": 0.5690739009229016
+      },
+      "confidence_audit": {
+        "audited_confidence": "LOW",
+        "direct_skill_stat_coverage": "LOW",
+        "all_modules_same_side": false,
+        "module_spread": 0.5479780203313009,
+        "warning": "EXTREME_PROBABILITY_WITH_LOW_DIRECT_SKILL_DATA"
+      },
+      "tape_audit": {
+        "fighter_a_evidence": "verified full prior-DWCS fight source + current regional history",
+        "fighter_b_evidence": "current UFC/regional history; no full-fight playback verified",
+        "a_minus_b_dimension_diffs": {
+          "submission_access_quality": 1.0,
+          "back_exposure_created": 1.0,
+          "back_exposure_allowed": null,
+          "durability_after_clean_damage": -2.0,
+          "failed_finish_cardio_cost": null,
+          "late_round_momentum_reversal": 0.0,
+          "size_physicality": -1.0,
+          "decision_resilience": -2.0,
+          "elite_amateur_pedigree": 0.0,
+          "amateur_fight_sample": 0.0,
+          "pre_ufc_championship_experience": 1.0,
+          "five_round_experience": null,
+          "grappling_generated_tko_access": 0.0,
+          "slam_ground_damage_tko_access": 0.0,
+          "early_finish_route_strength": 1.0,
+          "post_high_output_round_freshness": 0.0
+        },
+        "note": "Prospectively frozen tape fields are audit-only in v0.7; no retrospective coefficients are invented. They begin accumulating labeled evidence for future trained inclusion."
+      }
+    },
+    {
+      "fight": "Ryuho Miyaguchi vs Mateus Soares",
+      "fighter_a": "Ryuho Miyaguchi",
+      "fighter_b": "Mateus Soares",
+      "v0_7_probability_a": 0.008622695593188961,
+      "v0_7_pick": "Mateus Soares",
+      "v0_7_pick_probability": 0.991377304406811,
+      "module_probabilities_a": {
+        "resume_form": 0.040913383556648,
+        "striking": 0.3584457233810986,
+        "grappling": 0.3535173332978258,
+        "durability": 0.4593291765139455,
+        "cardio_decision": 0.1697079869510961,
+        "physical_quality": 0.019178288529957205
+      },
+      "confidence_audit": {
+        "audited_confidence": "LOW",
+        "direct_skill_stat_coverage": "LOW",
+        "all_modules_same_side": true,
+        "module_spread": 0.44015088798398827,
+        "warning": "EXTREME_PROBABILITY_WITH_LOW_DIRECT_SKILL_DATA"
+      },
+      "tape_audit": {
+        "fighter_a_evidence": "verified full Road to UFC fight source + current history",
+        "fighter_b_evidence": "current UFC/regional history; no full-fight playback verified",
+        "a_minus_b_dimension_diffs": {
+          "submission_access_quality": -1.0,
+          "back_exposure_created": -1.0,
+          "back_exposure_allowed": 2.0,
+          "durability_after_clean_damage": -1.0,
+          "failed_finish_cardio_cost": 0.0,
+          "late_round_momentum_reversal": -1.0,
+          "size_physicality": 0.0,
+          "decision_resilience": -1.0,
+          "elite_amateur_pedigree": 0.0,
+          "amateur_fight_sample": 0.0,
+          "pre_ufc_championship_experience": 0.0,
+          "five_round_experience": null,
+          "grappling_generated_tko_access": 0.0,
+          "slam_ground_damage_tko_access": 0.0,
+          "early_finish_route_strength": 0.0,
+          "post_high_output_round_freshness": -1.0
+        },
+        "note": "Prospectively frozen tape fields are audit-only in v0.7; no retrospective coefficients are invented. They begin accumulating labeled evidence for future trained inclusion."
+      }
+    },
+    {
+      "fight": "Nell Ariano vs Preston LaGrange",
+      "fighter_a": "Nell Ariano",
+      "fighter_b": "Preston LaGrange",
+      "v0_7_probability_a": 0.9211448742569297,
+      "v0_7_pick": "Nell Ariano",
+      "v0_7_pick_probability": 0.9211448742569297,
+      "module_probabilities_a": {
+        "resume_form": 0.8272148526091491,
+        "striking": 0.7258949174731505,
+        "grappling": 0.7556382119726455,
+        "durability": 0.800331484353577,
+        "cardio_decision": 0.8821495902270928,
+        "physical_quality": 0.6909935744486075
+      },
+      "confidence_audit": {
+        "audited_confidence": "MEDIUM",
+        "direct_skill_stat_coverage": "LOW",
+        "all_modules_same_side": true,
+        "module_spread": 0.1911560157784853,
+        "warning": "EXTREME_PROBABILITY_WITH_LOW_DIRECT_SKILL_DATA"
+      },
+      "tape_audit": {
+        "fighter_a_evidence": "current UFC preview + regional history",
+        "fighter_b_evidence": "current UFC preview + detailed loss footage/report + regional history",
+        "a_minus_b_dimension_diffs": {
+          "submission_access_quality": -2.0,
+          "back_exposure_created": -1.0,
+          "back_exposure_allowed": null,
+          "durability_after_clean_damage": 3.0,
+          "failed_finish_cardio_cost": 0.0,
+          "late_round_momentum_reversal": 0.0,
+          "size_physicality": 1.0,
+          "decision_resilience": null,
+          "elite_amateur_pedigree": 1.0,
+          "amateur_fight_sample": 0.0,
+          "pre_ufc_championship_experience": 1.0,
+          "five_round_experience": null,
+          "grappling_generated_tko_access": 0.0,
+          "slam_ground_damage_tko_access": 0.0,
+          "early_finish_route_strength": -1.0,
+          "post_high_output_round_freshness": 1.0
+        },
+        "note": "Prospectively frozen tape fields are audit-only in v0.7; no retrospective coefficients are invented. They begin accumulating labeled evidence for future trained inclusion."
+      }
+    }
+  ],
+  "integrity": [
+    "official_picks/week9_locked_card.csv is not modified",
+    "no Week 9 outcomes or sportsbook odds are inputs",
+    "Week 7/8 labels enter only after their frozen pre-fight feature rows",
+    "Week 9 tape scores are audit-only until enough prospective labels exist to train their weights"
+  ]
+}
