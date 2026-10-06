@@ -1,0 +1,272 @@
+{
+  "event": "DWCS Season 10 Week 8 learning update",
+  "graded_event_date": "2026-09-29",
+  "winner": {
+    "version": "DWCS-W-v0.6-week8-retrain",
+    "historical_rows": 416,
+    "week7_rows": 5,
+    "week8_completed_rows": 4,
+    "total_training_rows": 425,
+    "artifact": "models/dwcs_w_v0_6_week8_logistic.joblib",
+    "boosting_shadow_artifact": "models/dwcs_w_v0_6_boosting_shadow.joblib",
+    "largest_coefficient_changes": [
+      {
+        "feature": "global_elo_diff",
+        "coefficient_after": 0.4294046241193152,
+        "coefficient_before": 0.29576644586340184,
+        "delta": 0.13363817825591334,
+        "abs_delta": 0.13363817825591334
+      },
+      {
+        "feature": "global_career_wins_diff",
+        "coefficient_after": 0.07680264836114574,
+        "coefficient_before": 0.1667397717883576,
+        "delta": -0.08993712342721187,
+        "abs_delta": 0.08993712342721187
+      },
+      {
+        "feature": "global_career_bouts_diff",
+        "coefficient_after": 0.039104720715620045,
+        "coefficient_before": 0.09160821405920708,
+        "delta": -0.05250349334358703,
+        "abs_delta": 0.05250349334358703
+      },
+      {
+        "feature": "global_career_losses_diff",
+        "coefficient_after": -0.08107083966410716,
+        "coefficient_before": -0.1325676343650335,
+        "delta": 0.05149679470092633,
+        "abs_delta": 0.05149679470092633
+      },
+      {
+        "feature": "global_recent3_win_pct_diff",
+        "coefficient_after": 1.2145607682561317,
+        "coefficient_before": 1.2520771371800068,
+        "delta": -0.03751636892387511,
+        "abs_delta": 0.03751636892387511
+      },
+      {
+        "feature": "global_avg_opp_win_pct_diff",
+        "coefficient_after": 0.03805442723335787,
+        "coefficient_before": 0.07207946219414105,
+        "delta": -0.03402503496078318,
+        "abs_delta": 0.03402503496078318
+      },
+      {
+        "feature": "global_recent5_win_pct_diff",
+        "coefficient_after": -0.1337070616381887,
+        "coefficient_before": -0.16405173585061336,
+        "delta": 0.03034467421242465,
+        "abs_delta": 0.03034467421242465
+      },
+      {
+        "feature": "global_win_streak_diff",
+        "coefficient_after": 1.2637611530308879,
+        "coefficient_before": 1.2388028117332364,
+        "delta": 0.02495834129765151,
+        "abs_delta": 0.02495834129765151
+      },
+      {
+        "feature": "global_career_win_pct_diff",
+        "coefficient_after": -0.007946995018178337,
+        "coefficient_before": 0.01182078614876607,
+        "delta": -0.019767781166944408,
+        "abs_delta": 0.019767781166944408
+      },
+      {
+        "feature": "global_major_bouts_diff",
+        "coefficient_after": 0.01583893280239274,
+        "coefficient_before": -0.0038862047546560042,
+        "delta": 0.019725137557048744,
+        "abs_delta": 0.019725137557048744
+      }
+    ],
+    "prospective_week7_week8_audit": {
+      "n": 9,
+      "production": {
+        "n": 9,
+        "accuracy": 0.6666666666666666,
+        "brier": 0.18317608960891707,
+        "log_loss": 0.4972422006537632
+      },
+      "boosting_challenger": {
+        "n": 9,
+        "accuracy": 0.6666666666666666,
+        "brier": 0.2361561613048823,
+        "log_loss": 0.7260881896665414
+      },
+      "simple_50_50_ensemble": {
+        "n": 9,
+        "accuracy": 0.6666666666666666,
+        "brier": 0.18465220256782786,
+        "log_loss": 0.546052711618244
+      },
+      "note": "This is prospective diagnostic evidence only: Week 7 used the then-production v0.4 logistic and Week 8 used v0.5. It is not a historical promotion test."
+    },
+    "decision": "Keep logistic production architecture; boosting/50-50 ensemble remain shadow because the 9-fight prospective sample does not improve probability quality over production."
+  },
+  "method": {
+    "candidate": "DWCS-M-v0.4-hierarchical-finish-route",
+    "historical_walk_forward": {
+      "n": 319,
+      "accuracy": 0.5799373040752351,
+      "log_loss": 1.1878639132696551,
+      "brier_multiclass": 0.5525149642962929
+    },
+    "v0_3_reference": {
+      "accuracy": 0.5799373040752351,
+      "log_loss": 1.1937154454968144,
+      "brier_multiclass": 0.5569264643576686
+    },
+    "week7_rows": 5,
+    "week8_rows": 4,
+    "total_training_rows": 424,
+    "architecture": "P(winner) x P(finish vs decision | winner) x P(KO/TKO vs SUB | finish, winner)",
+    "promotion_rule": "Must improve historical walk-forward log loss and multiclass Brier without lowering exact winner+method accuracy.",
+    "promoted": true,
+    "production_if_not_promoted": "models/dwcs_m_v0_3_week8_refit.joblib",
+    "candidate_artifacts": [
+      "models/dwcs_m_v0_4_finish_gate_logistic.joblib",
+      "models/dwcs_m_v0_4_finish_route_logistic.joblib"
+    ]
+  },
+  "duration_and_round": {
+    "candidate": "DWCS-D-v0.4 pair-symmetric coherent hazard",
+    "round_candidate": "DWCS-R-v0.4 pair-symmetric hazard-derived",
+    "historical_walk_forward": {
+      "duration": {
+        "under_0_5": {
+          "candidate": {
+            "n": 319,
+            "accuracy": 0.8557993730407524,
+            "brier": 0.11195392835397751,
+            "log_loss": 0.371539103265982,
+            "auc": 0.7406914893617021
+          },
+          "naive": {
+            "n": 319,
+            "accuracy": 0.8526645768025078,
+            "brier": 0.12620580787414135,
+            "log_loss": 0.4204170909313356,
+            "auc": 0.44465738423028783
+          }
+        },
+        "under_1_5": {
+          "candidate": {
+            "n": 319,
+            "accuracy": 0.6896551724137931,
+            "brier": 0.20052204301768353,
+            "log_loss": 0.5843623057525658,
+            "auc": 0.728472736244757
+          },
+          "naive": {
+            "n": 319,
+            "accuracy": 0.6050156739811913,
+            "brier": 0.24086330884104307,
+            "log_loss": 0.6748139506778743,
+            "auc": 0.4358499876634591
+          }
+        },
+        "under_2_5": {
+          "candidate": {
+            "n": 319,
+            "accuracy": 0.6520376175548589,
+            "brier": 0.2117820433867375,
+            "log_loss": 0.6055793128144286,
+            "auc": 0.7195261825660497
+          },
+          "naive": {
+            "n": 319,
+            "accuracy": 0.5391849529780565,
+            "brier": 0.2506242363179946,
+            "log_loss": 0.6944690863913774,
+            "auc": 0.4420384432842904
+          }
+        },
+        "goes_distance": {
+          "candidate": {
+            "n": 319,
+            "accuracy": 0.6614420062695925,
+            "brier": 0.2004896270450888,
+            "log_loss": 0.5781258196094047,
+            "auc": 0.7395400895400895
+          },
+          "naive": {
+            "n": 319,
+            "accuracy": 0.5924764890282131,
+            "brier": 0.24428140312073535,
+            "log_loss": 0.6820266092906836,
+            "auc": 0.43994708994709003
+          }
+        },
+        "round_2_starts": {
+          "candidate": {
+            "n": 319,
+            "accuracy": 0.7241379310344828,
+            "brier": 0.18814777546431047,
+            "log_loss": 0.5574431254960381,
+            "auc": 0.7304499781564002
+          },
+          "naive": {
+            "n": 319,
+            "accuracy": 0.658307210031348,
+            "brier": 0.22580158079716406,
+            "log_loss": 0.6441417777438401,
+            "auc": 0.4994975972040192
+          }
+        },
+        "round_3_starts": {
+          "candidate": {
+            "n": 319,
+            "accuracy": 0.6520376175548589,
+            "brier": 0.21090082930960982,
+            "log_loss": 0.6050397062094973,
+            "auc": 0.7242511203710983
+          },
+          "naive": {
+            "n": 319,
+            "accuracy": 0.47962382445141066,
+            "brier": 0.2530006975434642,
+            "log_loss": 0.6991851084857735,
+            "auc": 0.4504874597059518
+          }
+        }
+      },
+      "round": {
+        "candidate": {
+          "n": 319,
+          "accuracy": 0.5172413793103449,
+          "log_loss": 1.156328100455892,
+          "brier_multiclass": 0.6203393836964015
+        },
+        "naive": {
+          "n": 319,
+          "accuracy": 0.39184952978056425,
+          "log_loss": 1.261597660560997,
+          "brier_multiclass": 0.6910667044029007
+        }
+      }
+    },
+    "pair_feature_count": 30,
+    "duration_markets_beating_naive_on_brier_and_logloss": 6,
+    "round_beats_naive_probability_quality": true,
+    "promoted": true,
+    "note": "All timing inputs are order-invariant pair features (means/max/min/products/absolute gaps). Swapping Fighter A and Fighter B cannot change a fight-duration prediction."
+  },
+  "week8_context_flags": [
+    "Escuza official TKO retained as label, with illegal-knee review context preserved separately.",
+    "Staines official TKO-by-slam retained as KO_TKO label; future tape features distinguish grappling-generated TKO access from conventional striking KO history.",
+    "Bulaid-Visconde cancelled bout is excluded from labels and retraining."
+  ],
+  "prospective_only_features_starting_next_card": [
+    "elite_amateur_pedigree_diff",
+    "amateur_fight_sample_diff",
+    "pre_ufc_championship_experience_diff",
+    "five_round_experience_diff",
+    "grappling_generated_tko_access_diff",
+    "slam_ground_damage_tko_access_diff",
+    "early_finish_route_strength_diff",
+    "post_high_output_round_freshness_diff"
+  ],
+  "anti_overfit_rule": "Week 8-derived concepts are added prospectively only. No historical or Week 8 prefight values are invented after outcomes are known."
+}
