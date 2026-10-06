@@ -1,0 +1,37 @@
+name: Fix DWCS Week 9 fallback coherence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/fix_week9_fallback_joint.py"
+      - ".github/workflows/fix_week9_fallback.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy pandas
+      - name: Align fallback joint probabilities and simulations
+        run: python src/fix_week9_fallback_joint.py
+      - name: Commit corrected Week 9 pre-odds outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/week9_preodds_model_lock.json official_picks/week9_preodds_model_lock.csv
+          if git diff --cached --quiet; then
+            echo "No corrected output changes."
+          else
+            git commit -m "Correct Week 9 fallback joint coherence [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
