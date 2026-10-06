@@ -99,6 +99,35 @@ Duration/round rules:
 - The preferred challenger is a coherent survival/hazard layer across 2.5, 5, 7.5, 10, 12.5 and 15 minutes.
 - Round probabilities should be derived from the same survival curve whenever possible so R1/R2/R3/DEC and O/U markets cannot contradict one another.
 
+## Week 8 rule changes
+
+These features begin prospectively with the next DWCS card. They are not backfilled into Week 8 or older rows after seeing results.
+
+- elite_amateur_pedigree_diff
+- amateur_fight_sample_diff
+- pre_ufc_championship_experience_diff
+- five_round_experience_diff
+- grappling_generated_tko_access_diff
+- slam_ground_damage_tko_access_diff
+- early_finish_route_strength_diff
+- post_high_output_round_freshness_diff
+
+Winner-specific rules:
+- A short professional record must not automatically erase strong amateur/IMMAF or pre-UFC championship evidence.
+- Amateur pedigree is a separate prospect-development signal, not a substitute for professional opponent quality.
+- Production logistic and boosting challenger disagreement is tracked prospectively with Brier/log-loss; no ensemble is promoted from one small card.
+
+Method-specific rules:
+- Method is modeled hierarchically as finish-vs-decision first, then KO/TKO-vs-submission conditional on a finish when that architecture validates better.
+- Opponent submission vulnerability cannot by itself override the winner's own repeated KO/TKO route evidence.
+- KO/TKO plausibility must include grappling-generated damage, slams and ground-and-pound rather than relying only on historical standing-KO counts.
+- Contextual official results (for example a reviewed illegal strike in a finishing sequence) remain official labels but carry an audit flag for later diagnosis.
+
+Duration/round rules:
+- Fight-duration models must be invariant to which fighter is listed as A or B.
+- Pair-level finish pressure, early-finish rates, durability, average duration and absolute experience/quality gaps are preferred to signed A-minus-B features for timing.
+- A coherent survival chain remains mandatory for O/U, round-start and exact-round consistency.
+
 ## Anti-leakage
 
 - No current-fight odds.
