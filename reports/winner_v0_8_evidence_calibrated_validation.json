@@ -1,0 +1,90 @@
+{
+  "version": "DWCS-W-v0.8-evidence-calibrated-challenger",
+  "built_on": "2026-10-06 pre-Week-9 event start",
+  "status": "DEVELOPMENT CHALLENGER \u2014 original Week 9 lock unchanged",
+  "architecture": "Existing full winner signal anchored by a learned evidence-calibration layer using modular skill/resume probabilities, module spread, and full-vs-module disagreement. No manual probability haircut.",
+  "historical_nested_validation": {
+    "v0_8_evidence_calibrated": {
+      "n": 186,
+      "accuracy": 0.7795698924731183,
+      "brier": 0.1583025091314981,
+      "log_loss": 0.5008244477271228,
+      "auc": 0.8503203261502621
+    },
+    "full_feature_anchor_same_rows": {
+      "n": 186,
+      "accuracy": 0.7956989247311828,
+      "brier": 0.14359205407262823,
+      "log_loss": 0.47583998082918655,
+      "auc": 0.8728013977868375
+    },
+    "promotion_test": {
+      "lower_brier": false,
+      "lower_log_loss": false,
+      "accuracy_not_lower": false
+    },
+    "earns_historical_promotion_gate": false
+  },
+  "week9_rerun": [
+    {
+      "fight": "Alivia Bierley vs Summer Onley",
+      "v0_8_pick": "Summer Onley",
+      "v0_8_probability": 0.6307270366368094,
+      "p_fighter_a": 0.36927296336319065,
+      "anchor_probability_a": 0.5335366363747142,
+      "module_mean_a": 0.5092026977741759,
+      "module_spread": 0.27940943429740206,
+      "direct_skill_stat_coverage": "LOW",
+      "audited_confidence": "MEDIUM",
+      "warning": null
+    },
+    {
+      "fight": "Salhahuddin Everett vs Ozzy Martin",
+      "v0_8_pick": "Ozzy Martin",
+      "v0_8_probability": 0.5058789802104837,
+      "p_fighter_a": 0.4941210197895163,
+      "anchor_probability_a": 0.47754663955333054,
+      "module_mean_a": 0.5381491810495351,
+      "module_spread": 0.09055204809902118,
+      "direct_skill_stat_coverage": "LOW",
+      "audited_confidence": "LOW",
+      "warning": null
+    },
+    {
+      "fight": "Roque Conceicao Moreira Junior vs Alexander Chavez",
+      "v0_8_pick": "Alexander Chavez",
+      "v0_8_probability": 0.9334206912970915,
+      "p_fighter_a": 0.06657930870290857,
+      "anchor_probability_a": 0.03717278130182722,
+      "module_mean_a": 0.26575378826040913,
+      "module_spread": 0.5479780203313009,
+      "direct_skill_stat_coverage": "LOW",
+      "audited_confidence": "LOW",
+      "warning": "EXTREME_PROBABILITY_REQUIRES_CAUTION"
+    },
+    {
+      "fight": "Ryuho Miyaguchi vs Mateus Soares",
+      "v0_8_pick": "Mateus Soares",
+      "v0_8_probability": 0.980136097965115,
+      "p_fighter_a": 0.019863902034885004,
+      "anchor_probability_a": 0.01235403984558281,
+      "module_mean_a": 0.23351531537176184,
+      "module_spread": 0.4401508879839883,
+      "direct_skill_stat_coverage": "LOW",
+      "audited_confidence": "LOW",
+      "warning": "EXTREME_PROBABILITY_REQUIRES_CAUTION"
+    },
+    {
+      "fight": "Nell Ariano vs Preston LaGrange",
+      "v0_8_pick": "Nell Ariano",
+      "v0_8_probability": 0.8660847860760476,
+      "p_fighter_a": 0.8660847860760476,
+      "anchor_probability_a": 0.810481285419445,
+      "module_mean_a": 0.7803704385140371,
+      "module_spread": 0.1911560157784853,
+      "direct_skill_stat_coverage": "LOW",
+      "audited_confidence": "MEDIUM",
+      "warning": "EXTREME_PROBABILITY_REQUIRES_CAUTION"
+    }
+  ]
+}
