@@ -1,0 +1,11 @@
+fighter_name,as_of_date,wins,losses,nc,ko_wins,sub_wins,dec_wins,ko_losses,sub_losses,dec_losses,dob,height_cm,association,last_fight_date,last_opponent,last_result,last_method,source,record_status,recent3_win_pct,recent5_win_pct,current_win_streak
+Alivia Bierley,2026-10-06,5,1,0,3,0,2,0,0,1,1996-09-20,170.18,Pete Spratt American Muay Thai,2026-07-19,Nikola Kacperska,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,5
+Summer Onley,2026-10-06,6,0,0,5,0,1,0,0,0,1994-06-09,170.18,Ronin MMA,2026-03-07,Myllena Messias,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,6
+Salhahuddin Everett,2026-10-06,4,0,0,2,2,0,0,0,0,,190.50,Freestyle MMA,2026-07-08,Armus Guyton,W,SUB,Sherdog,RECONCILED,1.0,1.0,4
+Ozzy Martin,2026-10-06,4,0,0,4,0,0,0,0,0,2002-09-18,182.88,Lakes Region Vale Tudo,2026-07-18,Ryan Jett,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,4
+Roque Conceicao Moreira Junior,2026-10-06,11,3,0,8,2,1,1,0,2,1999-10-27,162.56,Cruel Top Team,2026-03-30,Yamato Fujita,W,KO/TKO,Sherdog,RECONCILED,0.6666666667,0.6,1
+Alexander Chavez,2026-10-06,9,0,0,6,0,3,0,0,0,2000-10-01,167.64,Pitbull Martial Arts Center,2026-04-01,Francisco Neves,W,KO/TKO,Sherdog,RECONCILED,1.0,1.0,9
+Ryuho Miyaguchi,2026-10-06,7,1,0,6,0,1,0,1,0,1998-01-27,177.80,Cobra Kai MMA Dojo,2026-05-28,Chungreng Koren,L,SUB,Sherdog,RECONCILED,0.6666666667,0.8,0
+Mateus Soares,2026-10-06,11,2,0,9,1,1,0,1,1,2004-05-24,162.56,Rizzo RVT,2026-05-29,Edson dos Anjos,W,KO/TKO,Sherdog,RECONCILED,1.0,0.8,4
+Nell Ariano,2026-10-06,6,0,0,4,0,2,0,0,0,1995-01-20,193.04,Platinum MMA Training Centre,2026-07-04,Norbert Pietrzak,W,DEC,Sherdog,RECONCILED,1.0,1.0,6
+Preston LaGrange,2026-10-06,6,1,0,2,4,0,1,0,0,1998-12-16,190.50,Hard Drive MMA,2026-07-24,Dylan Diebitz,W,SUB,Sherdog,RECONCILED,0.6666666667,0.8,2
