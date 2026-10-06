@@ -1,0 +1,465 @@
+{
+  "event": "DWCS Season 10 Week 9",
+  "event_date": "2026-10-06",
+  "lock_type": "PRE_ODDS",
+  "odds_used": false,
+  "models": {
+    "winner": "DWCS-W-v0.6",
+    "method": "DWCS-M-v0.4 hierarchical finish-route",
+    "duration": "DWCS-D-v0.4 pair-symmetric coherent hazard",
+    "round": "DWCS-R-v0.4 hazard-derived"
+  },
+  "simulation_runs_per_fight": 10000,
+  "fights": [
+    {
+      "fight": "Alivia Bierley vs Summer Onley",
+      "winner_pick": "Alivia Bierley",
+      "winner_probability": 0.5335366363747142,
+      "coverage_status": "V0_3_FALLBACK",
+      "winner_models_agree": false,
+      "winner_model_disagreement_range": 0.26238627371517553,
+      "method_forecast": "Alivia Bierley by DEC",
+      "method_joint_probability": 0.3312018124089237,
+      "method_conditional_probability_given_win": 0.6462969007318193,
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.060494867657312046,
+      "under_1_5_probability": 0.38955257836331625,
+      "under_2_5_probability": 0.4704267979062552,
+      "goes_distance_probability": 0.5094446200945022,
+      "round_2_starts_probability": 0.6358219636583963,
+      "round_3_starts_probability": 0.5517394544271658,
+      "round_top": "DEC",
+      "round_top_probability": 0.5094446200945022,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Alivia Bierley": 0.5124607777538388,
+        "Summer Onley": 0.4875392222461612,
+        "v0_6_boosting_shadow_a": 0.2711503626595386,
+        "v0_3_fallback_a": 0.5335366363747142
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.3001571236526264,
+        "SUB": 0.05354597561555427,
+        "DEC": 0.6462969007318193
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.3182498839355696,
+        "SUB": 0.04377833356520207,
+        "DEC": 0.6379717824992284
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.1538187530353801,
+        "A_SUB": 0.027440212309535028,
+        "A_DEC": 0.3312018124089237,
+        "B_KO_TKO": 0.15515930089387867,
+        "B_SUB": 0.02134365469761163,
+        "B_DEC": 0.31103626665467093
+      },
+      "duration": {
+        "under_0_5": 0.060494867657312046,
+        "under_1_5": 0.38955257836331625,
+        "under_2_5": 0.4704267979062552,
+        "goes_distance": 0.5094446200945022,
+        "round_2_starts": 0.6358219636583963,
+        "round_3_starts": 0.5517394544271658
+      },
+      "round": {
+        "R1": 0.36417803634160373,
+        "R2": 0.0840825092312305,
+        "R3": 0.04229483433266357,
+        "DEC": 0.5094446200945022
+      },
+      "method_route_gate": {
+        "career_smoothed_plausibility": 0.375,
+        "career_method_win_count": 2,
+        "special_tko_access_score": 3.0,
+        "route_supported": true
+      },
+      "prospective_lesson_features": {
+        "pick_fighter_evidence_class": "full amateur fight source located + current regional history",
+        "elite_amateur_pedigree": 2.0,
+        "pre_ufc_championship_experience": 2.0,
+        "five_round_experience": null,
+        "post_high_output_round_freshness": 3.0
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 1476,
+          "A_SUB": 275,
+          "A_DEC": 3314,
+          "B_KO_TKO": 1633,
+          "B_SUB": 215,
+          "B_DEC": 3087
+        },
+        "round_counts_10000": {
+          "R1": 2665,
+          "R2": 621,
+          "R3": 313,
+          "DEC": 6401
+        },
+        "note": "Joint winner+method uses W-v0.6 and M-v0.4. Finish timing uses D-v0.4 conditional on a finish; standalone D/R probabilities are separately reported as production outputs."
+      }
+    },
+    {
+      "fight": "Salhahuddin Everett vs Ozzy Martin",
+      "winner_pick": "Ozzy Martin",
+      "winner_probability": 0.5224533604466695,
+      "coverage_status": "V0_3_FALLBACK",
+      "winner_models_agree": false,
+      "winner_model_disagreement_range": 0.2501845789522357,
+      "method_forecast": "Ozzy Martin by DEC",
+      "method_joint_probability": 0.22204033267154974,
+      "method_conditional_probability_given_win": 0.5095130325400097,
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.07099897529697596,
+      "under_1_5_probability": 0.41172595367666964,
+      "under_2_5_probability": 0.5078631509205795,
+      "goes_distance_probability": 0.45845842860011626,
+      "round_2_starts_probability": 0.6321755754682195,
+      "round_3_starts_probability": 0.5140716966596425,
+      "round_top": "DEC",
+      "round_top_probability": 0.45845842860011626,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Salhahuddin Everett": 0.5642106904221063,
+        "Ozzy Martin": 0.43578930957789375,
+        "v0_6_boosting_shadow_a": 0.7277312185055663,
+        "v0_3_fallback_a": 0.4775466395533306
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.3168473269579942,
+        "SUB": 0.18592095366590464,
+        "DEC": 0.4972317193761011
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.43783658348874943,
+        "SUB": 0.05265038397124089,
+        "DEC": 0.5095130325400097
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.17876864910136875,
+        "A_SUB": 0.10489858963177648,
+        "A_DEC": 0.280543451688961,
+        "B_KO_TKO": 0.19080450242650596,
+        "B_SUB": 0.02294447447983807,
+        "B_DEC": 0.22204033267154974
+      },
+      "duration": {
+        "under_0_5": 0.07099897529697596,
+        "under_1_5": 0.41172595367666964,
+        "under_2_5": 0.5078631509205795,
+        "goes_distance": 0.45845842860011626,
+        "round_2_starts": 0.6321755754682195,
+        "round_3_starts": 0.5140716966596425
+      },
+      "round": {
+        "R1": 0.36782442453178055,
+        "R2": 0.11810387880857698,
+        "R3": 0.05561326805952621,
+        "DEC": 0.45845842860011626
+      },
+      "method_route_gate": {
+        "career_smoothed_plausibility": 0.14285714285714285,
+        "career_method_win_count": 0,
+        "special_tko_access_score": 4.0,
+        "route_supported": false
+      },
+      "prospective_lesson_features": {
+        "pick_fighter_evidence_class": "current UFC preview/reports + regional result history",
+        "elite_amateur_pedigree": 1.0,
+        "pre_ufc_championship_experience": 1.0,
+        "five_round_experience": null,
+        "post_high_output_round_freshness": 3.0
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 1760,
+          "A_SUB": 1040,
+          "A_DEC": 2844,
+          "B_KO_TKO": 1928,
+          "B_SUB": 237,
+          "B_DEC": 2191
+        },
+        "round_counts_10000": {
+          "R1": 3399,
+          "R2": 1033,
+          "R3": 533,
+          "DEC": 5035
+        },
+        "note": "Joint winner+method uses W-v0.6 and M-v0.4. Finish timing uses D-v0.4 conditional on a finish; standalone D/R probabilities are separately reported as production outputs."
+      }
+    },
+    {
+      "fight": "Roque Conceicao Moreira Junior vs Alexander Chavez",
+      "winner_pick": "Alexander Chavez",
+      "winner_probability": 0.9628272186981729,
+      "coverage_status": "PRIMARY_V0_6",
+      "winner_models_agree": true,
+      "winner_model_disagreement_range": 0.4670686989856316,
+      "method_forecast": "Alexander Chavez by DEC",
+      "method_joint_probability": 0.5662547972573467,
+      "method_conditional_probability_given_win": 0.5881167319126821,
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.06465314805704125,
+      "under_1_5_probability": 0.2838100025542789,
+      "under_2_5_probability": 0.4690502576119838,
+      "goes_distance_probability": 0.5017447204851733,
+      "round_2_starts_probability": 0.749902780492384,
+      "round_3_starts_probability": 0.604585299620313,
+      "round_top": "DEC",
+      "round_top_probability": 0.5017447204851733,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Roque Conceicao Moreira Junior": 0.03717278130182713,
+        "Alexander Chavez": 0.9628272186981729,
+        "v0_6_boosting_shadow_a": 0.03093033027203762,
+        "v0_3_fallback_a": 0.4979990292576692
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.18753551715594133,
+        "SUB": 0.08413439542072372,
+        "DEC": 0.7283300874233349
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.36723958821516056,
+        "SUB": 0.04464367987215735,
+        "DEC": 0.5881167319126821
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.006971216765562857,
+        "A_SUB": 0.0031275094809360086,
+        "A_DEC": 0.027074055055328262,
+        "B_KO_TKO": 0.35358827131706533,
+        "B_SUB": 0.04298415012376087,
+        "B_DEC": 0.5662547972573467
+      },
+      "duration": {
+        "under_0_5": 0.06465314805704125,
+        "under_1_5": 0.2838100025542789,
+        "under_2_5": 0.4690502576119838,
+        "goes_distance": 0.5017447204851733,
+        "round_2_starts": 0.749902780492384,
+        "round_3_starts": 0.604585299620313
+      },
+      "round": {
+        "R1": 0.250097219507616,
+        "R2": 0.14531748087207097,
+        "R3": 0.10284057913513978,
+        "DEC": 0.5017447204851733
+      },
+      "method_route_gate": {
+        "career_smoothed_plausibility": 0.3333333333333333,
+        "career_method_win_count": 3,
+        "special_tko_access_score": 3.0,
+        "route_supported": true
+      },
+      "prospective_lesson_features": {
+        "pick_fighter_evidence_class": "current UFC/regional history; no full-fight playback verified",
+        "elite_amateur_pedigree": 2.0,
+        "pre_ufc_championship_experience": 2.0,
+        "five_round_experience": null,
+        "post_high_output_round_freshness": 3.0
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 64,
+          "A_SUB": 26,
+          "A_DEC": 274,
+          "B_KO_TKO": 3615,
+          "B_SUB": 455,
+          "B_DEC": 5566
+        },
+        "round_counts_10000": {
+          "R1": 2088,
+          "R2": 1232,
+          "R3": 840,
+          "DEC": 5840
+        },
+        "note": "Joint winner+method uses W-v0.6 and M-v0.4. Finish timing uses D-v0.4 conditional on a finish; standalone D/R probabilities are separately reported as production outputs."
+      }
+    },
+    {
+      "fight": "Ryuho Miyaguchi vs Mateus Soares",
+      "winner_pick": "Mateus Soares",
+      "winner_probability": 0.9876459601544173,
+      "coverage_status": "PRIMARY_V0_6",
+      "winner_models_agree": true,
+      "winner_model_disagreement_range": 0.34179528874182624,
+      "method_forecast": "Mateus Soares by KO_TKO",
+      "method_joint_probability": 0.5549079782026163,
+      "method_conditional_probability_given_win": 0.5618490841757273,
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.1696988182149295,
+      "under_1_5_probability": 0.5794460838246166,
+      "under_2_5_probability": 0.8204710430047834,
+      "goes_distance_probability": 0.15538833320989853,
+      "round_2_starts_probability": 0.4993421874151497,
+      "round_3_starts_probability": 0.21261883213781607,
+      "round_top": "R1",
+      "round_top_probability": 0.5006578125848503,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Ryuho Miyaguchi": 0.012354039845582653,
+        "Mateus Soares": 0.9876459601544173,
+        "v0_6_boosting_shadow_a": 0.007265650049145057,
+        "v0_3_fallback_a": 0.3490609387909713
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.3493731278909098,
+        "SUB": 0.043240025013875916,
+        "DEC": 0.6073868470952143
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.5618490841757273,
+        "SUB": 0.33704909357349916,
+        "DEC": 0.10110182225077358
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.004316169542940144,
+        "A_SUB": 0.0005341889919454137,
+        "A_DEC": 0.0075036813106970955,
+        "B_KO_TKO": 0.5549079782026163,
+        "B_SUB": 0.3328851756415746,
+        "B_DEC": 0.0998528063102265
+      },
+      "duration": {
+        "under_0_5": 0.1696988182149295,
+        "under_1_5": 0.5794460838246166,
+        "under_2_5": 0.8204710430047834,
+        "goes_distance": 0.15538833320989853,
+        "round_2_starts": 0.4993421874151497,
+        "round_3_starts": 0.21261883213781607
+      },
+      "round": {
+        "R1": 0.5006578125848503,
+        "R2": 0.2867233552773336,
+        "R3": 0.05723049892791754,
+        "DEC": 0.15538833320989853
+      },
+      "method_route_gate": {
+        "career_smoothed_plausibility": 0.7142857142857143,
+        "career_method_win_count": 9,
+        "special_tko_access_score": 4.0,
+        "route_supported": true
+      },
+      "prospective_lesson_features": {
+        "pick_fighter_evidence_class": "current UFC/regional history; no full-fight playback verified",
+        "elite_amateur_pedigree": 3.0,
+        "pre_ufc_championship_experience": 3.0,
+        "five_round_experience": 4.0,
+        "post_high_output_round_freshness": 3.0
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 30,
+          "A_SUB": 10,
+          "A_DEC": 69,
+          "B_KO_TKO": 5540,
+          "B_SUB": 3314,
+          "B_DEC": 1037
+        },
+        "round_counts_10000": {
+          "R1": 5142,
+          "R2": 3097,
+          "R3": 655,
+          "DEC": 1106
+        },
+        "note": "Joint winner+method uses W-v0.6 and M-v0.4. Finish timing uses D-v0.4 conditional on a finish; standalone D/R probabilities are separately reported as production outputs."
+      }
+    },
+    {
+      "fight": "Nell Ariano vs Preston LaGrange",
+      "winner_pick": "Nell Ariano",
+      "winner_probability": 0.810481285419445,
+      "coverage_status": "PRIMARY_V0_6",
+      "winner_models_agree": false,
+      "winner_model_disagreement_range": 0.44863833295438127,
+      "method_forecast": "Nell Ariano by KO_TKO",
+      "method_joint_probability": 0.7417089971430899,
+      "method_conditional_probability_given_win": 0.9151463586962855,
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.24443556716048076,
+      "under_1_5_probability": 0.46233230022938254,
+      "under_2_5_probability": 0.7096883798175284,
+      "goes_distance_probability": 0.20807423113668871,
+      "round_2_starts_probability": 0.6550412642023197,
+      "round_3_starts_probability": 0.3279605246068066,
+      "round_top": "R1",
+      "round_top_probability": 0.3449587357976803,
+      "simulation_runs": 10000,
+      "odds_used": false,
+      "winner_probabilities": {
+        "Nell Ariano": 0.810481285419445,
+        "Preston LaGrange": 0.18951871458055503,
+        "v0_6_boosting_shadow_a": 0.8740797968796024,
+        "v0_3_fallback_a": 0.4254414639252211
+      },
+      "conditional_method_if_a_wins": {
+        "KO_TKO": 0.9151463586962855,
+        "SUB": 0.015673713079366824,
+        "DEC": 0.06917992822434771
+      },
+      "conditional_method_if_b_wins": {
+        "KO_TKO": 0.1257563949429768,
+        "SUB": 0.1458739901962094,
+        "DEC": 0.7283696148608139
+      },
+      "joint_winner_method": {
+        "A_KO_TKO": 0.7417089971430899,
+        "A_SUB": 0.012703251123860792,
+        "A_DEC": 0.05606903715249427,
+        "B_KO_TKO": 0.023833190319877573,
+        "B_SUB": 0.02764585111272209,
+        "B_DEC": 0.13803967314795537
+      },
+      "duration": {
+        "under_0_5": 0.24443556716048076,
+        "under_1_5": 0.46233230022938254,
+        "under_2_5": 0.7096883798175284,
+        "goes_distance": 0.20807423113668871,
+        "round_2_starts": 0.6550412642023197,
+        "round_3_starts": 0.3279605246068066
+      },
+      "round": {
+        "R1": 0.3449587357976803,
+        "R2": 0.3270807395955131,
+        "R3": 0.11988629347011787,
+        "DEC": 0.20807423113668871
+      },
+      "method_route_gate": {
+        "career_smoothed_plausibility": 0.5555555555555556,
+        "career_method_win_count": 4,
+        "special_tko_access_score": 3.0,
+        "route_supported": true
+      },
+      "prospective_lesson_features": {
+        "pick_fighter_evidence_class": "current UFC preview + regional history",
+        "elite_amateur_pedigree": 4.0,
+        "pre_ufc_championship_experience": 3.0,
+        "five_round_experience": null,
+        "post_high_output_round_freshness": 4.0
+      },
+      "monte_carlo": {
+        "joint_outcome_counts_10000": {
+          "A_KO_TKO": 7444,
+          "A_SUB": 118,
+          "A_DEC": 526,
+          "B_KO_TKO": 250,
+          "B_SUB": 280,
+          "B_DEC": 1382
+        },
+        "round_counts_10000": {
+          "R1": 3485,
+          "R2": 3354,
+          "R3": 1253,
+          "DEC": 1908
+        },
+        "note": "Joint winner+method uses W-v0.6 and M-v0.4. Finish timing uses D-v0.4 conditional on a finish; standalone D/R probabilities are separately reported as production outputs."
+      }
+    }
+  ]
+}
