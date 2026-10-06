@@ -1,0 +1,76 @@
+{
+  "version": "DWCS-W-CG-v0.1",
+  "built_on": "2026-10-06 pre-Week-9 event start",
+  "purpose": "Predict whether the production winner side is trustworthy; does not replace the side model.",
+  "historical_nested_validation": {
+    "confidence_gate": {
+      "n": 186,
+      "brier": 0.15085018287386398,
+      "log_loss": 0.48229457102578105,
+      "auc": 0.7064366998577525
+    },
+    "raw_anchor_confidence": {
+      "n": 186,
+      "brier": 0.14359205407262823,
+      "log_loss": 0.47583998082918655,
+      "auc": 0.7316856330014225
+    },
+    "promotion_test": {
+      "lower_brier": false,
+      "lower_log_loss": false
+    },
+    "earns_promotion_gate": false
+  },
+  "week9": [
+    {
+      "fight": "Alivia Bierley vs Summer Onley",
+      "winner_side": "Alivia Bierley",
+      "raw_side_probability": 0.5335366363747142,
+      "confidence_gate_probability": 0.6665700815095147,
+      "audited_confidence": "MEDIUM-HIGH",
+      "module_support_fraction": 0.5,
+      "module_spread": 0.279409434297402,
+      "full_vs_module_gap": 0.02433393860053823
+    },
+    {
+      "fight": "Salhahuddin Everett vs Ozzy Martin",
+      "winner_side": "Ozzy Martin",
+      "raw_side_probability": 0.5224533604466695,
+      "confidence_gate_probability": 0.5101638809039523,
+      "audited_confidence": "LOW",
+      "module_support_fraction": 0.16666666666666666,
+      "module_spread": 0.0905520480990211,
+      "full_vs_module_gap": 0.06060254149620459
+    },
+    {
+      "fight": "Roque Conceicao Moreira Junior vs Alexander Chavez",
+      "winner_side": "Alexander Chavez",
+      "raw_side_probability": 0.9628272186981728,
+      "confidence_gate_probability": 0.9097214549642315,
+      "audited_confidence": "HIGH",
+      "module_support_fraction": 0.8333333333333334,
+      "module_spread": 0.5479780203313009,
+      "full_vs_module_gap": 0.2285810069585819
+    },
+    {
+      "fight": "Ryuho Miyaguchi vs Mateus Soares",
+      "winner_side": "Mateus Soares",
+      "raw_side_probability": 0.9876459601544172,
+      "confidence_gate_probability": 0.9400230641395065,
+      "audited_confidence": "HIGH",
+      "module_support_fraction": 1.0,
+      "module_spread": 0.4401508879839882,
+      "full_vs_module_gap": 0.22116127552617904
+    },
+    {
+      "fight": "Nell Ariano vs Preston LaGrange",
+      "winner_side": "Nell Ariano",
+      "raw_side_probability": 0.810481285419445,
+      "confidence_gate_probability": 0.8763537552519901,
+      "audited_confidence": "HIGH",
+      "module_support_fraction": 1.0,
+      "module_spread": 0.1911560157784853,
+      "full_vs_module_gap": 0.030110846905407884
+    }
+  ]
+}
