@@ -253,7 +253,7 @@
     "artifacts": "Derived from models/dwcs_d_pair_hazard_*_v0_4.joblib"
   },
   "DWCS-W-v0.7-modular-challenger": {
-    "status": "development challenger; Week 9 rerun only, original lock preserved",
+    "status": "NOT PROMOTED \u2014 historical validation gate failed",
     "built_on": "2026-10-06",
     "training_rows": 425,
     "historical_nested_validation": {
@@ -327,7 +327,7 @@
     "note": "Modular real-ML architecture separates resume/form, striking, grappling, durability, cardio/decision, and physical/opponent-quality signals. Prospectively frozen tape concepts remain audit-only until trained prospectively."
   },
   "DWCS-W-v0.8-evidence-calibrated-challenger": {
-    "status": "development challenger; original Week 9 lock preserved",
+    "status": "NOT PROMOTED \u2014 historical validation gate failed",
     "built_on": "2026-10-06",
     "historical_nested_validation": {
       "v0_8_evidence_calibrated": {
@@ -356,7 +356,7 @@
     "note": "Learns whether module disagreement should attenuate or reinforce the full-model probability; no hand-edited probability caps."
   },
   "DWCS-W-CG-v0.1": {
-    "status": "promote if probability-quality gate passes",
+    "status": "NOT PROMOTED \u2014 historical validation gate failed",
     "built_on": "2026-10-06",
     "historical_nested_validation": {
       "confidence_gate": {
@@ -380,5 +380,13 @@
     "artifact": "models/dwcs_w_confidence_gate_v0_1.joblib",
     "week9": "diagnostics/week9_winner_confidence_gate_v0_1.csv",
     "note": "Separate correctness/confidence layer. Production winner side remains W-v0.6 unless a future winner challenger earns promotion."
+  },
+  "DWCS-W-SKILL-AUDIT-v0.1": {
+    "status": "ACTIVE prospective audit/betting-confidence policy; not a probability model",
+    "started": "2026-10-06 before Week 9 event start",
+    "winner_model_remains": "DWCS-W-v0.6",
+    "purpose": "Prevent resume/form-heavy probabilities from being treated as high-confidence bets when direct matchup skill evidence is weak or modular skill signals conflict.",
+    "week9_rerun": "diagnostics/week9_skill_audited_rerun.csv",
+    "report": "reports/week9_skill_audited_rerun.json"
   }
 }

@@ -1,0 +1,259 @@
+{
+  "event": "DWCS Season 10 Week 9",
+  "rerun_timestamp_context": "2026-10-06 pre-event-start model development",
+  "winner_model": "DWCS-W-v0.6 production with existing coverage fallback",
+  "new_component": "DWCS-W-SKILL-AUDIT-v0.1 prospective confidence/betting policy",
+  "challenger_results": {
+    "DWCS-W-v0.7-modular": "NOT PROMOTED \u2014 worse historical accuracy/Brier/log loss than full model",
+    "DWCS-W-v0.8-evidence-calibrated": "NOT PROMOTED \u2014 failed historical promotion gate",
+    "DWCS-W-CG-v0.1": "NOT PROMOTED \u2014 confidence calibration worse than raw anchor"
+  },
+  "policy": "Raw winner probabilities are retained for grading. Betting confidence is capped/downgraded when direct skill coverage is low or matchup modules disagree. No manual replacement probabilities are invented.",
+  "fights": [
+    {
+      "fight": "Alivia Bierley vs Summer Onley",
+      "winner_pick": "Alivia Bierley",
+      "raw_winner_probability": 0.5335366363747142,
+      "skill_audit_status": "PASS",
+      "audited_confidence": "VERY LOW",
+      "module_support_fraction": 0.5,
+      "module_spread": 0.279409434297402,
+      "direct_skill_stat_coverage": "LOW",
+      "audit_reason": "fallback winner model + incomplete enriched coverage",
+      "method_forecast": "Alivia Bierley by DEC",
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.060494867657312,
+      "under_1_5_probability": 0.3895525783633162,
+      "under_2_5_probability": 0.4704267979062552,
+      "goes_distance_probability": 0.5094446200945022,
+      "round_2_starts_probability": 0.6358219636583963,
+      "round_3_starts_probability": 0.5517394544271658,
+      "round_top": "DEC",
+      "round_top_probability": 0.5094446200945022,
+      "fresh_simulation_runs": 10000,
+      "module_probabilities_fighter_a": {
+        "resume_form": 0.4383950941476052,
+        "striking": 0.5126798190037734,
+        "grappling": 0.4937503097771773,
+        "durability": 0.5178272669904662,
+        "cardio_decision": 0.4065771312143158,
+        "physical_quality": 0.6859865655117179
+      },
+      "tape_evidence": {
+        "Alivia Bierley": "full amateur fight source located + current regional history",
+        "Summer Onley": "current UFC preview + full regional result history; no full pro playback verified"
+      },
+      "fresh_10000_joint_counts": {
+        "A_KO_TKO": 1599,
+        "A_SUB": 297,
+        "A_DEC": 3475,
+        "B_KO_TKO": 1474,
+        "B_SUB": 197,
+        "B_DEC": 2958
+      },
+      "fresh_10000_round_counts": {
+        "R1": 3657,
+        "R2": 832,
+        "R3": 424,
+        "DEC": 5087
+      },
+      "note": "Winner probability remains the frozen production/fallback probability. The new audit changes confidence/bet status, not history. M/D/R probabilities remain the already-frozen production outputs; Monte Carlo was freshly resampled."
+    },
+    {
+      "fight": "Salhahuddin Everett vs Ozzy Martin",
+      "winner_pick": "Ozzy Martin",
+      "raw_winner_probability": 0.5224533604466695,
+      "skill_audit_status": "PASS",
+      "audited_confidence": "VERY LOW",
+      "module_support_fraction": 0.16666666666666666,
+      "module_spread": 0.0905520480990211,
+      "direct_skill_stat_coverage": "LOW",
+      "audit_reason": "fallback winner model + incomplete enriched coverage",
+      "method_forecast": "Ozzy Martin by DEC",
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.0709989752969759,
+      "under_1_5_probability": 0.4117259536766696,
+      "under_2_5_probability": 0.5078631509205795,
+      "goes_distance_probability": 0.4584584286001162,
+      "round_2_starts_probability": 0.6321755754682195,
+      "round_3_starts_probability": 0.5140716966596425,
+      "round_top": "DEC",
+      "round_top_probability": 0.4584584286001162,
+      "fresh_simulation_runs": 10000,
+      "module_probabilities_fighter_a": {
+        "resume_form": 0.5762499287705513,
+        "striking": 0.5513565312127814,
+        "grappling": 0.494238566941654,
+        "durability": 0.50758053395646,
+        "cardio_decision": 0.5146789103750888,
+        "physical_quality": 0.5847906150406752
+      },
+      "tape_evidence": {
+        "Salhahuddin Everett": "current UFC preview/reports + regional result history",
+        "Ozzy Martin": "current UFC preview/reports + regional result history"
+      },
+      "fresh_10000_joint_counts": {
+        "A_KO_TKO": 1506,
+        "A_SUB": 915,
+        "A_DEC": 2392,
+        "B_KO_TKO": 2212,
+        "B_SUB": 249,
+        "B_DEC": 2726
+      },
+      "fresh_10000_round_counts": {
+        "R1": 3593,
+        "R2": 1184,
+        "R3": 543,
+        "DEC": 4680
+      },
+      "note": "Winner probability remains the frozen production/fallback probability. The new audit changes confidence/bet status, not history. M/D/R probabilities remain the already-frozen production outputs; Monte Carlo was freshly resampled."
+    },
+    {
+      "fight": "Roque Conceicao Moreira Junior vs Alexander Chavez",
+      "winner_pick": "Alexander Chavez",
+      "raw_winner_probability": 0.9628272186981728,
+      "skill_audit_status": "LEAN",
+      "audited_confidence": "MEDIUM",
+      "module_support_fraction": 0.8333333333333334,
+      "module_spread": 0.5479780203313009,
+      "direct_skill_stat_coverage": "LOW",
+      "audit_reason": "most modules agree, but direct skill coverage is low and module dispersion is large",
+      "method_forecast": "Alexander Chavez by DEC",
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.0646531480570412,
+      "under_1_5_probability": 0.2838100025542789,
+      "under_2_5_probability": 0.4690502576119838,
+      "goes_distance_probability": 0.5017447204851733,
+      "round_2_starts_probability": 0.749902780492384,
+      "round_3_starts_probability": 0.604585299620313,
+      "round_top": "DEC",
+      "round_top_probability": 0.5017447204851733,
+      "fresh_simulation_runs": 10000,
+      "module_probabilities_fighter_a": {
+        "resume_form": 0.044397481793359,
+        "striking": 0.4195264156402218,
+        "grappling": 0.3989611476325329,
+        "durability": 0.1414679029818391,
+        "cardio_decision": 0.0210958805916006,
+        "physical_quality": 0.5690739009229016
+      },
+      "tape_evidence": {
+        "Roque Conceicao Moreira Junior": "verified full prior-DWCS fight source + current regional history",
+        "Alexander Chavez": "current UFC/regional history; no full-fight playback verified"
+      },
+      "fresh_10000_joint_counts": {
+        "A_KO_TKO": 60,
+        "A_SUB": 26,
+        "A_DEC": 285,
+        "B_KO_TKO": 3518,
+        "B_SUB": 430,
+        "B_DEC": 5681
+      },
+      "fresh_10000_round_counts": {
+        "R1": 2507,
+        "R2": 1431,
+        "R3": 1015,
+        "DEC": 5047
+      },
+      "note": "Winner probability remains the frozen production/fallback probability. The new audit changes confidence/bet status, not history. M/D/R probabilities remain the already-frozen production outputs; Monte Carlo was freshly resampled."
+    },
+    {
+      "fight": "Ryuho Miyaguchi vs Mateus Soares",
+      "winner_pick": "Mateus Soares",
+      "raw_winner_probability": 0.9876459601544172,
+      "skill_audit_status": "LEAN",
+      "audited_confidence": "MEDIUM",
+      "module_support_fraction": 1.0,
+      "module_spread": 0.4401508879839882,
+      "direct_skill_stat_coverage": "LOW",
+      "audit_reason": "all modules agree, but module dispersion/direct skill coverage prevent high confidence",
+      "method_forecast": "Mateus Soares by KO_TKO",
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.1696988182149295,
+      "under_1_5_probability": 0.5794460838246166,
+      "under_2_5_probability": 0.8204710430047834,
+      "goes_distance_probability": 0.1553883332098985,
+      "round_2_starts_probability": 0.4993421874151497,
+      "round_3_starts_probability": 0.212618832137816,
+      "round_top": "R1",
+      "round_top_probability": 0.5006578125848503,
+      "fresh_simulation_runs": 10000,
+      "module_probabilities_fighter_a": {
+        "resume_form": 0.040913383556648,
+        "striking": 0.3584457233810986,
+        "grappling": 0.3535173332978258,
+        "durability": 0.4593291765139455,
+        "cardio_decision": 0.1697079869510961,
+        "physical_quality": 0.0191782885299572
+      },
+      "tape_evidence": {
+        "Ryuho Miyaguchi": "verified full Road to UFC fight source + current history",
+        "Mateus Soares": "current UFC/regional history; no full-fight playback verified"
+      },
+      "fresh_10000_joint_counts": {
+        "A_KO_TKO": 35,
+        "A_SUB": 6,
+        "A_DEC": 69,
+        "B_KO_TKO": 5528,
+        "B_SUB": 3371,
+        "B_DEC": 991
+      },
+      "fresh_10000_round_counts": {
+        "R1": 4977,
+        "R2": 2851,
+        "R3": 585,
+        "DEC": 1587
+      },
+      "note": "Winner probability remains the frozen production/fallback probability. The new audit changes confidence/bet status, not history. M/D/R probabilities remain the already-frozen production outputs; Monte Carlo was freshly resampled."
+    },
+    {
+      "fight": "Nell Ariano vs Preston LaGrange",
+      "winner_pick": "Nell Ariano",
+      "raw_winner_probability": 0.810481285419445,
+      "skill_audit_status": "LEAN",
+      "audited_confidence": "MEDIUM-HIGH",
+      "module_support_fraction": 1.0,
+      "module_spread": 0.1911560157784853,
+      "direct_skill_stat_coverage": "LOW",
+      "audit_reason": "all skill modules agree but direct pre-UFC skill-stat coverage is low",
+      "method_forecast": "Nell Ariano by KO_TKO",
+      "method_status": "FORECAST_ONLY",
+      "under_0_5_probability": 0.2444355671604807,
+      "under_1_5_probability": 0.4623323002293825,
+      "under_2_5_probability": 0.7096883798175284,
+      "goes_distance_probability": 0.2080742311366887,
+      "round_2_starts_probability": 0.6550412642023197,
+      "round_3_starts_probability": 0.3279605246068066,
+      "round_top": "R1",
+      "round_top_probability": 0.3449587357976803,
+      "fresh_simulation_runs": 10000,
+      "module_probabilities_fighter_a": {
+        "resume_form": 0.8272148526091491,
+        "striking": 0.7258949174731505,
+        "grappling": 0.7556382119726455,
+        "durability": 0.800331484353577,
+        "cardio_decision": 0.8821495902270928,
+        "physical_quality": 0.6909935744486075
+      },
+      "tape_evidence": {
+        "Nell Ariano": "current UFC preview + regional history",
+        "Preston LaGrange": "current UFC preview + detailed loss footage/report + regional history"
+      },
+      "fresh_10000_joint_counts": {
+        "A_KO_TKO": 7379,
+        "A_SUB": 150,
+        "A_DEC": 553,
+        "B_KO_TKO": 225,
+        "B_SUB": 288,
+        "B_DEC": 1405
+      },
+      "fresh_10000_round_counts": {
+        "R1": 3402,
+        "R2": 3323,
+        "R3": 1207,
+        "DEC": 2068
+      },
+      "note": "Winner probability remains the frozen production/fallback probability. The new audit changes confidence/bet status, not history. M/D/R probabilities remain the already-frozen production outputs; Monte Carlo was freshly resampled."
+    }
+  ]
+}
