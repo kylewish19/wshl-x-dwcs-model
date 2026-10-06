@@ -1,0 +1,195 @@
+{
+  "event": "DWCS Season 10 Week 8",
+  "event_date": "2026-09-29",
+  "graded_on": "2026-10-06",
+  "source_results": "UFC official Week 8 results",
+  "cancelled_bout": {
+    "fight": "Ilias Bulaid vs Erick Visconde",
+    "status": "CANCELLED_POST_WEIGHIN",
+    "reason": "Bulaid illness; rescheduled to Week 10",
+    "grading": "N/A — excluded from all Week 8 model records and retraining labels"
+  },
+  "official_results": [
+    {
+      "fight": "Camila Reynoso vs Aieza Ramos Bertolso",
+      "winner": "Aieza Ramos Bertolso",
+      "method": "SUB",
+      "round": "R1",
+      "time": "3:02",
+      "duration_seconds": 182
+    },
+    {
+      "fight": "Luca Borando vs Ian Escuza",
+      "winner": "Ian Escuza",
+      "method": "KO_TKO",
+      "round": "R1",
+      "time": "0:32",
+      "duration_seconds": 32,
+      "context": "Official TKO result; finishing sequence included an illegal knee reviewed by officials."
+    },
+    {
+      "fight": "Zaurbek Sabanov vs Adama Diop",
+      "winner": "Adama Diop",
+      "method": "KO_TKO",
+      "round": "R2",
+      "time": "2:13",
+      "duration_seconds": 433
+    },
+    {
+      "fight": "Loai Abushaar vs George Staines",
+      "winner": "George Staines",
+      "method": "KO_TKO",
+      "round": "R1",
+      "time": "1:01",
+      "duration_seconds": 61,
+      "context": "TKO by slam."
+    }
+  ],
+  "grades": {
+    "production_winner_DWCS_W_v0_5": {
+      "record": "3-1",
+      "accuracy": 0.75,
+      "brier": 0.14845901114007165,
+      "log_loss": 0.4456130431457874,
+      "cancelled": 1
+    },
+    "boosting_challenger_DWCS_W_v0_4": {
+      "record": "3-1",
+      "accuracy": 0.75,
+      "brier": 0.10864898175221054,
+      "log_loss": 0.3005092207963508,
+      "cancelled": 1,
+      "note": "Correct on Bertolso, Escuza and Staines; wrong on Sabanov. Production was correct on Escuza, Diop and Staines; wrong on Reynoso."
+    },
+    "v0_3_winner_fallback": {
+      "record": "1-3",
+      "accuracy": 0.25,
+      "cancelled": 1
+    },
+    "official_side_leans_only": {
+      "record": "2-0",
+      "cancelled": 1,
+      "wins": ["Ian Escuza", "George Staines"],
+      "note": "Reynoso and Diop were PASS fights; Visconde was cancelled."
+    },
+    "forced_winner_method_all_completed": {
+      "record": "1-3",
+      "accuracy": 0.25,
+      "note": "Counts the raw Staines KO/TKO forecast as a model hit even though the audit rejected it as a bet."
+    },
+    "method_given_correct_production_winner_raw": {
+      "record": "1-2",
+      "accuracy": 0.3333333333,
+      "note": "Escuza SUB miss, Diop DEC miss, Staines KO/TKO hit."
+    },
+    "official_method_leans": {
+      "record": "0-1",
+      "cancelled": 1,
+      "note": "Escuza SUB lost; Visconde DEC was cancelled. No official method bet on Reynoso, Diop or Staines."
+    },
+    "shadow_main_total_leans": {
+      "record": "1-3",
+      "accuracy": 0.25,
+      "cancelled": 1
+    },
+    "shadow_ou_thresholds_combined": {
+      "record": "5-7",
+      "accuracy": 0.4166666667,
+      "under_over_0_5": "2-2",
+      "under_over_1_5": "1-3",
+      "under_over_2_5": "2-2"
+    },
+    "shadow_goes_distance": {
+      "record": "2-2",
+      "accuracy": 0.5
+    },
+    "shadow_round_starts": {
+      "record": "2-6",
+      "accuracy": 0.25,
+      "round_2_starts": "1-3",
+      "round_3_starts": "1-3"
+    },
+    "all_shadow_duration_binary_markets": {
+      "record": "9-15",
+      "accuracy": 0.375
+    },
+    "shadow_exact_round_or_decision_bucket": {
+      "record": "1-3",
+      "accuracy": 0.25
+    },
+    "monte_carlo_top_exact_winner_method": {
+      "record": "1-3",
+      "accuracy": 0.25
+    },
+    "monte_carlo_top_round_bucket": {
+      "record": "1-3",
+      "accuracy": 0.25
+    }
+  },
+  "fight_by_fight": [
+    {
+      "fight": "Camila Reynoso vs Aieza Ramos Bertolso",
+      "production_winner": "Camila Reynoso",
+      "production_winner_grade": "L",
+      "boosting_challenger": "Aieza Ramos Bertolso",
+      "boosting_grade": "W",
+      "method_forecast": "Camila Reynoso by DEC",
+      "method_grade": "L",
+      "shadow_total_lean": "Under 2.5",
+      "shadow_total_grade": "W",
+      "shadow_round_top": "R1",
+      "shadow_round_grade": "W"
+    },
+    {
+      "fight": "Luca Borando vs Ian Escuza",
+      "production_winner": "Ian Escuza",
+      "production_winner_grade": "W",
+      "boosting_challenger": "Ian Escuza",
+      "boosting_grade": "W",
+      "method_forecast": "Ian Escuza by SUB",
+      "method_grade": "L",
+      "shadow_total_lean": "Over 2.5",
+      "shadow_total_grade": "L",
+      "shadow_round_top": "DEC",
+      "shadow_round_grade": "L"
+    },
+    {
+      "fight": "Zaurbek Sabanov vs Adama Diop",
+      "production_winner": "Adama Diop",
+      "production_winner_grade": "W",
+      "boosting_challenger": "Zaurbek Sabanov",
+      "boosting_grade": "L",
+      "method_forecast": "Adama Diop by DEC",
+      "method_grade": "L",
+      "shadow_total_lean": "Over 1.5",
+      "shadow_total_grade": "L",
+      "shadow_round_top": "DEC",
+      "shadow_round_grade": "L"
+    },
+    {
+      "fight": "Loai Abushaar vs George Staines",
+      "production_winner": "George Staines",
+      "production_winner_grade": "W",
+      "boosting_challenger": "George Staines",
+      "boosting_grade": "W",
+      "method_forecast": "George Staines by KO/TKO (raw; rejected by route gate)",
+      "raw_method_grade": "W",
+      "official_method_bet_grade": "N/A",
+      "shadow_total_lean": "Over 1.5",
+      "shadow_total_grade": "L",
+      "shadow_round_top": "DEC",
+      "shadow_round_grade": "L"
+    }
+  ],
+  "lessons": [
+    "Bertolso exposed a winner-model blind spot for elite amateur pedigree and high-level pre-UFC championship experience; capture this prospectively rather than treating a short pro record as low information.",
+    "DWCS-M-v0.3 remained too decision-heavy on the completed slate. Reynoso DEC and Diop DEC both missed while all four completed fights ended inside the distance.",
+    "Escuza-Borando showed that opponent-specific submission vulnerability should not overpower a fighter's own repeated ultra-early KO/TKO finishing pattern. Early-finish route evidence needs stronger interaction with method selection.",
+    "Diop-Sabanov strongly supports round-dependent cardio/freshness and failed-exchange cost features. Diop was fresher in Round 2 and finished Sabanov after a high-output first round.",
+    "Staines showed the career-route plausibility gate can be too rigid: a fighter with few historical KO/TKO wins can still have a high TKO path through wrestling, slams or ground damage. Distinguish striking KO history from grappling-generated TKO access.",
+    "DWCS-D/R v0.3 regressed sharply from Week 7: 9-15 across all binary duration markets and 1-3 exact round. Keep both shadow-only and do not promote based on Week 7's 12-3 totals result.",
+    "Three of four completed bouts ended in Round 1 and all four ended inside the distance. Do not globally inflate early-finish priors from one card, but investigate whether pair-level combined finish pressure and minimum durability are underweighted.",
+    "Boosting challenger and production winner both finished 3-1 but made complementary errors. Track prospective Brier/log-loss for both before considering any ensemble or promotion change.",
+    "Bulaid-Visconde must remain ungraded and excluded from Week 8 retraining. Re-run the matchup fresh for Week 10 rather than reusing the Week 8 probability lock."
+  ]
+}
